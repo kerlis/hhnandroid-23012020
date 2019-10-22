@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">16sp</dimen>
+    <dimen name="text_size_options">12sp</dimen>
+    <dimen name="text_size_tip">22sp</dimen>
+
+    <dimen name="text_size_item_bulletin_title">18sp</dimen>
+    <dimen name="text_size_item_bulletin_description">15sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- AboutActivity -->
+    <dimen name="aa_title">22sp</dimen>
+    <dimen name="aa_address">16sp</dimen>
+    <dimen name="aa_email">14sp</dimen>
+
+</resources>

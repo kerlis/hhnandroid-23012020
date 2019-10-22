@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.doapps.appdhn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.Mapapoligonos"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ChartsActivity"
+            android:label="@string/title_activity_downloadable_content"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VideosActivity"
+            android:label="@string/title_activity_videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TipsActivity"
+            android:label="@string/title_activity_tips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BulletinNoticesActivity"
+            android:label="@string/title_activity_bulletin_notices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NationalSeismicReportActivity"
+            android:label="@string/title_activity_national_seismic_report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".NotificationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.NotificationDescriptionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PressReleasesActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".PressReleasesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.PressReleasesDescriptionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".PressReleasesDescriptionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FrequentQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProvincesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.Listadorecyclerlugares"
+            android:screenOrientation="portrait" />
+
+
+        <service android:name=".fcm.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.IdMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification2_white" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".background.TokenService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.AlarmActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/chanelMGP" />
+    </application>
+
+</manifest>

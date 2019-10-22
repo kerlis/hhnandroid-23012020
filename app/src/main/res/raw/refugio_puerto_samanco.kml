@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="021807_0001_refugio">
+  <name>021807_0001_refugio</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>021807_0001_refugio</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>17336.200409</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>WV-2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021807</td>
+
+</tr>
+
+<tr>
+
+<td>COD_CP</td>
+
+<td>0009</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.004908</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.49303218299997,-9.265411768999968,0 -78.49162138699995,-9.265860925999959,0 -78.49127753699997,-9.264832852999973,0 -78.49276923899998,-9.264618254999959,0 -78.49303218299997,-9.265411768999968,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0.000000</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff0055ff</color>
+        <width>0.400000</width>
+      </LineStyle>
+        <PolyStyle>
+        <color>ff0055ff</color>
+      </PolyStyle>
+    </Style>
+</Document>
+</kml>

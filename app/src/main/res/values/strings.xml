@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">MGP Tsunamis</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- activity_maps -->
+    <string name="information_of_maps">Información del mapa</string>
+    <string name="flood_charts">Zonas de inundación</string>
+    <string name="places_of_refuge">Lugares de refugio</string>
+    <string name="evacuation_routes">Rutas de evacuación</string>
+    <string name="search_in_dhn">Búsqueda</string>
+
+    <!-- side menu -->
+    <string name="central_alerts_of_tsunamis_normal">"Central de alertas de Tsunamis"</string>
+    <string name="central_alerts_of_tsunamis">"Central Nacional de\nAlerta de Tsunamis"</string>
+    <string name="tips">Tips</string>
+    <string name="bulletin_notices">Boletín de avisos</string>
+    <string name="national_seismic_report">Reporte Últimos Sismos</string>
+    <string name="downloadable_content">Cartas de inundación</string>
+    <string name="videos">Videos</string>
+    <string name="about">Acerca de Nosotros</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="pressreleases">Notas de prensa</string>
+    <string name="frequent_questions">Preguntas frecuentes</string>
+
+    <!-- titles -->
+    <string name="title_tips">Tips</string>
+    <string name="title_bulletin_notices">Boletín de noticias</string>
+    <string name="title_national_seismic_report">Reporte Últimos Sismos</string>
+    <string name="title_downloadable_content">Cartas de inundación</string>
+    <string name="title_videos">Videos</string>
+    <string name="title_about">Acerca de MGP Tsunamis</string>
+    <string name="title_notifications">Últimos mensajes recibidos</string>
+    <string name="title_pressrelease">Últimas Notas de Prensa</string>
+    <string name="title_activity_splash">MGP Tsunamis</string>
+    <string name="title_frequent_questions">Preguntas frecuentes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Compartir</string>
+    <string name="title_activity_downloadable_content">DownloadableContentActivity</string>
+
+    <string name="lorem_ipsum_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod</string>
+    <string name="lorem_minutes">10m</string>
+    <string name="download">DESCARGAR</string>
+    <string name="title_activity_videos">VideosActivity</string>
+    <string name="title_activity_tips">TipsActivity</string>
+    <string name="title_activity_bulletin_notices">BulletinNoticesActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <!-- about -->
+    <string name="information_institute">Dirección de\nHidrografía y Navegación\nde la Marina de Guerra del Perú</string>
+    <string name="about_description">Las cartas de inundación son proporcionadas por el CNAT en coordinación con el Instituto Nacional de Defensa Civil, quienes son los encargados de establecer las áreas de refugio y zonas de evauación.</string>
+    <string name="address_institute">Calle Roca Nº 118 Chucuito - Callao</string>
+    <string name="email_institute">dihidronav@dhn.mil.pe</string>
+    <string name="title_activity_national_seismic_report">NationalSeismicReportActivity</string>
+
+    <!-- national sismic report -->
+    <string name="magnitude">MAGNITUD</string>
+    <string name="lorem_number">4.7</string>
+
+    <!-- sliders -->
+    <string name="first_slider">"Si veo que el nivel del\nmar disminuye...\n¡Me alejo! </string>
+    <string name="second_slider">"Si ha ocurrido un sismo\ndebes estar alerta a una\nemergencia de tsunami."</string>
+    <string name="third_slider">"Aléjate de la playa antes\nque sea demasiado tarde."</string>
+    <string name="fourth_slider">"Ubico y me dirijo a mi\nárea de refugio."</string>
+    <string name="fifth_slider">"Cojo mi mochila\nsalvavida</string>
+    <string name="sixth_slider">"Ropa de abrigo\nAgua, galletas y chocolates\nLinterna, radio y pilas\nKit de primeros auxilios\nPapel higiénico"</string>
+
+    <!-- Share -->
+    <string name="s_url">www.google.</string>
+    <string name="s_text">Te invito a descargar esta aplicación:</string>
+    <string name="s_share">Compartir</string>
+
+    <!-- DialogProgress -->
+    <string name="loading">Cargando...</string>
+    <string name="no_connection_message">Verifica tu conexión a internet e intenta nuevamente</string>
+
+
+    <!-- Google Maps Key -->
+
+    <!--   AIzaSyABt1RNt3TALHonvsExS-2EEN3nWGy5PFw
+    <string name="google_key">AIzaSyA7fsRUK2CddnKZBWziQu8XA6FtT4XFdjg
+
+    AIzaSyABt1RNt3TALHonvsExS-2EEN3nWGy5PFw
+    </string>
+-->
+    <string name="google_key">AIzaSyCxt_iMIo9VLSNlZOpUmdTSdxNyU21U8uw</string>
+    <string name="google_message_notconnection_internet">Revise su conexión a internet</string>
+
+    <!-- GPSUtil -->
+    <string name="message_gps_utiñ">Configura el servicio de ubicación en el modo precisión alta o red móvil y Wifi</string>
+    <string name="label_gps_configure">Configuración</string>
+    <string name="label_gps_cancel">Cancelar</string>
+
+    <!-- PermissionUtil -->
+    <string name="permission_label_gps_configure">ENTIENDO</string>
+    <string name="permission_message_enable_position_explication">Permiso de posición necesario para mostrar los kml!</string>
+    <string name="permission_message_enable_position">Habilitar permiso de posición!</string>
+    <string name="permission_message_enable_write">Permiso de escritura ME es necario para descargar!</string>
+    <string name="activate">ACTIVAR</string>
+    <string name="go_to_config">IR A CONFIGURACIÓN</string>
+
+    <!-- url -->
+    <string name="url_www">https://www.dhn.mil.pe/</string>
+    <string name="url_twitter">https://twitter.com/DHN_PERU</string>
+    <string name="url_facebook">https://www.facebook.com/DHN.Peru/</string>
+    <string name="url_youtube">https://www.youtube.com/channel/UCG4JCanwRBTY3TMk1fL7kQg</string>
+
+    <string name="chanelMGP">Notificación</string>
+
+</resources>

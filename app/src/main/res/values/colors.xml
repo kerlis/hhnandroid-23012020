@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gen_white">#ffffff</color>
+    <color name="gen_black">#000000</color>
+    <color name="gen_white_50">#80ffffff</color>
+    <color name="gen_transparent">#00ffffff</color>
+    <color name="option_result_pressed">#cfcfcf</color>
+    <color name="colorPrimary">#055096</color>
+    <color name="colorPrimaryDark">#055096</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="windowBackground">#ffffff</color>
+    <color name="menu_interline">#ffffff</color>
+    <color name="backgroundOpenMenu">#B3000000</color>
+    <color name="pressed_option">#1562a1</color>
+
+    <color name="sand">#BFA052</color>
+    <color name="water">#1398B7</color>
+
+    <color name="orange">#FF7043</color>
+    <color name="orange_pressed">#e04d28</color>
+
+    <color name="title">#50000000</color>
+    <color name="description">#20000000</color>
+    <color name="gray_light">#969696</color>
+    <color name="gray_forte">#383838</color>
+
+    <color name="bg_group_item_expanded_pressed_state">#ffffff</color>
+    <color name="bg_group_item_expanded_state">#ffffff</color>
+    <color name="bg_group_item_normal_pressed_state">#ffffff</color>
+    <color name="bg_group_item_normal_state">#ffffff</color>
+    <color name="bg_item_normal_state">#ffffff</color>
+    <color name="bg_swipe_item_neutral">#ff9999ff</color>
+
+    <color name="button_map_normal">#D9FAFAFA</color>
+    <color name="button_map_pressed">#D99E9E9E</color>
+
+    <color name="red">#FF0000</color>
+    <color name="orangeBasick">#FFA75C</color>
+    <color name="blueLight">#77B7FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black207">#e3000000</color>
+    <color name="blackOpacity100">#00000000</color>
+
+</resources>

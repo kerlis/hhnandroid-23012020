@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="me.doapps.appdhn.activities.AboutActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Centro Nacional\nde Alerta de Tsunami"
+                android:textColor="@color/gray_forte"
+                android:textSize="@dimen/aa_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/im_cnat"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/im_marine"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/information_institute"
+                android:textColor="@color/gray_forte"
+                android:textSize="@dimen/aa_title"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/about_description"
+                android:textColor="@color/gray_forte"
+                android:textSize="@dimen/aa_address"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="@string/address_institute"
+                android:textColor="@color/gray_forte"
+                android:textSize="@dimen/aa_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_institute"
+                android:textColor="@color/gray_forte"
+                android:textSize="@dimen/aa_email"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_view_www"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_www"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/image_view_twitter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_twitter"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"/>
+
+                <ImageView
+                    android:id="@+id/image_view_facebook"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_facebook"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"/>
+
+                <ImageView
+                    android:id="@+id/image_view_youtube"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_youtube"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
