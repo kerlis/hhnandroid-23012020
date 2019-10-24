@@ -24,6 +24,7 @@ import android.os.Looper;
 import android.os.ParcelFileDescriptor;
 import android.os.StrictMode;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -114,10 +115,12 @@ import java.util.Locale;
 
 import me.doapps.appdhn.BuildConfig;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.adapters.Listadolugaresadapter;
 import me.doapps.appdhn.adapters.ResultAdapter;
 import me.doapps.appdhn.config.Setting;
 import me.doapps.appdhn.databases.DatabaseHelper;
 import me.doapps.appdhn.models.Cartasevacua;
+import me.doapps.appdhn.models.Departamentos;
 import me.doapps.appdhn.models.Distrito;
 import me.doapps.appdhn.models.RefugePlaces;
 import me.doapps.appdhn.models.cartasevacuacion;
@@ -206,10 +209,55 @@ ImageButton busqueda;
 
 
     public InputStream in2;
+
+
+
+
+
+    DatabaseReference reference;
+    RecyclerView recyclerView;
+    ArrayList<Departamentos> list;
+    Listadolugaresadapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+
+        if (extras != null){
+
+           // String user_name = extras.getString("PRIMERA");
+        Toast.makeText(MapsActivity.this, "PRIMERA URL: " + extras.getString("PRIMERA"), Toast.LENGTH_SHORT).show();
+
+    }
+
+
+
+        /*
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null)
+        {
+           // name.setText(" "+bundle.getString("PRIMERA"));
+
+            Toast.makeText(MapsActivity.this, "PRIMERA URL: " + bundle.getString("PRIMERA"), Toast.LENGTH_SHORT).show();
+
+            Log.d("PRIMERA URL", bundle.getString("PRIMERA"));
+
+        }
+        */
+
+
+        //Intent i=this.getIntent();
+        //String texto1 = i.getExtras().getString("PRIMERA");
+
+       // Toast.makeText(MapsActivity.this, "PRIMERA URL: " + texto1, Toast.LENGTH_SHORT).show();
+
+
+
         FirebaseMessaging.getInstance().subscribeToTopic(Setting.SISMOTOPIC);
         FirebaseMessaging.getInstance().subscribeToTopic(Setting.BOLETINTOPIC);
         FirebaseMessaging.getInstance().subscribeToTopic(Setting.ALARMATOPIC);
@@ -226,6 +274,7 @@ ImageButton busqueda;
         busqueda.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
+                verpopup();
 
             }
         });
@@ -342,28 +391,47 @@ ImageButton busqueda;
 
 
 
-/*
+
     public void verpopup() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.alertanaranja, null);
+        View dialogView = inflater.inflate(R.layout.zonas_evacuacion, null);
 
         dialogBuilder.setView(dialogView);
-        Button cerrar = dialogView.findViewById(R.id.close);
 
-        Button icono1 = dialogView.findViewById(R.id.icono1);
-        Button icono2 = dialogView.findViewById(R.id.icono2);
-        Button icono3 = dialogView.findViewById(R.id.icono3);
-        Button icono4 = dialogView.findViewById(R.id.icono4);
-        Button icono5 = dialogView.findViewById(R.id.icono5);
-        Button icono6 = dialogView.findViewById(R.id.icono6);
+        final RecyclerView recyclerview4 = dialogView.findViewById(R.id.my_recycler_view);
 
+        recyclerview4.setLayoutManager(new LinearLayoutManager(this));
+
+        reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list = new ArrayList<Departamentos>();
+                for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
+                {
+                    Departamentos p = dataSnapshot1.getValue(Departamentos.class);
+                    String commentKey = dataSnapshot1.getKey();
+                    Log.d("LLAVE:", commentKey);
+                    list.add(p);
+                }
+                adapter = new Listadolugaresadapter(MapsActivity.this,list);
+                recyclerview4.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(MapsActivity.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button cerrar = dialogView.findViewById(R.id.cerrar);
 
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
 
-
-        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         cerrar.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -372,11 +440,9 @@ ImageButton busqueda;
             }
         });
 
-
-
     }
 
-*/
+
 
 
 

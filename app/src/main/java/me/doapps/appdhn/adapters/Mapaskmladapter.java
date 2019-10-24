@@ -1,70 +1,115 @@
 package me.doapps.appdhn.adapters;
+import android.content.ClipData;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.activities.MapsActivity;
 import me.doapps.appdhn.models.Cartasevacua;
-
 public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyViewHolder>{
 
     Context context;
-    ArrayList<Cartasevacua> listadorecyclerlugares;
+    ArrayList<Cartasevacua> listadozonas;
 
     public Mapaskmladapter(Context c , ArrayList<Cartasevacua> p) {
         context = c;
-        listadorecyclerlugares = p;
+        listadozonas = p;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.cardview,parent,false));
-
-
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardviewtwo, parent, false);
+        return new Mapaskmladapter.MyViewHolder(itemView);
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.name.setText(listadorecyclerlugares.get(position).getFuente());
-        holder.email.setText(listadorecyclerlugares.get(position).getUrlkml());
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
+
+
+
+        holder.nombre.setText(listadozonas.get(position).getNombre());
+        Log.d("DATA LISTADOZONAS", listadozonas.get(position).getUrl_kml1());
+
+
+
+        holder.iramapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Bundle b = new Bundle();
+                b.putString("PRIMERA", "SDWDWEDEWD");
+
+                Intent intent = new Intent(holder.itemView.getContext(), MapsActivity.class);
+
+
+
+
+                intent.putExtras(b);
+
+                holder.itemView.getContext().startActivity(intent);
+
+
+                Toast.makeText(context, position+ listadozonas.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
     public int getItemCount() {
-        return listadorecyclerlugares.size();
+        return listadozonas.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
-
-        TextView name,email;
-        ImageView profilePic;
-        Button btn;
+        TextView nombre;
+        ImageButton iramapa;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            name = (TextView) itemView.findViewById(R.id.name);
-            email = (TextView) itemView.findViewById(R.id.email);
-            btn = (Button) itemView.findViewById(R.id.checkDetails);
+            nombre = (TextView) itemView.findViewById(R.id.nombre);
+            iramapa = (ImageButton) itemView.findViewById(R.id.iramapa);
+
+
+
         }
 
         public void onClick(final int position) {
-            btn.setOnClickListener(new View.OnClickListener() {
+/*
+            iramapa.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
                     Toast.makeText(context, position+" is clicked", Toast.LENGTH_SHORT).show();
                 }
             });
+            */
+
         }
 
     }
+
+/*
+    public void iramapax(){
+        Intent intent = new Intent(MapsActivity.this, MapsActivity.class);
+        // Intent intent = new Intent(volcanmenu.this,Configuraciones.class);
+
+        startActivity(intent);
+
+    }
+    */
 
 }

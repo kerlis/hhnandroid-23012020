@@ -1,5 +1,4 @@
 package me.doapps.appdhn.activities;
-
 import android.Manifest;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
@@ -11,7 +10,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.background.TokenService;
 import me.doapps.appdhn.config.Setting;
@@ -121,10 +119,10 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startService(new Intent(SplashActivity.this, TokenService.class));
 
-                //  Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
-               // Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
+                //   Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
+                  Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
 
-            Intent intent = new Intent(SplashActivity.this, Listadorecyclerlugares.class);
+                //  Intent intent = new Intent(SplashActivity.this, Listadorecyclerlugares.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
