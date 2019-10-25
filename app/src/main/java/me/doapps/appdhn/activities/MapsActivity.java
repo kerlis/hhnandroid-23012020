@@ -220,6 +220,15 @@ ImageButton busqueda;
     ArrayList<Departamentos> list;
     Listadolugaresadapter adapter;
 
+
+     // AlertDialog alertDialog;
+
+
+
+    AlertDialog.Builder dialogBuilder;
+      AlertDialog alertDialog2;
+    LayoutInflater inflater;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -307,7 +316,7 @@ ImageButton busqueda;
         busqueda.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
-                verpopup("dd");
+                verpopup("si");
 
             }
         });
@@ -422,117 +431,136 @@ ImageButton busqueda;
     }
 
 
-
+/*
     @SuppressLint("MissingSuperCall")
     protected void  onStart() {
-
-
         String s = getIntent().getStringExtra("PRIMERA");
         Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
-
-
         if (s != null) {
             String value = s;
             Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
-
             Log.e("DATOS44", s + "3333");
-
-            //The key argument here must match that used in the other activity
-        }
-
-
-
+         }
         super.onStart();
-
-    }
-/*
-   public  class de {
-
-       String s = getIntent().getStringExtra("PRIMERA");
-
-
-        //Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
-
     }
     */
 
-    public void verpopup(String f) {
-
-
-        ///String s = getIntent().getStringExtra("PRIMERA");
+    public void verpopup(String opcion) {
 
 
 
-/*
 
-        if (s != null) {
-            String value = s;
-            Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
 
-            Log.e("DATOS44", s + "3333");
+            dialogBuilder = new AlertDialog.Builder(this);
 
-            //The key argument here must match that used in the other activity
-        }
-        */
+              inflater = this.getLayoutInflater();
 
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.zonas_evacuacion, null);
+            View dialogView = inflater.inflate(R.layout.zonas_evacuacion, null);
 
-        dialogBuilder.setView(dialogView);
+            dialogBuilder.setView(dialogView);
 
-        final RecyclerView recyclerview4 = dialogView.findViewById(R.id.my_recycler_view);
+            final RecyclerView recyclerview4 = dialogView.findViewById(R.id.my_recycler_view);
 
-        recyclerview4.setLayoutManager(new LinearLayoutManager(this));
+            recyclerview4.setLayoutManager(new LinearLayoutManager(this));
 
-        reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
-        reference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                list = new ArrayList<Departamentos>();
-                for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
-                {
-                    Departamentos p = dataSnapshot1.getValue(Departamentos.class);
-                    String commentKey = dataSnapshot1.getKey();
-                    Log.d("LLAVE:", commentKey);
-                    list.add(p);
+            reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
+
+            reference.addListenerForSingleValueEvent(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    list = new ArrayList<Departamentos>();
+                    for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
+                    {
+                        Departamentos p = dataSnapshot1.getValue(Departamentos.class);
+                        String commentKey = dataSnapshot1.getKey();
+                        Log.d("LLAVE:", commentKey);
+                        list.add(p);
+                    }
+                    adapter = new Listadolugaresadapter(MapsActivity.this,list);
+                    recyclerview4.setAdapter(adapter);
                 }
-                adapter = new Listadolugaresadapter(MapsActivity.this,list);
-                recyclerview4.setAdapter(adapter);
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(MapsActivity.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+
+            Button cerrar = dialogView.findViewById(R.id.cerrar);
+
+           alertDialog2 = dialogBuilder.create();
+           /// alertDialog.show();
+
+            //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
+
+
+        if(opcion.equals("si")){
+            alertDialog2.show();
+
+        }
+
+        else if(!opcion.equals("si")){
+
+            alertDialog2.hide();
+            alertDialog2.setCancelable(true);
+
+
+          ///  alertDialog.dismiss();
+            if(opcion!= "si"){
+
+                cerrardialog();
+                Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
+               alertDialog2.cancel();
+
+               if(alertDialog2.isShowing() == true){
+
+                   alertDialog2.cancel();
+
+
+
+               }
+
             }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(MapsActivity.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
-            }
-        });
+        }
 
 
-        Button cerrar = dialogView.findViewById(R.id.cerrar);
-
-        final AlertDialog alertDialog = dialogBuilder.create();
-        alertDialog.show();
-
-        //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         cerrar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
-                alertDialog.hide();
+                alertDialog2.hide();
             }
         });
 
 
-        if(f!= null){
-            Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + f, Toast.LENGTH_SHORT).show();
-            alertDialog.dismiss();
-
-        }
 
 
 
     }
 
+
+    public  void cerrardialog(){
+        alertDialog2.hide();
+    }
+
+
+    /*
+
+    public void ver_mapas(String url_mapas){
+
+        alertDialog.hide();
+        if(url_mapas!= null){
+            Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + url_mapas, Toast.LENGTH_SHORT).show();
+            //alertDialog.dismiss();
+
+        }
+
+    }
+*/
 
 
 

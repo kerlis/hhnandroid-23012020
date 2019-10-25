@@ -80,28 +80,7 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
         reference2 = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4").child(listadorecyclerlugares.get(position).getKey()).child("zonas");
 
         reference2.addChildEventListener(new ChildEventListener()   {
-            /*
-                                    @Override
-                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                        list2 = new ArrayList<Cartasevacua>();
 
-
-
-                                        for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
-                                        {
-                                            Cartasevacua p = dataSnapshot1.getValue(Cartasevacua.class);
-
-                                            String commentKey = dataSnapshot1.getKey();
-                                            Log.d("PRIMERA:", commentKey);
-
-                                            list2.add(p);
-                                        }
-
-
-                                        adapter2 = new Mapaskmladapter(context,list2);
-                                        holder.recyclerView2.setAdapter(adapter2);
-                                    }
-            */
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 list2 = new ArrayList<Cartasevacua>();
@@ -113,8 +92,6 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
                     Cartasevacua p = dataSnapshot1.getValue(Cartasevacua.class);
 
                     String commentKey = dataSnapshot1.getKey();
-                 ///   Log.d("PRIMERA:", commentKey);
-
                     list2.add(p);
                 }
 
