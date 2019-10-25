@@ -1,4 +1,5 @@
 package me.doapps.appdhn.activities;
+        import android.content.Intent;
         import android.content.res.Resources;
         import android.location.Location;
         import android.location.LocationListener;
@@ -9,6 +10,8 @@ package me.doapps.appdhn.activities;
         import android.util.Log;
         import android.view.View;
         import android.widget.FrameLayout;
+        import android.widget.Toast;
+
         import com.google.android.gms.common.api.GoogleApiClient;
         import com.google.android.gms.maps.CameraUpdateFactory;
         import com.google.android.gms.maps.GoogleMap;
@@ -39,6 +42,25 @@ public class Mapapoligonos extends AppCompatActivity implements OnMapReadyCallba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapapoligonos);
+
+
+        String s = getIntent().getStringExtra("PRIMERA");
+        Toast.makeText(Mapapoligonos.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+
+        Log.e("DATOS44", s);
+
+
+
+        /*
+        if(s!=null){
+            Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+            intent.putExtra("SEGUNDA", "SEGUNDA DATO");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            getApplicationContext().startActivity(intent);
+        }
+
+        */
+
 
         //mapapoligonos = findViewById(R.id.mapapoligonos);
 

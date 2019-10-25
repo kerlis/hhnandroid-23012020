@@ -1,6 +1,7 @@
 package me.doapps.appdhn.adapters;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.activities.MapsActivity;
 import me.doapps.appdhn.models.Cartasevacua;
 import me.doapps.appdhn.models.Departamentos;
 
@@ -49,6 +51,15 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
         holder.cerrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Intent intent = new Intent(holder.itemView.getContext(), MapsActivity.class);
+                intent.putExtra("PRIMERA", "SDWDWEDEWD");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                holder.itemView.getContext().startActivity(intent);
+
+
+
 
                 if(holder.recyclerView2.getVisibility() == View.VISIBLE){
                     holder.recyclerView2.setVisibility(View.GONE);
@@ -102,7 +113,7 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
                     Cartasevacua p = dataSnapshot1.getValue(Cartasevacua.class);
 
                     String commentKey = dataSnapshot1.getKey();
-                    Log.d("PRIMERA:", commentKey);
+                 ///   Log.d("PRIMERA:", commentKey);
 
                     list2.add(p);
                 }

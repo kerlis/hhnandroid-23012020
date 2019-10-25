@@ -2,6 +2,7 @@ package me.doapps.appdhn.activities;
 
 import android.Manifest;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -225,6 +226,37 @@ ImageButton busqueda;
         setContentView(R.layout.activity_maps);
 
 
+        String s = getIntent().getStringExtra("PRIMERA");
+        Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+
+
+         if (s != null) {
+            String value = s;
+            Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
+
+            Log.e("DATOS44", s + "3333");
+
+            //The key argument here must match that used in the other activity
+        }
+
+        /*
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("SEGUNDA");
+         Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
+
+            //The key argument here must match that used in the other activity
+        }
+        */
+
+
+
+
+     //   String s = getIntent().getStringExtra("PRIMERA");
+     //   Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+
+
+/*
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 
@@ -233,7 +265,8 @@ ImageButton busqueda;
            // String user_name = extras.getString("PRIMERA");
         Toast.makeText(MapsActivity.this, "PRIMERA URL: " + extras.getString("PRIMERA"), Toast.LENGTH_SHORT).show();
 
-    }
+        }
+        */
 
 
 
@@ -274,7 +307,7 @@ ImageButton busqueda;
         busqueda.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
-                verpopup();
+                verpopup("dd");
 
             }
         });
@@ -390,9 +423,58 @@ ImageButton busqueda;
 
 
 
+    @SuppressLint("MissingSuperCall")
+    protected void  onStart() {
 
 
-    public void verpopup() {
+        String s = getIntent().getStringExtra("PRIMERA");
+        Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+
+
+        if (s != null) {
+            String value = s;
+            Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
+
+            Log.e("DATOS44", s + "3333");
+
+            //The key argument here must match that used in the other activity
+        }
+
+
+
+        super.onStart();
+
+    }
+/*
+   public  class de {
+
+       String s = getIntent().getStringExtra("PRIMERA");
+
+
+        //Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+
+    }
+    */
+
+    public void verpopup(String f) {
+
+
+        ///String s = getIntent().getStringExtra("PRIMERA");
+
+
+
+/*
+
+        if (s != null) {
+            String value = s;
+            Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
+
+            Log.e("DATOS44", s + "3333");
+
+            //The key argument here must match that used in the other activity
+        }
+        */
+
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.zonas_evacuacion, null);
@@ -439,6 +521,15 @@ ImageButton busqueda;
                 alertDialog.hide();
             }
         });
+
+
+        if(f!= null){
+            Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + f, Toast.LENGTH_SHORT).show();
+            alertDialog.dismiss();
+
+        }
+
+
 
     }
 

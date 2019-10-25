@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.activities.Mapapoligonos;
 import me.doapps.appdhn.activities.MapsActivity;
 import me.doapps.appdhn.models.Cartasevacua;
 public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyViewHolder>{
@@ -45,24 +46,47 @@ public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyView
 
 
 
+
         holder.iramapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                /*
+            Intent intent = new Intent(holder.itemView.getContext(), MapsActivity.class);
+                intent.putExtra("PRIMERA", "SDWDWEDEWD");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                holder.itemView.getContext().startActivity(intent);
+
+*/
+
+                ((MapsActivity)context).verpopup(listadozonas.get(position).getUrl_kml1());
+
+
+                /*
+
+*/
+
+
+
+
+/*
+                Intent intent = new Intent( holder.itemView.getContext(), MapsActivity.class);
                 Bundle b = new Bundle();
                 b.putString("PRIMERA", "SDWDWEDEWD");
-
-                Intent intent = new Intent(holder.itemView.getContext(), MapsActivity.class);
-
-
-
-
                 intent.putExtras(b);
-
                 holder.itemView.getContext().startActivity(intent);
 
 
-                Toast.makeText(context, position+ listadozonas.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+
+                Intent intent2 = new Intent(holder.itemView.getContext(), Mapapoligonos.class);
+                holder.itemView.getContext().startActivity(intent2);
+
+
+*/
+
+              //  Toast.makeText(context, position+ listadozonas.get(position).getNombre() +  "wwww", Toast.LENGTH_SHORT).show();
+
+
             }
         });
 
