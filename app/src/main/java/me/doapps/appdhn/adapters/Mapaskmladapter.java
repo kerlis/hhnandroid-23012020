@@ -1,4 +1,5 @@
 package me.doapps.appdhn.adapters;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -39,9 +40,17 @@ public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyView
             @Override
             public void onClick(View v) {
 
-                ((MapsActivity)context).verpopup(listadozonas.get(position).getUrl_kml1());
+                //  ((MapsActivity)context).cerrarpopup(listadozonas.get(position).getUrl_kml1());
 
-                ((MapsActivity)context).cerrardialog();
+
+             // ((MapsActivity)context).verpopup(listadozonas.get(position).getUrl_kml1());
+
+
+
+              ((MapsActivity)context).cerrarpopup(listadozonas.get(position).getUrl_kml1()+"&&"+listadozonas.get(position).getUrl_kml2()+"&&"+listadozonas.get(position).getUrl_kml3());
+
+
+//             ((MapsActivity)context).verpopup();
 
 
 

@@ -187,33 +187,15 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
     public KmlLayer kmllayer88;
-
     Button verificar;
-
-
     public KmlLayer kml1;
-
-
-
     //List<cartasevacuacion> kmls;
 
     private  ArrayList<cartasevacuacion> kmls= new ArrayList<>();
 
     Iterable containers;
-
-
-
-
-ImageButton busqueda;
-
-
-
-
+    ImageButton busqueda;
     public InputStream in2;
-
-
-
-
 
     DatabaseReference reference;
     RecyclerView recyclerView;
@@ -221,32 +203,67 @@ ImageButton busqueda;
     Listadolugaresadapter adapter;
 
 
-     // AlertDialog alertDialog;
-
-
-
+    AlertDialog alertDialog2;
     AlertDialog.Builder dialogBuilder;
-      AlertDialog alertDialog2;
     LayoutInflater inflater;
+    View dialogView;
+    RecyclerView recyclerview4;
+
+    String url_1;
+    String url_2;
+    String url_3;
+    Resources res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+        dialogBuilder = new AlertDialog.Builder(this);
+        inflater = this.getLayoutInflater();
+        dialogView  = inflater.inflate(R.layout.zonas_evacuacion, null);
+        dialogBuilder.setView(dialogView);
+        recyclerview4   = dialogView.findViewById(R.id.my_recycler_view);
+        recyclerview4.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list = new ArrayList<Departamentos>();
+                for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
+                {
+                    Departamentos p = dataSnapshot1.getValue(Departamentos.class);
+                    String commentKey = dataSnapshot1.getKey();
+                    Log.d("LLAVE:", commentKey);
+                    list.add(p);
+                }
+                adapter = new Listadolugaresadapter(MapsActivity.this,list);
+                recyclerview4.setAdapter(adapter);
+            }
 
-        String s = getIntent().getStringExtra("PRIMERA");
-        Toast.makeText(MapsActivity.this, "PRIMERA: " + s, Toast.LENGTH_SHORT).show();
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(MapsActivity.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
+            }
+        });
+        Button cerrar = dialogView.findViewById(R.id.cerrar);
+        alertDialog2 = dialogBuilder.create();
+        alertDialog2.setCancelable(true);
+
+        cerrar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                alertDialog2.hide();
+            }
+        });
 
 
-         if (s != null) {
-            String value = s;
-            Toast.makeText(MapsActivity.this, "PRIMERAvvv: " + value, Toast.LENGTH_SHORT).show();
 
-            Log.e("DATOS44", s + "3333");
 
-            //The key argument here must match that used in the other activity
-        }
+
+
+
+
 
         /*
         Bundle extras = getIntent().getExtras();
@@ -445,110 +462,27 @@ ImageButton busqueda;
     }
     */
 
-    public void verpopup(String opcion) {
+
+    public void cerrarpopup(String opcion){
+        alertDialog2.hide();
+        Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
 
 
-
-
-
-            dialogBuilder = new AlertDialog.Builder(this);
-
-              inflater = this.getLayoutInflater();
-
-            View dialogView = inflater.inflate(R.layout.zonas_evacuacion, null);
-
-            dialogBuilder.setView(dialogView);
-
-            final RecyclerView recyclerview4 = dialogView.findViewById(R.id.my_recycler_view);
-
-            recyclerview4.setLayoutManager(new LinearLayoutManager(this));
-
-            reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
-
-            reference.addListenerForSingleValueEvent(new ValueEventListener() {
-
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    list = new ArrayList<Departamentos>();
-                    for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
-                    {
-                        Departamentos p = dataSnapshot1.getValue(Departamentos.class);
-                        String commentKey = dataSnapshot1.getKey();
-                        Log.d("LLAVE:", commentKey);
-                        list.add(p);
-                    }
-                    adapter = new Listadolugaresadapter(MapsActivity.this,list);
-                    recyclerview4.setAdapter(adapter);
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Toast.makeText(MapsActivity.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
-                }
-            });
-
-
-            Button cerrar = dialogView.findViewById(R.id.cerrar);
-
-           alertDialog2 = dialogBuilder.create();
-           /// alertDialog.show();
-
-            //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-
-
-
-        if(opcion.equals("si")){
-            alertDialog2.show();
-
-        }
-
-        else if(!opcion.equals("si")){
-
-            alertDialog2.hide();
-            alertDialog2.setCancelable(true);
-
-
-          ///  alertDialog.dismiss();
-            if(opcion!= "si"){
-
-                cerrardialog();
-                Toast.makeText(MapsActivity.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
-               alertDialog2.cancel();
-
-               if(alertDialog2.isShowing() == true){
-
-                   alertDialog2.cancel();
-
-
-
-               }
-
-            }
-        }
-
-
-
-        cerrar.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View arg0) {
-                alertDialog2.hide();
-            }
-        });
-
-
-
-
+        retrieveFileFromUrl(opcion);
 
     }
 
+    public void verpopup( String opcion) {
+        alertDialog2.show();
+    }
 
+ /*
     public  void cerrardialog(){
         alertDialog2.hide();
     }
 
 
-    /*
+
 
     public void ver_mapas(String url_mapas){
 
@@ -727,71 +661,7 @@ ImageButton busqueda;
 
 
 
-        Log.d("DHN9999", "DHN999");
-        final ArrayList cartasevacuacion;
 
-        DatabaseReference mDatabase;
-        mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
-
-        mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-
-                for(final DataSnapshot ds : dataSnapshot.getChildren()) {
-                    final String address = ds.child("fuente").getValue(String.class);
-                    final String name = ds.child("url_kml").getValue(String.class);
-
-                    Resources res = getApplicationContext().getResources();
-                    int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
-                    Log.d("IDENTIFICACION",String.valueOf(rawId));
-
-                    try {
-
-                        kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
-
-                    } catch (XmlPullParserException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                    try {
-
-                        kml1.addLayerToMap();
-
-
-
-
-                        /*
-                        for (KmlContainer container : kml1.getFeatures()) {
-                            if (container.hasProperty("name")) {
-                                System.out.println(container.getProperty("name"));
-                            }
-                        }
-                        */
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (XmlPullParserException e) {
-                        e.printStackTrace();
-                    }
-
-                    Log.d("TAG", address + " / " + name);
-
-
-
-
-
-                }
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
 
       //  return kmls;
 
@@ -826,6 +696,8 @@ ImageButton busqueda;
         });
         */
 
+
+        cargarmapas_defecto("swwcw&&cscwccw&&wdvwevewvwev");
 
     }
 
@@ -1560,32 +1432,17 @@ ImageButton busqueda;
 
 
 
-    private void retrieveFileFromUrl() {
+    private void retrieveFileFromUrl(String urls) {
         new DownloadKmlFile(getString(R.string.kml_url)).execute();
+        cargarmapas_defecto(urls);
+
     }
-
-
 
     private void moveCameraToKml(KmlLayer kmlLayer) {
-        //Retrieve the first container in the KML layer
         KmlContainer container = kmlLayer.getContainers().iterator().next();
-        //Retrieve a nested container within the first container
         container = container.getContainers().iterator().next();
-        //Retrieve the first placemark in the nested container
         KmlPlacemark placemark = container.getPlacemarks().iterator().next();
-        //Retrieve a polygon object in a placemark
-//        KmlPolygon polygon = (KmlPolygon) placemark.getGeometry();
-        //Create LatLngBounds of the outer coordinates of the polygon
-      //  LatLngBounds.Builder builder = new LatLngBounds.Builder();
-      //  for (LatLng latLng : polygon.getOuterBoundaryCoordinates()) {
-         //   builder.include(latLng);
-       // }
-
-      //  int width = getResources().getDisplayMetrics().widthPixels;
-       // int height = getResources().getDisplayMetrics().heightPixels;
-       // mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), width, height, 1));
     }
-
 
     private class DownloadKmlFile extends AsyncTask<String, Void, byte[]> {
         private final String mUrl;
@@ -1613,8 +1470,9 @@ ImageButton busqueda;
 
         protected void onPostExecute(byte[] byteArr) {
             try {
-                KmlLayer kmlLayer = new KmlLayer(mMap, new ByteArrayInputStream(byteArr),
-                        getApplicationContext());
+                KmlLayer kmlLayer = new KmlLayer(mMap, new ByteArrayInputStream(byteArr), getApplicationContext());
+
+
 
                 kmlLayer.addLayerToMap();
 
@@ -1637,7 +1495,90 @@ ImageButton busqueda;
         }
     }
 
+    public void cargarmapas_defecto(String valor){
+
+        Log.d("DHN9999", "DHN999");
+        final ArrayList cartasevacuacion;
+        String valor3 = valor;
+
+         url_1 = valor3.split("&&")[0];
+          url_2 = valor3.split("&&")[1];
+          url_3 = valor3.split("&&")[2];
+
+        DatabaseReference mDatabase;
+        mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
+
+        mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for(final DataSnapshot ds : dataSnapshot.getChildren()) {
+
+                    final String address = ds.child("fuente").getValue(String.class);
+
+                    final String name = ds.child("url_kml").getValue(String.class);
+
+                    if(name != url_1){
+                          res = getApplicationContext().getResources();
+                    }
+                    else if(name != url_2){
+                        res = getApplicationContext().getResources();
+
+                    }
+                    else if(name != url_3){
+                        res = getApplicationContext().getResources();
+
+                    }
 
 
+                    int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
+
+                    Log.d("IDENTIFICACION",String.valueOf(rawId));
+
+                    try {
+
+
+
+
+
+
+                        kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
+
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    try {
+
+                        kml1.addLayerToMap();
+
+
+                        /*
+                        for (KmlContainer container : kml1.getFeatures()) {
+                            if (container.hasProperty("name")) {
+                                System.out.println(container.getProperty("name"));
+                            }
+                        }
+                        */
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    }
+
+                    Log.d("TAG", address + " / " + name);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
 
 }
