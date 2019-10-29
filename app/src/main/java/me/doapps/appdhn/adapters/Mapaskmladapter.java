@@ -47,7 +47,7 @@ public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyView
 
 
 
-              ((MapsActivity)context).cerrarpopup(listadozonas.get(position).getUrl_kml1()+"&&"+listadozonas.get(position).getUrl_kml2()+"&&"+listadozonas.get(position).getUrl_kml3());
+              ((MapsActivity)context).cerrarpopup(listadozonas.get(position).getUrl_kml1()+"&&"+listadozonas.get(position).getUrl_kml2()+"&&"+listadozonas.get(position).getUrl_kml3()+"&&"+listadozonas.get(position).getLatitud()+"&&"+listadozonas.get(position).getLongitud()+"&&"+listadozonas.get(position).getNombre());
 
 
 //             ((MapsActivity)context).verpopup();

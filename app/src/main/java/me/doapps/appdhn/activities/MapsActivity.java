@@ -1,5 +1,4 @@
 package me.doapps.appdhn.activities;
-
 import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
@@ -58,6 +57,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResolvableApiException;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
@@ -72,7 +72,9 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.ChildEventListener;
@@ -94,9 +96,7 @@ import com.google.maps.android.data.kml.KmlPolygon;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.rey.material.widget.CheckBox;
-
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -113,7 +113,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-
 import me.doapps.appdhn.BuildConfig;
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
@@ -128,10 +127,7 @@ import me.doapps.appdhn.models.cartasevacuacion;
 import me.doapps.appdhn.utils.GPSTracker;
 import me.doapps.appdhn.utils.MapsUtil;
 import me.doapps.appdhn.utils.PhoneUtil;
-
 import java.io.ByteArrayInputStream;
-
-
 
 public class MapsActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, View.OnClickListener, OnMapReadyCallback /*, GoogleMap.OnCameraChangeListener*/ {
 
@@ -167,10 +163,8 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     private ResultAdapter resultAdapter;
 
     private boolean GpsStatic;
-
     private String imei, token;
     private Context context;
-
     private GoogleApiClient googleApiClient;
     private Location location;
     private float zoom;
@@ -189,6 +183,10 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     public KmlLayer kmllayer88;
     Button verificar;
     public KmlLayer kml1;
+
+    public KmlLayer kml2;
+    public KmlLayer kml3;
+
     //List<cartasevacuacion> kmls;
 
     private  ArrayList<cartasevacuacion> kmls= new ArrayList<>();
@@ -212,12 +210,35 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     String url_1;
     String url_2;
     String url_3;
+    String latitud;
+    String longitud;
+    String nombre;
+
     Resources res;
+
+    Resources res_1;
+    Resources res_2;
+    Resources res_3;
+
+
+    Double lati;
+    Double longit;
+
+
+
+    String latitude_last;
+    String longitude_last;
+
+
+    private FusedLocationProviderClient fusedLocationClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
 
         dialogBuilder = new AlertDialog.Builder(this);
         inflater = this.getLayoutInflater();
@@ -697,7 +718,9 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         */
 
 
-        cargarmapas_defecto("swwcw&&cscwccw&&wdvwevewvwev");
+        cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+
+        //cargarmapas_defecto("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
 
     }
 
@@ -1392,9 +1415,12 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                 validateLatLng();
             }
         }
-    }
+
+        Log.d("UBICACION444", String.valueOf(gpsUtil.getLatitude()));
+   }
 
     private void validateLatLng() {
+
         if (gpsUtil.getLatitude() != 0 && gpsUtil.getLongitude() != 0) {
             if (mHandler != null) {
                 mHandler.removeCallbacks(runnable);
@@ -1409,6 +1435,9 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         } else {
             mMap.setMyLocationEnabled(true);
         }
+
+
+        Log.d("MI UBICACION",String.valueOf(gpsUtil.getLatitude()) + String.valueOf(gpsUtil.getLatitude()));
     }
 
     @Override
@@ -1495,15 +1524,276 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         }
     }
 
-    public void cargarmapas_defecto(String valor){
+
+
+
+    public void cargarmapas_ubicacion(String valor) {
+
+
+
+
+        fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+
+                if (location != null) {
+                    latitude_last = String.valueOf(location.getLatitude());
+                    longitude_last = String.valueOf(location.getLongitude());
+                    Log.d("UBICA555", latitude_last + "-" + longitude_last);
+
+                    double latitude2= -12.2213428;
+                    double longitude2=-76.2303765;
+                    float distance=0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(location.getLatitude());
+                    crntLocation.setLongitude(location.getLongitude());
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(latitude2);
+                    newLocation.setLongitude(longitude2);
+
+                    distance =crntLocation.distanceTo(newLocation) / 1000; // in km
+
+                    Log.d("DISTANCIA:",String.valueOf(distance));
+
+                    Toast.makeText(MapsActivity.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+        });
+
+
+
+
+
+
+
+
+        String valor3 = valor;
+
+        url_1 = valor3.split("&&")[0];
+        url_2 = valor3.split("&&")[1];
+        url_3 = valor3.split("&&")[2];
+        latitud = valor3.split("&&")[3];
+        longitud = valor3.split("&&")[4];
+        nombre = valor3.split("&&")[5];
+
+        lati= Double.parseDouble(latitud);
+        longit = Double.parseDouble(longitud);
+
+        DatabaseReference mDatabase;
+       // mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
+        mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas5");
+
+        mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+
+                Integer size = 0;
+
+                for(final DataSnapshot ds : dataSnapshot.getChildren()) {
+
+                    Log.d("NUMERO", String.valueOf(size++)) ;
+
+                 //   final String address = ds.child("fuente").getValue(String.class);
+
+                    final String name = ds.child("url_kml1").getValue(String.class);
+
+                    final String url_kml1 = ds.child("url_kml1").getValue(String.class);
+                    final String url_kml2 = ds.child("url_kml2").getValue(String.class);
+                    final String url_kml3 = ds.child("url_kml3").getValue(String.class);
+
+                    float distance = 0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(Double.parseDouble(latitude_last));
+                    crntLocation.setLongitude(Double.parseDouble(longitude_last));
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(Double.parseDouble(ds.child("latitud").getValue(String.class)));
+                    newLocation.setLongitude(Double.parseDouble(ds.child("longitud").getValue(String.class)));
+
+                    distance =crntLocation.distanceTo(newLocation) / 1000;
+
+                    Log.d("DISTANCIA_TOTAL", String.valueOf(distance));
+                    
+
+
+                    Integer maximo;
+                    Integer minimo;
+
+                    Integer contador;
+
+
+                   // int size = (int) dataSnapshot.getChildren().spliterator().getExactSizeIfKnown();
+
+
+
+
+/*
+
+                    if(url_kml1 != url_1){
+                        res = getApplicationContext().getResources();
+                    }
+                    else if(url_kml2 != url_2){
+                        res = getApplicationContext().getResources();
+
+                    }
+                    else if(url_kml3 != url_3){
+                        res = getApplicationContext().getResources();
+
+                    }
+                    */
+
+
+
+                    res_1 = getApplicationContext().getResources();
+                    res_2 = getApplicationContext().getResources();
+                    res_3 = getApplicationContext().getResources();
+
+
+
+                    int rawId_1 = res_1.getIdentifier(url_kml1 ,"raw", getApplicationContext().getPackageName());
+                    int rawId_2 = res_2.getIdentifier(url_kml2 ,"raw", getApplicationContext().getPackageName());
+                    int rawId_3 = res_3.getIdentifier(url_kml3 ,"raw", getApplicationContext().getPackageName());
+                    //int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
+
+                   Log.d("IDENTIFICACION",String.valueOf(rawId_1  + "-" + rawId_2 + "-" + rawId_3));
+
+
+
+                    try {
+
+                        if(rawId_1 != 0 ){
+                            kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
+
+                        }
+
+                        if(rawId_2 != 0){
+                            kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
+
+                        }
+
+                        if(rawId_3 != 0){
+                            kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
+
+                        }
+
+                        //kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
+                        //kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
+                        //kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
+
+
+                        LatLng sydney = new LatLng(lati, longit);
+                        mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                        mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+
+
+                        if(rawId_1 != 0 ){
+                            kml1.addLayerToMap();
+
+                        }
+
+                        if(rawId_2 != 0){
+                            kml2.addLayerToMap();
+
+                        }
+
+                        if(rawId_3 != 0){
+                            kml3.addLayerToMap();
+
+                        }
+
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    }
+
+                 //   Log.d("TAG", address + " / " + name);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+   }
+
+
+
+
+
+
+        public void cargarmapas_defecto(String valor){
+
+        fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null) {
+                    String latitude = String.valueOf(location.getLatitude());
+                    String longitude = String.valueOf(location.getLongitude());
+                    Log.d("UBICA555", latitude + "-" + longitude);
+
+
+
+                    double latitude2= -12.2213428;
+                    double longitude2=-76.2303765;
+                    float distance=0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(location.getLatitude());
+                    crntLocation.setLongitude(location.getLongitude());
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(latitude2);
+                    newLocation.setLongitude(longitude2);
+
+
+                     distance =crntLocation.distanceTo(newLocation) / 1000; // in km
+
+                    Log.d("DISTANCIA:",String.valueOf(distance));
+
+                   //  float[] results = new float[1];
+                   // Location.distanceBetween(location.getLatitude(), location.getLatitude(), location.getLatitude(), location.getLatitude(), results);
+
+
+                }
+            }
+        });
+
+
 
         Log.d("DHN9999", "DHN999");
         final ArrayList cartasevacuacion;
         String valor3 = valor;
 
          url_1 = valor3.split("&&")[0];
-          url_2 = valor3.split("&&")[1];
-          url_3 = valor3.split("&&")[2];
+         url_2 = valor3.split("&&")[1];
+         url_3 = valor3.split("&&")[2];
+        latitud = valor3.split("&&")[3];
+        longitud = valor3.split("&&")[4];
+        nombre = valor3.split("&&")[5];
+
+         lati= Double.parseDouble(latitud);
+          longit = Double.parseDouble(longitud);
+
 
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
@@ -1518,6 +1808,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                     final String name = ds.child("url_kml").getValue(String.class);
 
+
                     if(name != url_1){
                           res = getApplicationContext().getResources();
                     }
@@ -1529,6 +1820,10 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                         res = getApplicationContext().getResources();
 
                     }
+
+
+
+
 
 
                     int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
@@ -1543,6 +1838,14 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
                         kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
+
+                        LatLng sydney = new LatLng(lati, longit);
+
+                        mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                         mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+
 
                     } catch (XmlPullParserException e) {
                         e.printStackTrace();
