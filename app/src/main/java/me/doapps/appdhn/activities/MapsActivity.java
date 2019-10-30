@@ -1,7 +1,6 @@
 package me.doapps.appdhn.activities;
 import android.Manifest;
 import android.animation.ObjectAnimator;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -12,8 +11,6 @@ import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
@@ -70,50 +67,41 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.maps.android.data.Feature;
-import com.google.maps.android.data.geojson.GeoJsonFeature;
 import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
-import com.google.maps.android.data.kml.KmlPolygon;
 //import com.google.maps.android.kml.KmlLayer;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.rey.material.widget.CheckBox;
 import org.xmlpull.v1.XmlPullParserException;
-import java.io.BufferedInputStream;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
-import me.doapps.appdhn.BuildConfig;
+
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
 import me.doapps.appdhn.adapters.ResultAdapter;
@@ -127,7 +115,6 @@ import me.doapps.appdhn.models.cartasevacuacion;
 import me.doapps.appdhn.utils.GPSTracker;
 import me.doapps.appdhn.utils.MapsUtil;
 import me.doapps.appdhn.utils.PhoneUtil;
-import java.io.ByteArrayInputStream;
 
 public class MapsActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, View.OnClickListener, OnMapReadyCallback /*, GoogleMap.OnCameraChangeListener*/ {
 
@@ -229,8 +216,15 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     String latitude_last;
     String longitude_last;
 
+    float distance = 0;
+
 
     private FusedLocationProviderClient fusedLocationClient;
+
+    private final ArrayList<Cartasevacua> objetosismos= new ArrayList<>();
+
+    float largest = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1543,7 +1537,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                     double latitude2= -12.2213428;
                     double longitude2=-76.2303765;
-                    float distance=0;
+                  //  float distance=0;
 
                     Location crntLocation=new Location("crntlocation");
                     crntLocation.setLatitude(location.getLatitude());
@@ -1594,9 +1588,14 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                 Integer size = 0;
 
+
+
+
+
                 for(final DataSnapshot ds : dataSnapshot.getChildren()) {
 
                     Log.d("NUMERO", String.valueOf(size++)) ;
+
 
                  //   final String address = ds.child("fuente").getValue(String.class);
 
@@ -1608,6 +1607,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                     float distance = 0;
 
+
                     Location crntLocation=new Location("crntlocation");
                     crntLocation.setLatitude(Double.parseDouble(latitude_last));
                     crntLocation.setLongitude(Double.parseDouble(longitude_last));
@@ -1616,16 +1616,52 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                     newLocation.setLatitude(Double.parseDouble(ds.child("latitud").getValue(String.class)));
                     newLocation.setLongitude(Double.parseDouble(ds.child("longitud").getValue(String.class)));
 
-                    distance =crntLocation.distanceTo(newLocation) / 1000;
-
-                    Log.d("DISTANCIA_TOTAL", String.valueOf(distance));
-                    
+                    distance = crntLocation.distanceTo(newLocation) / 1000;
 
 
-                    Integer maximo;
-                    Integer minimo;
 
-                    Integer contador;
+                    if(size > distance){
+                        largest = distance;
+
+                        maximo_two(largest, ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), ds.child("nombre").getValue(String.class),  ds.child("url_kml1").getValue(String.class) );
+                    }
+
+/*
+                    if(ds.child("nombre").getValue(String.class).equals("Ancon")){
+
+                        maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class));
+
+                    }
+                    else{
+
+                        Log.d("COINCIDES", "no coincide");
+
+                    }
+                    */
+
+
+                    long de = dataSnapshot.getChildrenCount();
+
+                    maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), de);
+
+//Float[] valo = distance;
+
+
+
+
+                //    Log.d("DISTANCIA MINIMA", String.valueOf(min));
+
+
+                    Float o = distance;
+
+
+                    float extremo1 = distance;
+
+                    float extremo2 =  distance;
+
+                    float maximo;
+
+
 
 
                    // int size = (int) dataSnapshot.getChildren().spliterator().getExactSizeIfKnown();
@@ -1725,7 +1761,33 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                  //   Log.d("TAG", address + " / " + name);
 
+
+
+                    /*
+                    List<Float> list = Arrays.asList(numeros);
+                    Float min = Collections.min(list);
+                    Float max = Collections.max(list);
+
+                    Log.d("DISTANCIA_LISTADO", String.valueOf(distance));
+
+                    Log.d("DISTANCIA MINIMA", String.valueOf(min));
+*/
+
                 }
+
+                Log.d("MAYOR:", String.valueOf(largest));
+
+
+
+                //List<Float> valores = Arrays.asList(distance);
+               // Log.d("LUGARESZZZ", String.valueOf(valores));
+
+                //Float[] numeros = new Float[(int)distance];
+
+
+             //   Log.d("DISTANCIA_TOTAL", String.valueOf(numeros));
+
+
             }
 
             @Override
@@ -1737,7 +1799,28 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
    }
 
 
+    public void maximo_two(Float dato ,String latitud, String longitud, String nombre, String url){
 
+        Toast.makeText(MapsActivity.this, "Distancia:" + dato + " Latitud: " + latitud + "Longitud:" + longitud, Toast.LENGTH_SHORT).show();
+        Log.d("MAYOR:", "Distancia:" + dato + " Latitud: " + latitud + "Longitud:" + longitud + "nombre:" + nombre  + "url:" + url);
+
+    }
+
+   public void maximo(String latitud, String longitud, Long dato){
+
+       Location crntLocation=new Location("crntlocation");
+       crntLocation.setLatitude(Double.parseDouble(latitude_last));
+       crntLocation.setLongitude(Double.parseDouble(longitude_last));
+
+       Location newLocation=new Location("newlocation");
+       newLocation.setLatitude(Double.parseDouble(latitud));
+       newLocation.setLongitude(Double.parseDouble(longitud));
+
+       distance = crntLocation.distanceTo(newLocation) / 1000;
+
+       Toast.makeText(MapsActivity.this, "Distancia:" + distance + " - items total: " + dato, Toast.LENGTH_SHORT).show();
+       Log.d("VALOR55","Distancia:" + distance + " - items total: " + dato);
+   }
 
 
 
