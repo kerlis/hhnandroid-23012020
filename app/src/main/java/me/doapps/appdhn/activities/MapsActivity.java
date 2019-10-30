@@ -88,7 +88,6 @@ import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.rey.material.widget.CheckBox;
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -101,7 +100,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
 import me.doapps.appdhn.adapters.ResultAdapter;
@@ -224,6 +222,11 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     private final ArrayList<Cartasevacua> objetosismos= new ArrayList<>();
 
     float largest = 0;
+
+    String latitud_dos;
+
+    String latitud_posicion1;
+    String longitud_posicion2;
 
 
     @Override
@@ -484,7 +487,6 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
         retrieveFileFromUrl(opcion);
-
     }
 
     public void verpopup( String opcion) {
@@ -1523,9 +1525,6 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
     public void cargarmapas_ubicacion(String valor) {
 
-
-
-
         fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
@@ -1587,26 +1586,15 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
                 Integer size = 0;
-
-
-
-
-
                 for(final DataSnapshot ds : dataSnapshot.getChildren()) {
 
                     Log.d("NUMERO", String.valueOf(size++)) ;
-
-
-                 //   final String address = ds.child("fuente").getValue(String.class);
-
                     final String name = ds.child("url_kml1").getValue(String.class);
 
                     final String url_kml1 = ds.child("url_kml1").getValue(String.class);
                     final String url_kml2 = ds.child("url_kml2").getValue(String.class);
                     final String url_kml3 = ds.child("url_kml3").getValue(String.class);
-
                     float distance = 0;
-
 
                     Location crntLocation=new Location("crntlocation");
                     crntLocation.setLatitude(Double.parseDouble(latitude_last));
@@ -1618,58 +1606,24 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
                     distance = crntLocation.distanceTo(newLocation) / 1000;
 
-
+                  //  distance.com
 
                     if(size > distance){
                         largest = distance;
 
+                        latitud_posicion1 = ds.child("latitud").getValue(String.class);
+                        longitud_posicion2 = ds.child("longitud").getValue(String.class);
+
+
+                        latitud_dos = ds.child("latitud").getValue(String.class);
+
                         maximo_two(largest, ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), ds.child("nombre").getValue(String.class),  ds.child("url_kml1").getValue(String.class) );
                     }
 
-/*
-                    if(ds.child("nombre").getValue(String.class).equals("Ancon")){
+                   // long de = dataSnapshot.getChildrenCount();
+                    //maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), de);
 
-                        maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class));
-
-                    }
-                    else{
-
-                        Log.d("COINCIDES", "no coincide");
-
-                    }
-                    */
-
-
-                    long de = dataSnapshot.getChildrenCount();
-
-                    maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), de);
-
-//Float[] valo = distance;
-
-
-
-
-                //    Log.d("DISTANCIA MINIMA", String.valueOf(min));
-
-
-                    Float o = distance;
-
-
-                    float extremo1 = distance;
-
-                    float extremo2 =  distance;
-
-                    float maximo;
-
-
-
-
-                   // int size = (int) dataSnapshot.getChildren().spliterator().getExactSizeIfKnown();
-
-
-
-
-/*
+                    /*
 
                     if(url_kml1 != url_1){
                         res = getApplicationContext().getResources();
@@ -1724,9 +1678,9 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
                         LatLng sydney = new LatLng(lati, longit);
-                        mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-                        mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+                      //  mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                      //  mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                      //  mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
 
                     } catch (XmlPullParserException e) {
                         e.printStackTrace();
@@ -1735,23 +1689,15 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                     }
                     try {
 
-
                         if(rawId_1 != 0 ){
                             kml1.addLayerToMap();
-
                         }
-
                         if(rawId_2 != 0){
                             kml2.addLayerToMap();
-
                         }
-
                         if(rawId_3 != 0){
                             kml3.addLayerToMap();
-
                         }
-
-
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -1759,33 +1705,30 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                         e.printStackTrace();
                     }
 
-                 //   Log.d("TAG", address + " / " + name);
-
-
-
-                    /*
-                    List<Float> list = Arrays.asList(numeros);
-                    Float min = Collections.min(list);
-                    Float max = Collections.max(list);
-
-                    Log.d("DISTANCIA_LISTADO", String.valueOf(distance));
-
-                    Log.d("DISTANCIA MINIMA", String.valueOf(min));
-*/
-
                 }
 
-                Log.d("MAYOR:", String.valueOf(largest));
+                Log.d("MAYOR_YYY:", String.valueOf(largest) + latitud_dos);
+
+
+                if(String.valueOf(largest) + latitud_dos != null){
+
+                    Toast.makeText(MapsActivity.this, "Distancia:" + "  LLEGO_DATO", Toast.LENGTH_SHORT).show();
 
 
 
-                //List<Float> valores = Arrays.asList(distance);
-               // Log.d("LUGARESZZZ", String.valueOf(valores));
 
-                //Float[] numeros = new Float[(int)distance];
+                    LatLng sydney = new LatLng(Double.parseDouble(latitud_posicion1), Double.parseDouble(longitud_posicion2));
+                    mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                    mMap.animateCamera( CameraUpdateFactory.zoomTo( 13.0f ) );
 
 
-             //   Log.d("DISTANCIA_TOTAL", String.valueOf(numeros));
+                }
+                else{
+                    Toast.makeText(MapsActivity.this, "Distancia:" + "NO LLEGO", Toast.LENGTH_SHORT).show();
+                }
+
+
 
 
             }
