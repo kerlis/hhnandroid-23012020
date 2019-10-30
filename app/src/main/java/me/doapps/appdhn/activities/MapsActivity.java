@@ -1660,16 +1660,43 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                         if(rawId_1 != 0 ){
                             kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
 
+
+
+
+
+                            // Set a listener for geometry clicked events.
+                            kml1.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+                                @Override
+                                public void onFeatureClick(Feature feature) {
+                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
+
+                                 }
+                            });
+
+
+
                         }
 
                         if(rawId_2 != 0){
                             kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
-
+                            // Set a listener for geometry clicked events.
+                            kml2.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+                                @Override
+                                public void onFeatureClick(Feature feature) {
+                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
+                                }
+                            });
                         }
 
                         if(rawId_3 != 0){
                             kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
-
+                            // Set a listener for geometry clicked events.
+                            kml3.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+                                @Override
+                                public void onFeatureClick(Feature feature) {
+                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
+                                }
+                            });
                         }
 
                         //kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
@@ -1721,6 +1748,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                     mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                     mMap.animateCamera( CameraUpdateFactory.zoomTo( 13.0f ) );
+
 
 
                 }
