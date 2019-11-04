@@ -57,11 +57,13 @@ public class FileProvinceAdapter extends RecyclerView.Adapter<FileProvinceAdapte
         holder.progressBar.setVisibility(list.get(position).isDownload() ? View.VISIBLE : View.INVISIBLE);
         holder.descargaButton.setText(list.get(position).isDownload() ? "" : list.get(position).isStatus() ? "VER" : "DESCARGAR");
         holder.titleText.setText(list.get(position).getName());
+
         holder.descargaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.e("isStatus", list.get(position).isStatus() +"");
                 Log.e("isButtonstatus", list.get(position).isButtonstatus() +"");
+
                 if (!list.get(position).isButtonstatus()) {
 
                     if (!list.get(position).isStatus()) {
@@ -91,8 +93,12 @@ public class FileProvinceAdapter extends RecyclerView.Adapter<FileProvinceAdapte
                 } else {
                     Toast.makeText(activity, "Espere, descargando archivo", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
+
+
+
     }
 
     @Override

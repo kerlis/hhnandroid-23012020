@@ -5,6 +5,7 @@ public class Departamentos {
 
 
     private  String key;
+    private  String mapa;
 
 
     public String getKey() {
@@ -15,8 +16,17 @@ public class Departamentos {
         this.key = key;
     }
 
-    public Departamentos(String key) {
+    public String getMapa() {
+        return mapa;
+    }
+
+    public void setMapa(String mapa) {
+        this.mapa = mapa;
+    }
+
+    public Departamentos(String key, String mapa) {
         this.key = key;
+        this.mapa = mapa;
     }
 
     public Departamentos() {

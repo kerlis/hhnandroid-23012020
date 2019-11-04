@@ -1146,7 +1146,10 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
                     break;
                 case R.id.option_downloadable_content:
 //                    startActivity(new Intent(MapsActivity.this, ChartsActivity.class));
-                    startActivity(new Intent(MapsActivity.this, ProvincesActivity.class));
+//                    startActivity(new Intent(MapsActivity.this, ProvincesActivity.class));
+
+                    startActivity(new Intent(MapsActivity.this, Listadoregiones.class));
+
                     break;
                 case R.id.option_video:
                     startActivity(new Intent(MapsActivity.this, VideosActivity.class));

@@ -45,6 +45,7 @@ public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.Provin
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         holder.listChartRecycler.setLayoutManager(linearLayoutManager);
+
         fileProvinceAdapter = new FileProvinceAdapter(activity, listProvince.get(position).getFileProvinces());
         holder.listChartRecycler.setAdapter(fileProvinceAdapter);
 

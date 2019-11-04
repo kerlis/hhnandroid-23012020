@@ -120,7 +120,10 @@ public class SplashActivity extends AppCompatActivity {
                 startService(new Intent(SplashActivity.this, TokenService.class));
 
                 //   Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
-                  Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
+
+
+                Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
+                //   Intent intent = new Intent(SplashActivity.this, Listadoregiones.class);
 
                 //  Intent intent = new Intent(SplashActivity.this, Listadorecyclerlugares.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
