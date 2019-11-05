@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.activities.Mapapoligonos;
 import me.doapps.appdhn.activities.MapsActivity;
 import me.doapps.appdhn.models.Cartasevacua;
 public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyViewHolder>{
@@ -47,7 +48,7 @@ public class Mapaskmladapter extends RecyclerView.Adapter<Mapaskmladapter.MyView
 
 
 
-              ((MapsActivity)context).cerrarpopup(listadozonas.get(position).getUrl_kml1()+"&&"+listadozonas.get(position).getUrl_kml2()+"&&"+listadozonas.get(position).getUrl_kml3()+"&&"+listadozonas.get(position).getLatitud()+"&&"+listadozonas.get(position).getLongitud()+"&&"+listadozonas.get(position).getNombre());
+              ((Mapapoligonos)context).cargarmapas_ubicacion(listadozonas.get(position).getUrl_kml1()+"&&"+listadozonas.get(position).getUrl_kml2()+"&&"+listadozonas.get(position).getUrl_kml3()+"&&"+listadozonas.get(position).getLatitud()+"&&"+listadozonas.get(position).getLongitud()+"&&"+listadozonas.get(position).getNombre());
 
 
 //             ((MapsActivity)context).verpopup();

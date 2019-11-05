@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
+import me.doapps.appdhn.activities.Mapapoligonos;
 import me.doapps.appdhn.activities.MapsActivity;
 import me.doapps.appdhn.models.Cartasevacua;
 import me.doapps.appdhn.models.Departamentos;
@@ -53,7 +54,7 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
             public void onClick(View v) {
 
 
-                Intent intent = new Intent(holder.itemView.getContext(), MapsActivity.class);
+                Intent intent = new Intent(holder.itemView.getContext(), Mapapoligonos.class);
                 intent.putExtra("PRIMERA", "SDWDWEDEWD");
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 holder.itemView.getContext().startActivity(intent);
