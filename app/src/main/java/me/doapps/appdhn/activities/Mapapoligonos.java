@@ -1,9 +1,14 @@
 package me.doapps.appdhn.activities;
 import android.Manifest;
+import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.AsyncTask;
@@ -11,6 +16,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,9 +26,13 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -51,9 +62,7 @@ import com.google.maps.android.data.Feature;
 import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
-
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -62,12 +71,14 @@ import java.net.URL;
 import java.util.ArrayList;
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
+import me.doapps.appdhn.dialogs.ProgressDialog;
+import me.doapps.appdhn.fragments.WorkaroundMapFragment;
 import me.doapps.appdhn.models.Departamentos;
 import me.doapps.appdhn.utils.PermissionUtils;
 
 public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleMap.OnMyLocationButtonClickListener,
             GoogleMap.OnMyLocationClickListener,View.OnClickListener, OnMapReadyCallback, LocationListener, ActivityCompat.OnRequestPermissionsResultCallback, GoogleMap.OnInfoWindowClickListener,
-        GoogleApiClient.OnConnectionFailedListener, ResultCallback {
+        GoogleApiClient.OnConnectionFailedListener, ResultCallback  {
 
     private static final String TAG = Mapapoligonos.class.getSimpleName();
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
@@ -79,19 +90,15 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     FrameLayout mapapoligonos;
     String latitude_last;
     String longitude_last;
-
     FusedLocationProviderClient fusedLocationClient;
     GoogleApiClient mGoogleApiClient;
     LocationRequest mLocationRequest;
     private boolean mPermissionDenied = false;
     private static final int MY_LOCATION_REQUEST_CODE = 1;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
-
     Button cogerlocalizacion;
     protected LocationRequest locationRequest;
     int REQUEST_CHECK_SETTINGS = 100;
-
-
     AlertDialog.Builder dialogBuilder;
     LayoutInflater inflater;
     View dialogView;
@@ -100,7 +107,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     ArrayList<Departamentos> list;
     Listadolugaresadapter adapter;
     AlertDialog alertDialog2;
-
     Button busqueda;
     ImageButton abrirbusquedapopup;
     float distance = 0;
@@ -119,21 +125,37 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     Resources res_1;
     Resources res_2;
     Resources res_3;
-
     public KmlLayer kml1;
-
     public KmlLayer kml2;
     public KmlLayer kml3;
-
-    Resources res;
+    Resources res,restwo;
+    int rawId, rawidrwo;
+    private ImageView actionOpenDrawerMenu, ivSearch;
+    private DrawerLayout drawerLayout;
+    private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion;
+    private WorkaroundMapFragment.TouchableWrapper de;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapapoligonos);
 
-        abrirbusquedapopup = findViewById(R.id.abrirbusquedapopup);
 
+
+
+        progressDialog = new ProgressDialog(this);
+
+
+        progressDialog.setMessage("Cargando...");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+
+
+
+        actionOpenDrawerMenu = (ImageView) findViewById(R.id.ic_action_menu);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        abrirbusquedapopup = findViewById(R.id.abrirbusquedapopup);
         dialogBuilder = new AlertDialog.Builder(this);
         inflater = this.getLayoutInflater();
         dialogView  = inflater.inflate(R.layout.zonas_evacuacion, null);
@@ -172,12 +194,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
-
-
-
-
         busqueda = findViewById(R.id.cogerlocalizacion);
-
         busqueda.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
@@ -194,12 +211,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
             }
         });
-
-
-
-
-
-
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(LocationServices.API)
@@ -219,6 +230,30 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapapoligonos);
         mapFragment.getMapAsync(this);
+
+
+        opTips = (LinearLayout) findViewById(R.id.option_tips);
+        opBulletinNotice = (LinearLayout) findViewById(R.id.option_bulletin_notice);
+        opNationalSeismicReport = (LinearLayout) findViewById(R.id.option_national_seismic_rport);
+        opDownloadableContent = (LinearLayout) findViewById(R.id.option_downloadable_content);
+        opVideo = (LinearLayout) findViewById(R.id.option_video);
+        opAbout = (LinearLayout) findViewById(R.id.option_about);
+        opPressReleases = (LinearLayout) findViewById(R.id.option_pressreleases);
+        opFrequentQustion = (LinearLayout) findViewById(R.id.option_frequent_questions);
+
+       manageBlinkEffect();
+
+    }
+
+    @SuppressLint("WrongConstant")
+    private void manageBlinkEffect() {
+        ObjectAnimator anim = ObjectAnimator.ofInt(abrirbusquedapopup, "backgroundColor", Color.WHITE, Color.RED,Color.RED,Color.RED,
+                Color.WHITE);
+        anim.setDuration(700);
+        anim.setEvaluator(new ArgbEvaluator());
+        anim.setRepeatMode(Animation.REVERSE);
+        anim.setRepeatCount(Animation.INFINITE);
+        anim.start();
     }
 
     @Override
@@ -244,7 +279,44 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
-  //  cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+
+        mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
+            @Override
+            public void onMapLoaded() {
+                //shareScreenshot();
+                cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+
+
+            }
+
+        });
+
+
+
+
+
+
+
+        actionOpenDrawerMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(actionOpenDrawerMenu.getWindowToken(), 0);
+
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+
+        opTips.setOnClickListener(Mapapoligonos.this);
+        opBulletinNotice.setOnClickListener(Mapapoligonos.this);
+        opNationalSeismicReport.setOnClickListener(Mapapoligonos.this);
+        opDownloadableContent.setOnClickListener(Mapapoligonos.this);
+        opVideo.setOnClickListener(Mapapoligonos.this);
+        opAbout.setOnClickListener(Mapapoligonos.this);
+        //opNotification.setOnClickListener(MapsActivity.this);
+        opPressReleases.setOnClickListener(Mapapoligonos.this);
+        opFrequentQustion.setOnClickListener(Mapapoligonos.this);
+
 
     }
 
@@ -296,8 +368,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         alertDialog2.hide();
         Toast.makeText(Mapapoligonos.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
         Log.d("MIDATO", opcion);
-
-
         retrieveFileFromUrl(opcion);
     }
     private void retrieveFileFromUrl(String urls) {
@@ -449,10 +519,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         PermissionUtils.PermissionDeniedDialog.newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
 
-    @Override
-    public void onClick(View v) {
 
-    }
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
@@ -514,6 +581,8 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
     public void cargarmapas_ubicacion(String valor) {
 
+        Log.d("mapskmladapter", valor);
+
         fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
@@ -540,6 +609,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     Log.d("DISTANCIA:",String.valueOf(distance));
 
                     Toast.makeText(Mapapoligonos.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
 
                 }
             }
@@ -740,6 +810,20 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
+  //      progressDialog.dismiss();
+/*
+        mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
+            @Override
+            public void onMapLoaded() {
+                //shareScreenshot();
+progressDialog.dismiss();
+
+            }
+
+        });
+        */
+
+
     }
 
 
@@ -751,7 +835,88 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     }
 
 
+
+    public class CallActivities extends AsyncTask<Integer, Void, Integer> {
+
+
+        @Override
+        protected Integer doInBackground(Integer... params) {
+
+            return params[0];
+        }
+
+        @Override
+        protected void onPostExecute(Integer integer) {
+            super.onPostExecute(integer);
+            switch (integer) {
+                case R.id.option_tips:
+                    startActivity(new Intent(Mapapoligonos.this, TipsActivity.class));
+                    break;
+                case R.id.option_bulletin_notice:
+                    startActivity(new Intent(Mapapoligonos.this, BulletinNoticesActivity.class));
+                    break;
+                case R.id.option_national_seismic_rport:
+                    startActivity(new Intent(Mapapoligonos.this, NationalSeismicReportActivity.class));
+                    break;
+                case R.id.option_downloadable_content:
+//                    startActivity(new Intent(MapsActivity.this, ChartsActivity.class));
+//                    startActivity(new Intent(MapsActivity.this, ProvincesActivity.class));
+
+                    startActivity(new Intent(Mapapoligonos.this, Listadoregiones.class));
+
+                    break;
+                case R.id.option_video:
+                    startActivity(new Intent(Mapapoligonos.this, VideosActivity.class));
+                    break;
+                case R.id.option_about:
+                    startActivity(new Intent(Mapapoligonos.this, AboutActivity.class));
+                    break;
+                /*case R.id.option_notifications:
+                    startActivity(new Intent(MapsActivity.this, NotificationActivity.class));
+                    break;*/
+                case R.id.option_pressreleases:
+                    startActivity(new Intent(Mapapoligonos.this, PressReleasesActivity.class));
+                    break;
+                case R.id.option_frequent_questions:
+                    startActivity(new Intent(Mapapoligonos.this, FrequentQuestionsActivity.class));
+                    break;
+                default:
+                    Log.e(TAG, "default");
+                    break;
+            }
+        }
+
+    }
+
+
+    @Override
+    public void onClick(final View v) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(100);
+                    new CallActivities().execute(v.getId());
+                } catch (Exception e) {
+                    Log.e(TAG, "CallEditAlert " + e.toString());
+                }
+            }
+        }).start();
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+
+
+
+
+
     public void cargarmapas_defecto(String valor){
+
+
+
+
+        mMap.clear();
+
+        Log.d("localizaciones:",valor);
 
         fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
@@ -760,8 +925,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     String latitude = String.valueOf(location.getLatitude());
                     String longitude = String.valueOf(location.getLongitude());
                     Log.d("UBICA555", latitude + "-" + longitude);
-
-
 
                     double latitude2= -12.2213428;
                     double longitude2=-76.2303765;
@@ -775,15 +938,9 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     newLocation.setLatitude(latitude2);
                     newLocation.setLongitude(longitude2);
 
-
-                    distance =crntLocation.distanceTo(newLocation) / 1000; // in km
+                    distance =crntLocation.distanceTo(newLocation) / 1000;
 
                     Log.d("DISTANCIA:",String.valueOf(distance));
-
-                    //  float[] results = new float[1];
-                    // Location.distanceBetween(location.getLatitude(), location.getLatitude(), location.getLatitude(), location.getLatitude(), results);
-
-
                 }
             }
         });
@@ -804,6 +961,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         lati= Double.parseDouble(latitud);
         longit = Double.parseDouble(longitud);
 
+        Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
 
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
@@ -816,46 +974,42 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
                   //  final String address = ds.child("fuente").getValue(String.class);
 
-                    final String name = ds.child("url_kml").getValue(String.class);
+                    final String urlszonas = ds.child("url_kml").getValue(String.class);
 
 
-                    if(name != url_1){
-                        res = getApplicationContext().getResources();
-                    }
-                    else if(name != url_2){
-                        res = getApplicationContext().getResources();
 
-                    }
-                    else if(name != url_3){
-                        res = getApplicationContext().getResources();
-
+                    if(urlszonas.equals(url_1)){
+                        restwo = getApplicationContext().getResources();
+                        rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                        Log.d("RECHAZADOS",urlszonas);
                     }
 
+                    else if(urlszonas.equals(url_2)){
+                        restwo = getApplicationContext().getResources();
+                        rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                        Log.d("RECHAZADOS",urlszonas);
+                    }
 
+                    else if(urlszonas.equals(url_3)){
+                        restwo = getApplicationContext().getResources();
+                        rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                        Log.d("RECHAZADOS",urlszonas);
+                    }
 
-
-
-
-                    int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
+                    else{
+                        res = getApplicationContext().getResources();
+                        rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                        Log.d("ACEPTADOS",urlszonas);
+                    }
 
                     Log.d("IDENTIFICACION",String.valueOf(rawId));
-
                     try {
 
-
-
-
-
-
                         kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
-
                         LatLng sydney = new LatLng(lati, longit);
-
                         mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                         mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-
-
 
                     } catch (XmlPullParserException e) {
                         e.printStackTrace();
@@ -866,6 +1020,8 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     try {
 
                         kml1.addLayerToMap();
+
+
 
 
                         /*

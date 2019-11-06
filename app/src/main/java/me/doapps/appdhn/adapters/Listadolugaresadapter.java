@@ -2,6 +2,7 @@ package me.doapps.appdhn.adapters;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -45,6 +47,14 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
 
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
+
+
+        String uri = "@mipmap/"+listadorecyclerlugares.get(position).getMapa();
+        int imageResource = context.getResources().getIdentifier(uri, null, context.getPackageName());
+        Drawable res = context.getResources().getDrawable(imageResource);
+        holder.mapa.setImageDrawable(res);
+
+
         holder.cerrar.setImageResource(R.drawable.noexpand);
 
         holder.recyclerView2.setVisibility(View.GONE);
@@ -53,12 +63,13 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
             @Override
             public void onClick(View v) {
 
-
+/*
                 Intent intent = new Intent(holder.itemView.getContext(), Mapapoligonos.class);
                 intent.putExtra("PRIMERA", "SDWDWEDEWD");
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 holder.itemView.getContext().startActivity(intent);
 
+*/
 
 
 
@@ -85,8 +96,6 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 list2 = new ArrayList<Cartasevacua>();
-
-
 
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
@@ -128,12 +137,15 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
         public RecyclerView recyclerView2;
         TextView name;
         ImageButton cerrar;
+        ImageView mapa;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.name);
             cerrar = (ImageButton) itemView.findViewById(R.id.cerrar);
             recyclerView2 = itemView.findViewById(R.id.my_recycler_view2);
+            mapa = itemView.findViewById(R.id.mapa);
+
         }
 
         public void onClick(final int position) {

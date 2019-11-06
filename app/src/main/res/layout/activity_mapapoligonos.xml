@@ -23,7 +23,6 @@ android:focusableInTouchMode="true">
         android:text="VERIFICAR"
         android:id="@+id/verificaurl"/>
 
-
     <fragment
         android:id="@+id/mapapoligonos"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -34,6 +33,7 @@ android:focusableInTouchMode="true">
 
         <Button
             android:id="@+id/cogerlocalizacion"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="60dp"/>
 
@@ -44,29 +44,33 @@ android:focusableInTouchMode="true">
             android:layout_width="260dp"
             android:layout_height="50dp"
     -->
-    <LinearLayout
-        android:id="@+id/linear_layout_search"
-        android:layout_width="460dp"
-        android:layout_height="100dp"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="left|top"
-        android:layout_marginLeft="-181dp"
+        android:padding="8dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_right"
-        android:clickable="false"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
+            android:id="@+id/ic_action_menu"
+            android:layout_centerVertical="true"
             android:layout_width="40dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:src="@mipmap/ic_menu" />
 
         <EditText
             android:id="@+id/edit_text_search"
-            android:layout_width="180dp"
+             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:background="@drawable/selector_edit_text_search"
             android:hint="@string/search_in_dhn"
             android:paddingLeft="2dp"
+            android:visibility="gone"
             android:paddingRight="2dp"
             android:singleLine="true"
             android:textColor="@color/gen_white_50"
@@ -77,37 +81,42 @@ android:focusableInTouchMode="true">
             android:id="@+id/image_view_search"
             android:layout_width="40dp"
             android:layout_height="50dp"
+            android:visibility="gone"
             android:clickable="true"
             android:padding="2dp"
             android:src="@mipmap/ic_search" />
 
+        <TextView android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/white"
+            android:id="@+id/textobuscar"
+            android:layout_toEndOf="@+id/ic_action_menu"
+            android:layout_height="wrap_content"
+            android:text="Zonas de Evacuación"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_toRightOf="@+id/ic_action_menu" />
+
 
         <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="90dp"
+            android:layout_width="42dp"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textobuscar"
+            android:layout_height="42dp"
             android:clickable="true"
             android:padding="2dp"
             android:id="@+id/abrirbusquedapopup"
-            android:src="@drawable/chevrol"/>
+            android:layout_marginRight="10dp"
+            android:src="@drawable/mapaevacuacion_icon"
+            android:layout_toRightOf="@+id/textobuscar" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_gravity="left|top"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/selector_right"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/ic_action_menu"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:padding="2dp"
-            android:src="@mipmap/ic_menu" />
 
-    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/menu_right"
@@ -538,6 +547,40 @@ android:focusableInTouchMode="true">
                 android:layout_marginLeft="20dp"
                 android:background="@color/menu_interline"></LinearLayout>
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/notificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_option_menu"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:clickable="false"
+                        android:text="Notificaciones"
+                        android:textColor="@color/gen_white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/menu_interline"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -701,50 +744,3 @@ android:focusableInTouchMode="true">
 </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
-
-
-
-
-
-    <!--<?xml version="1.0" encoding="utf-8"?>
-    <android.support.constraint.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activities.Mapapoligonos"
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-        >
-
-
-
-    <fragment
-
-        android:id="@+id/mapapoligonos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        tools:context=".activities.Mapapoligonos"
-
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-
-
-        >
-
-
-        <Button
-            android:id="@+id/cogerlocalizacion"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"/>
-
-    </fragment>
-
-
-
-
-
-    </android.support.constraint.ConstraintLayout>
-    -->
-
-

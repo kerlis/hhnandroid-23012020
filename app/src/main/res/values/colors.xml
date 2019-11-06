@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="transparente">#73000000</color>
+    <color name="plomo">#8C8C8C</color>
 
     <color name="gen_white">#ffffff</color>
     <color name="gen_black">#000000</color>
@@ -7,6 +9,8 @@
     <color name="gen_transparent">#00ffffff</color>
     <color name="option_result_pressed">#cfcfcf</color>
     <color name="colorPrimary">#055096</color>
+
+
     <color name="colorPrimaryDark">#055096</color>
     <color name="colorAccent">#FF5722</color>
     <color name="windowBackground">#ffffff</color>
