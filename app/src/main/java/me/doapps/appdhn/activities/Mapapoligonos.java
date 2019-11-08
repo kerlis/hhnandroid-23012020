@@ -12,6 +12,9 @@ import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.AsyncTask;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -45,10 +48,12 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -63,12 +68,17 @@ import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
 import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
 import me.doapps.appdhn.dialogs.ProgressDialog;
@@ -76,9 +86,16 @@ import me.doapps.appdhn.fragments.WorkaroundMapFragment;
 import me.doapps.appdhn.models.Departamentos;
 import me.doapps.appdhn.utils.PermissionUtils;
 
-public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleMap.OnMyLocationButtonClickListener,
-            GoogleMap.OnMyLocationClickListener,View.OnClickListener, OnMapReadyCallback, LocationListener, ActivityCompat.OnRequestPermissionsResultCallback, GoogleMap.OnInfoWindowClickListener,
-        GoogleApiClient.OnConnectionFailedListener, ResultCallback  {
+public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
+                                                                GoogleMap.OnMyLocationButtonClickListener,
+                                                                GoogleMap.OnMyLocationClickListener,
+                                                                View.OnClickListener,
+                                                                OnMapReadyCallback,
+                                                                LocationListener,
+                                                                ActivityCompat.OnRequestPermissionsResultCallback,
+                                                                GoogleMap.OnInfoWindowClickListener,
+                                                                GoogleApiClient.OnConnectionFailedListener,
+                                                                ResultCallback  {
 
     private static final String TAG = Mapapoligonos.class.getSimpleName();
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
@@ -125,22 +142,58 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     Resources res_1;
     Resources res_2;
     Resources res_3;
+
+
+    Resources res_4;
+
+
     public KmlLayer kml1;
     public KmlLayer kml2;
     public KmlLayer kml3;
+
+
+    public KmlLayer kml4;
+    public KmlLayer kml5;
+    public KmlLayer kml6;
+
     Resources res,restwo;
+
+    Resources res4,res5,res6;
+
+
     int rawId, rawidrwo;
+    int rawId4, rawId5,rawId6;
+
     private ImageView actionOpenDrawerMenu, ivSearch;
     private DrawerLayout drawerLayout;
     private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion;
     private WorkaroundMapFragment.TouchableWrapper de;
     ProgressDialog progressDialog;
 
+    String valorx;
+
+    private  ProgressDialog progressDialogs;
+    Context context;
+    private Handler handler;
+
+
+
+    String valorurls;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapapoligonos);
+        handler = new Handler(Looper.myLooper());
 
+        progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
+
+
+
+/*
+   progressDialogs = new  ProgressDialog(context, R.style.AppCompatAlertDialogStyle);
+        progressDialogs.setMessage("Cargando...");
+        progressDialogs.setCancelable(false);
 
 
 
@@ -150,7 +203,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         progressDialog.setMessage("Cargando...");
         progressDialog.setCancelable(false);
         progressDialog.show();
-
+**/
 
 
         actionOpenDrawerMenu = (ImageView) findViewById(R.id.ic_action_menu);
@@ -241,8 +294,58 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         opPressReleases = (LinearLayout) findViewById(R.id.option_pressreleases);
         opFrequentQustion = (LinearLayout) findViewById(R.id.option_frequent_questions);
 
-       manageBlinkEffect();
 
+
+
+
+/*
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+
+                try {
+                 //   Thread.sleep(1000);
+
+                    manageBlinkEffect();
+
+
+
+                } catch (Exception e) {
+                    Log.e(TAG, "new Thread " + e.toString());
+                }
+
+            }
+        }).start();
+*/
+
+
+        //PrimeRun p = new PrimeRun(143);
+        //new Thread(p).start();
+
+
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                manageBlinkEffect();
+            }
+        });
+
+
+    }
+
+
+    class PrimeRun implements Runnable {
+        long minPrime;
+        PrimeRun(long minPrime) {
+            this.minPrime = minPrime;
+        }
+
+        public void run() {
+            manageBlinkEffect();
+
+        }
     }
 
     @SuppressLint("WrongConstant")
@@ -255,6 +358,11 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         anim.setRepeatCount(Animation.INFINITE);
         anim.start();
     }
+
+
+
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -285,6 +393,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             public void onMapLoaded() {
                 //shareScreenshot();
                 cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+
 
 
             }
@@ -365,14 +474,38 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
 
     public void cerrarpopup(String opcion){
-        alertDialog2.hide();
+        alertDialog2.dismiss();
         Toast.makeText(Mapapoligonos.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
         Log.d("MIDATO", opcion);
         retrieveFileFromUrl(opcion);
     }
-    private void retrieveFileFromUrl(String urls) {
-        new DownloadKmlFile(getString(R.string.kml_url)).execute();
-        cargarmapas_defecto(urls);
+    private void retrieveFileFromUrl(final String urls) {
+    //   new DownloadKmlFile(getString(R.string.kml_url)).execute();
+      //  cargarmapas_defecto(urls);
+
+        Log.d("valorurls:",urls);
+
+
+        cargarprograso(urls);
+    //    new DownloadFilesTask().execute(urls);
+
+       // new DownloadFilesTask().execute(urls);
+
+
+        /*
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+                new DownloadFilesTask().execute(urls);
+
+
+            }
+        });
+        */
+
+
+
 
     }
 
@@ -609,7 +742,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     Log.d("DISTANCIA:",String.valueOf(distance));
 
                     Toast.makeText(Mapapoligonos.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
+                   // progressDialog.dismiss();
 
                 }
             }
@@ -1049,6 +1182,343 @@ progressDialog.dismiss();
             }
         });
     }
+
+
+
+
+
+    public void cargarprograso(final String dato){
+
+       // progressDialogs.setMessage("sddwfwfw");
+        //progressDialogs.show();
+
+        valorurls = dato;
+        Log.d("valorurls:dd",valorurls);
+
+        //cargarmapas_defecto(dato);
+
+mMap.clear();
+
+ /*
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+
+                 new DownloadFilesTask().execute(dato);
+
+
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                    else
+                        task.execute();
+
+
+
+                } catch (Exception e) {
+                    Log.e(TAG, "new Thread " + e.toString());
+                }
+            }
+        }).start();
+        */
+
+
+      new DownloadFilesTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
+
+    }
+
+
+
+    class DownloadFilesTask extends AsyncTask<String,  Integer, Long> {
+
+        @Override
+        protected void onPreExecute() {
+            progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
+
+
+            progressDialogs.setMessage("Cargando...");
+            progressDialogs.setCancelable(false);
+            progressDialogs.show();
+
+
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Long doInBackground(String... strings) {
+
+
+
+
+            valorx = valorurls;
+
+            Log.d("VALORES:", valorx);
+
+
+
+            long totalSize = 0;
+
+
+            Log.d("localizacionesxxxx:",valorx);
+
+
+
+
+
+            /*
+            int count = urls.length;
+            long totalSize = 0;
+            for (int i = 0; i < count; i++) {
+                totalSize += Downloader.downloadFile(urls[i]);
+                publishProgress((int) ((i / (float) count) * 100));
+                // Escape early if cancel() is called
+                if (isCancelled()) break;
+            }
+            return totalSize;
+            */
+
+
+
+            /////////
+
+
+            //  setProgressPercent(progress[0]);
+            fusedLocationClient.getLastLocation().addOnSuccessListener(Mapapoligonos.this, new OnSuccessListener<Location>() {
+
+                // fusedLocationClient.getLastLocation().addOnSuccessListener((Executor) this, new OnSuccessListener<Location>() {
+                @Override
+                public void onSuccess(Location location) {
+                    if (location != null) {
+                        String latitude = String.valueOf(location.getLatitude());
+                        String longitude = String.valueOf(location.getLongitude());
+                        Log.d("UBICA555", latitude + "-" + longitude);
+
+                        double latitude2= -12.2213428;
+                        double longitude2=-76.2303765;
+                        float distance=0;
+
+                        Location crntLocation=new Location("crntlocation");
+                        crntLocation.setLatitude(location.getLatitude());
+                        crntLocation.setLongitude(location.getLongitude());
+
+                        Location newLocation=new Location("newlocation");
+                        newLocation.setLatitude(latitude2);
+                        newLocation.setLongitude(longitude2);
+
+                        distance =crntLocation.distanceTo(newLocation) / 1000;
+
+                        Log.d("DISTANCIA:",String.valueOf(distance));
+                    }
+                }
+            });
+
+
+            Log.d("DHN9999", "DHN999");
+            final ArrayList cartasevacuacion;
+            String valor3 = valorx;
+
+            url_1 = valor3.split("&&")[0];
+            url_2 = valor3.split("&&")[1];
+            url_3 = valor3.split("&&")[2];
+
+            latitud = valor3.split("&&")[3];
+            longitud = valor3.split("&&")[4];
+            nombre = valor3.split("&&")[5];
+
+            lati= Double.parseDouble(latitud);
+            longit = Double.parseDouble(longitud);
+
+            Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
+
+/*
+            res4 = getApplicationContext().getResources();
+            rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
+
+
+            res5 = getApplicationContext().getResources();
+            rawId5 = res5.getIdentifier(url_2, "raw", getApplicationContext().getPackageName());
+
+
+            res6 = getApplicationContext().getResources();
+            rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
+
+*/
+
+            DatabaseReference mDatabase;
+            mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
+
+            mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    for(final DataSnapshot ds : dataSnapshot.getChildren()) {
+
+
+                        final String urlszonas = ds.child("url_kml").getValue(String.class);
+
+/*
+                        assert urlszonas != null;
+                        if(urlszonas.equals(url_1)){
+
+                            String acept =  ds.child("url_kml").getValue(String.class);
+                        //    res = getApplicationContext().getResources();
+                           // rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                            Log.d("ACEPTADOS",acept);
+                        }
+                        else{
+
+                            String rechazado =  ds.child("url_kml").getValue(String.class);
+
+
+                            //restwo = getApplicationContext().getResources();
+                            //rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                            Log.d("RECHAZADOS",rechazado);
+                        }
+
+
+                        res = getApplicationContext().getResources();
+                        rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                        Log.d("ACEPTADOS",urlszonas);
+                        */
+   /*
+
+                        if(urlszonas.equals(url_1)){
+
+
+                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
+
+                            Log.d("RECHAZADOS1",rechazado1);
+                        }
+                        else{
+
+
+                            res = getApplicationContext().getResources();
+                            rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
+                            Log.d("ACEPTADOS",urlszonas);
+
+
+
+                        }
+
+
+
+
+                     */
+                        if((urlszonas.equals(url_1)) || (urlszonas.equals(url_2)) || (urlszonas.equals(url_3))){
+
+                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
+
+                            Log.d("RECHAZADOS1",rechazado1);
+                        }
+                        else if(urlszonas.equals(url_3)) {
+
+                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
+
+                            Log.d("RECHAZADOS1",rechazado1);
+                        }
+
+
+
+
+
+                        else {
+                            res = getApplicationContext().getResources();
+                            rawId = res.getIdentifier(urlszonas, "raw", getApplicationContext().getPackageName());
+                            Log.d("ACEPTADOS", urlszonas);
+
+
+                        }
+
+
+
+
+                        Log.d("IDENTIFICACION",String.valueOf(rawId));
+
+                        try {
+                            kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
+
+
+
+
+
+
+
+                            LatLng sydney = new LatLng(lati, longit);
+                            mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                            mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+                        } catch (XmlPullParserException e) {
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        try {
+
+                            kml1.addLayerToMap();
+
+
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (XmlPullParserException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
+
+
+            onProgressUpdate(valorx);
+            return totalSize;
+
+        }
+
+        protected void onProgressUpdate(String... strings) {
+
+
+
+        }
+
+        protected void onPostExecute(Long result) {
+
+            mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
+                @Override
+                public void onMapLoaded() {
+                    //shareScreenshot();
+                   // cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+
+
+                progressDialogs.dismiss();
+
+                }
+
+            });
+
+
+
+            // progressDialogs.dismiss();
+
+            ///showDialog("Downloaded " + result + " bytes");
+        }
+
+
+
+
+
+    }
+
 
 
 

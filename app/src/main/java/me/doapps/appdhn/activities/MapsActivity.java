@@ -686,7 +686,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
 /*
-        kml1.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+        kml1.setOnFeatureClickListener(new KmlLayr.OnFeatureClickListener() {
             @Override
             public void onFeatureClick(Feature feature) {
                 Log.i("KmlClick", "Feature clicked: " +  feature.getId());

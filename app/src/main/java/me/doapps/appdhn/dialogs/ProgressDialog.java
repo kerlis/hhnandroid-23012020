@@ -7,12 +7,10 @@ import android.view.View;
 
 import me.doapps.appdhn.R;
 
-/**
- * Created by William_ST on 02/10/15.
- */
+
 public class ProgressDialog extends AlertDialog {
 
-    public  ProgressDialog(Context context) {
+    public  ProgressDialog(Context context, int appCompatAlertDialogStyle) {
         super(context);
         initDialog();
     }
@@ -26,5 +24,9 @@ public class ProgressDialog extends AlertDialog {
 
     public void dismiss(){
         dismiss();
+    }
+
+    public void cancel(){
+        cancel();
     }
 }
