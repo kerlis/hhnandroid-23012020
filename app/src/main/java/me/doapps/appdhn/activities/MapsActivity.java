@@ -92,9 +92,12 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1497,8 +1500,18 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         }
 
         protected void onPostExecute(byte[] byteArr) {
+
+            try {
+                FileInputStream file = new FileInputStream(String.valueOf(byteArr));
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
+
             try {
                 KmlLayer kmlLayer = new KmlLayer(mMap, new ByteArrayInputStream(byteArr), getApplicationContext());
+
 
 
 

@@ -2,6 +2,11 @@
     <string name="app_name">MGP Tsunamis</string>
     <string name="title_activity_maps">Map</string>
 
+
+
+    <string name="kml_url">https://www.dhn.mil.pe/secciones/departamentos/oceanografia/apps/cartastsunamis/images/cartas_inundacion/sur/mejia_arequipa_2013.pdf</string>
+
+
     <!-- activity_maps -->
     <string name="information_of_maps">Información del mapa</string>
     <string name="flood_charts">Zonas de inundación</string>

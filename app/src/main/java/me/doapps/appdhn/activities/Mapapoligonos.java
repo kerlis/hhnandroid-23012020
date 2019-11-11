@@ -70,10 +70,15 @@ import com.google.maps.android.data.kml.KmlPlacemark;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -179,6 +184,8 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
 
     String valorurls;
+    InputStreamReader isr ;
+    FileInputStream fis = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1197,7 +1204,7 @@ progressDialog.dismiss();
 
         //cargarmapas_defecto(dato);
 
-mMap.clear();
+        mMap.clear();
 
  /*
         new Thread(new Runnable() {
@@ -1420,13 +1427,35 @@ mMap.clear();
                         }
 
 
-
-
-
                         else {
-                            res = getApplicationContext().getResources();
-                            rawId = res.getIdentifier(urlszonas, "raw", getApplicationContext().getPackageName());
-                            Log.d("ACEPTADOS", urlszonas);
+
+                             try {
+                                fis = context.openFileInput(urlszonas);
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                            }
+
+                             /*
+                            InputStreamReader isr = new InputStreamReader(fis);
+                            BufferedReader bufferedReader = new BufferedReader(isr);
+                            StringBuilder sb = new StringBuilder();
+                            String line;
+                            while ((line = bufferedReader.readLine()) != null) {
+                                sb.append(line);
+                            }
+
+
+                            String yourFilePath = context.getFilesDir() + "/" + urlszonas;
+                            File yourFile = new File( yourFilePath );
+                            rawId = yourFile;
+                            */
+
+
+
+
+                         //   res = getApplicationContext().getResources();
+                         //   rawId = res.getIdentifier(urlszonas, "raw", getApplicationContext().getPackageName());
+                         //   Log.d("ACEPTADOS", urlszonas);
 
 
                         }
@@ -1437,7 +1466,7 @@ mMap.clear();
                         Log.d("IDENTIFICACION",String.valueOf(rawId));
 
                         try {
-                            kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
+                            kml1 = new KmlLayer(mMap, fis, getApplicationContext());
 
 
 
@@ -1500,7 +1529,7 @@ mMap.clear();
                    // cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
 
 
-                progressDialogs.dismiss();
+              // progressDialogs.dismiss();
 
                 }
 
