@@ -17,6 +17,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
@@ -48,12 +49,10 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -69,7 +68,6 @@ import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
 import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -79,10 +77,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
 
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
@@ -169,6 +165,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     int rawId, rawidrwo;
     int rawId4, rawId5,rawId6;
 
+
     private ImageView actionOpenDrawerMenu, ivSearch;
     private DrawerLayout drawerLayout;
     private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion;
@@ -186,6 +183,24 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     String valorurls;
     InputStreamReader isr ;
     FileInputStream fis = null;
+
+    FileInputStream fileinputstream;
+    InputStreamReader inputStreamReader;
+
+
+
+    FileInputStream fileInputStream;
+
+    String urlszonas;
+
+
+    InputStream inputstream_kml;
+    String pathfile;
+
+    File archivo;
+
+    InputStream archivo_inputstream_kml;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -484,6 +499,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         alertDialog2.dismiss();
         Toast.makeText(Mapapoligonos.this, "PRIMERA_DATA: " + opcion, Toast.LENGTH_SHORT).show();
         Log.d("MIDATO", opcion);
+        mMap.clear();
         retrieveFileFromUrl(opcion);
     }
     private void retrieveFileFromUrl(final String urls) {
@@ -1240,16 +1256,17 @@ progressDialog.dismiss();
 
     class DownloadFilesTask extends AsyncTask<String,  Integer, Long> {
 
+
         @Override
         protected void onPreExecute() {
             progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
 
-
+/*
             progressDialogs.setMessage("Cargando...");
             progressDialogs.setCancelable(false);
             progressDialogs.show();
 
-
+*/
             super.onPreExecute();
         }
 
@@ -1290,7 +1307,7 @@ progressDialog.dismiss();
 
             /////////
 
-
+          //  mMap.clear();
             //  setProgressPercent(progress[0]);
             fusedLocationClient.getLastLocation().addOnSuccessListener(Mapapoligonos.this, new OnSuccessListener<Location>() {
 
@@ -1352,18 +1369,18 @@ progressDialog.dismiss();
             rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
 
 */
-
             DatabaseReference mDatabase;
             mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
 
             mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
+                @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                     for(final DataSnapshot ds : dataSnapshot.getChildren()) {
 
 
-                        final String urlszonas = ds.child("url_kml").getValue(String.class);
+                      urlszonas = ds.child("url_kml").getValue(String.class);
 
 /*
                         assert urlszonas != null;
@@ -1428,12 +1445,20 @@ progressDialog.dismiss();
 
 
                         else {
+                            Log.d("TRAZOURL:", ds.child("url_kml").getValue(String.class));
 
-                             try {
-                                fis = context.openFileInput(urlszonas);
-                            } catch (FileNotFoundException e) {
-                                e.printStackTrace();
-                            }
+                           // String pathfile =  context.getFilesDir() + "/" +  ds.child("url_kml").getValue(String.class);
+
+
+
+                              pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
+
+
+                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kml");
+
+
+                            Log.d("TRAZOURLWW:", String.valueOf(archivo));
+
 
                              /*
                             InputStreamReader isr = new InputStreamReader(fis);
@@ -1450,12 +1475,22 @@ progressDialog.dismiss();
                             rawId = yourFile;
                             */
 
+/*
+                            BufferedReader in = new BufferedReader(new InputStreamReader(archivo_inputstream_kml));
+
+
+                            InputStream input =   new InputStream() getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
+
+                            FileInputStream filei = new FileInputStream()
+
+                            res = getApplicationContext().getResources();
+                           rawId = res.getIdentifier(String.valueOf(rawId), "raw", getApplicationContext().getPackageName());
+                           Log.d("ACEPTADOS", String.valueOf(rawId));
+*/
 
 
 
-                         //   res = getApplicationContext().getResources();
-                         //   rawId = res.getIdentifier(urlszonas, "raw", getApplicationContext().getPackageName());
-                         //   Log.d("ACEPTADOS", urlszonas);
+
 
 
                         }
@@ -1463,27 +1498,38 @@ progressDialog.dismiss();
 
 
 
-                        Log.d("IDENTIFICACION",String.valueOf(rawId));
-
-                        try {
-                            kml1 = new KmlLayer(mMap, fis, getApplicationContext());
 
 
 
+                        try( InputStream inputstream = new FileInputStream(archivo) ) {
 
 
+                            // KmlLayer layer = new KmlLayer(mMap, inputstream, context);
+
+                            // layer.addLayerToMap();
 
 
+                            kml1 = new KmlLayer(mMap, inputstream, getApplicationContext());
                             LatLng sydney = new LatLng(lati, longit);
                             mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                             mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+                            //  kml1.addLayerToMap();
+
+
+
+                        } catch (FileNotFoundException e) {
+
+                            e.printStackTrace();
+
+                        } catch (IOException e) {
+
+                            e.printStackTrace();
 
                         } catch (XmlPullParserException e) {
                             e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
                         }
+
 
                         try {
 
@@ -1496,6 +1542,40 @@ progressDialog.dismiss();
                         } catch (XmlPullParserException e) {
                             e.printStackTrace();
                         }
+
+
+
+
+
+/*
+
+
+                        Log.d("IDENTIFICACION",String.valueOf(rawId));
+
+                        try {
+
+                            inputstream_kml = new FileInputStream(archivo);
+
+                            archivo_inputstream_kml = new FileInputStream(archivo);
+
+                            // inputstream_kml= new InputStreamReader(pathfile);
+
+
+                            kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
+                            LatLng sydney = new LatLng(lati, longit);
+                            mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                            mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+                        } catch (XmlPullParserException e) {
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+
+*/
+
 
 
                     }

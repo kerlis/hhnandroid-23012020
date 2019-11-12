@@ -102,7 +102,7 @@ public class SplashActivity extends AppCompatActivity {
 
     public void cargararchivo() {
      //  new  DownloadKmlFile(getString(R.string.kml_url)).execute();
-        valoresconfiguracion();
+       valoresconfiguracion();
     }
 
 //    private boolean checkPlayServices() {
