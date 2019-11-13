@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fragment android:name="me.doapps.appdhn.fragments.Mapa1"
+        android:id="@+id/mapa1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <fragment android:name="me.doapps.appdhn.fragments.Mapa2"
+        android:layout_below="@+id/mapa1"
+        android:id="@+id/mapa2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button  android:layout_height="60dp"
+        android:layout_below="@+id/mapa2"
+        android:id="@+id/cambiar"
+        android:layout_width="match_parent"
+        android:text="CAMBIAR"/>
+    </RelativeLayout>

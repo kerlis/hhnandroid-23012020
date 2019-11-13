@@ -161,7 +161,9 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startService(new Intent(SplashActivity.this, TokenService.class));
 
-             Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
+//             Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
+
+                Intent intent = new Intent(SplashActivity.this, Comunicarfragmentos.class);
 
 
                 //  Intent intent = new Intent(SplashActivity.this, MapsActivity.class);

@@ -1256,62 +1256,24 @@ progressDialog.dismiss();
 
     class DownloadFilesTask extends AsyncTask<String,  Integer, Long> {
 
-
         @Override
         protected void onPreExecute() {
             progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
-
-/*
+            /*
             progressDialogs.setMessage("Cargando...");
             progressDialogs.setCancelable(false);
             progressDialogs.show();
-
-*/
+            */
             super.onPreExecute();
         }
 
         @Override
         protected Long doInBackground(String... strings) {
-
-
-
-
             valorx = valorurls;
-
             Log.d("VALORES:", valorx);
-
-
-
             long totalSize = 0;
-
-
             Log.d("localizacionesxxxx:",valorx);
-
-
-
-
-
-            /*
-            int count = urls.length;
-            long totalSize = 0;
-            for (int i = 0; i < count; i++) {
-                totalSize += Downloader.downloadFile(urls[i]);
-                publishProgress((int) ((i / (float) count) * 100));
-                // Escape early if cancel() is called
-                if (isCancelled()) break;
-            }
-            return totalSize;
-            */
-
-
-
-            /////////
-
-          //  mMap.clear();
-            //  setProgressPercent(progress[0]);
             fusedLocationClient.getLastLocation().addOnSuccessListener(Mapapoligonos.this, new OnSuccessListener<Location>() {
-
-                // fusedLocationClient.getLastLocation().addOnSuccessListener((Executor) this, new OnSuccessListener<Location>() {
                 @Override
                 public void onSuccess(Location location) {
                     if (location != null) {
@@ -1379,205 +1341,43 @@ progressDialog.dismiss();
 
                     for(final DataSnapshot ds : dataSnapshot.getChildren()) {
 
-
-                      urlszonas = ds.child("url_kml").getValue(String.class);
-
-/*
-                        assert urlszonas != null;
-                        if(urlszonas.equals(url_1)){
-
-                            String acept =  ds.child("url_kml").getValue(String.class);
-                        //    res = getApplicationContext().getResources();
-                           // rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
-                            Log.d("ACEPTADOS",acept);
-                        }
-                        else{
-
-                            String rechazado =  ds.child("url_kml").getValue(String.class);
-
-
-                            //restwo = getApplicationContext().getResources();
-                            //rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
-                            Log.d("RECHAZADOS",rechazado);
-                        }
-
-
-                        res = getApplicationContext().getResources();
-                        rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
-                        Log.d("ACEPTADOS",urlszonas);
-                        */
-   /*
-
-                        if(urlszonas.equals(url_1)){
-
-
-                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
-
-                            Log.d("RECHAZADOS1",rechazado1);
-                        }
-                        else{
-
-
-                            res = getApplicationContext().getResources();
-                            rawId = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
-                            Log.d("ACEPTADOS",urlszonas);
-
-
-
-                        }
-
-
-
-
-                     */
+                        urlszonas = ds.child("url_kml").getValue(String.class);
                         if((urlszonas.equals(url_1)) || (urlszonas.equals(url_2)) || (urlszonas.equals(url_3))){
-
                             final String rechazado1 = ds.child("url_kml").getValue(String.class);
-
                             Log.d("RECHAZADOS1",rechazado1);
                         }
                         else if(urlszonas.equals(url_3)) {
-
                             final String rechazado1 = ds.child("url_kml").getValue(String.class);
-
                             Log.d("RECHAZADOS1",rechazado1);
                         }
-
-
                         else {
                             Log.d("TRAZOURL:", ds.child("url_kml").getValue(String.class));
-
-                           // String pathfile =  context.getFilesDir() + "/" +  ds.child("url_kml").getValue(String.class);
-
-
-
-                              pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
-
-
+                            pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
                             archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kml");
-
-
                             Log.d("TRAZOURLWW:", String.valueOf(archivo));
-
-
-                             /*
-                            InputStreamReader isr = new InputStreamReader(fis);
-                            BufferedReader bufferedReader = new BufferedReader(isr);
-                            StringBuilder sb = new StringBuilder();
-                            String line;
-                            while ((line = bufferedReader.readLine()) != null) {
-                                sb.append(line);
-                            }
-
-
-                            String yourFilePath = context.getFilesDir() + "/" + urlszonas;
-                            File yourFile = new File( yourFilePath );
-                            rawId = yourFile;
-                            */
-
-/*
-                            BufferedReader in = new BufferedReader(new InputStreamReader(archivo_inputstream_kml));
-
-
-                            InputStream input =   new InputStream() getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
-
-                            FileInputStream filei = new FileInputStream()
-
-                            res = getApplicationContext().getResources();
-                           rawId = res.getIdentifier(String.valueOf(rawId), "raw", getApplicationContext().getPackageName());
-                           Log.d("ACEPTADOS", String.valueOf(rawId));
-*/
-
-
-
-
-
-
                         }
 
-
-
-
-
-
-
                         try( InputStream inputstream = new FileInputStream(archivo) ) {
-
-
-                            // KmlLayer layer = new KmlLayer(mMap, inputstream, context);
-
-                            // layer.addLayerToMap();
-
-
                             kml1 = new KmlLayer(mMap, inputstream, getApplicationContext());
                             LatLng sydney = new LatLng(lati, longit);
                             mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                             mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-                            //  kml1.addLayerToMap();
-
-
-
                         } catch (FileNotFoundException e) {
-
                             e.printStackTrace();
-
                         } catch (IOException e) {
 
                             e.printStackTrace();
-
                         } catch (XmlPullParserException e) {
                             e.printStackTrace();
                         }
-
-
                         try {
-
                             kml1.addLayerToMap();
-
-
-
                         } catch (IOException e) {
                             e.printStackTrace();
                         } catch (XmlPullParserException e) {
                             e.printStackTrace();
                         }
-
-
-
-
-
-/*
-
-
-                        Log.d("IDENTIFICACION",String.valueOf(rawId));
-
-                        try {
-
-                            inputstream_kml = new FileInputStream(archivo);
-
-                            archivo_inputstream_kml = new FileInputStream(archivo);
-
-                            // inputstream_kml= new InputStreamReader(pathfile);
-
-
-                            kml1 = new KmlLayer(mMap, rawId, getApplicationContext());
-                            LatLng sydney = new LatLng(lati, longit);
-                            mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
-                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-                            mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-
-                        } catch (XmlPullParserException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-
-
-*/
-
-
-
                     }
                 }
 
@@ -1586,54 +1386,22 @@ progressDialog.dismiss();
 
                 }
             });
-
-
-
             onProgressUpdate(valorx);
             return totalSize;
-
         }
 
         protected void onProgressUpdate(String... strings) {
-
-
-
         }
 
         protected void onPostExecute(Long result) {
-
             mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
                 @Override
                 public void onMapLoaded() {
                     //shareScreenshot();
-                   // cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
-
-
-              // progressDialogs.dismiss();
-
+                    // cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+                    // progressDialogs.dismiss();
                 }
-
             });
-
-
-
-            // progressDialogs.dismiss();
-
-            ///showDialog("Downloaded " + result + " bytes");
         }
-
-
-
-
-
     }
-
-
-
-
 }
-
-
-
-
-

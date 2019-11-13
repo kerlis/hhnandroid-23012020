@@ -29,9 +29,7 @@ import me.doapps.appdhn.models.Bulletin;
 import me.doapps.appdhn.utils.UrlHelper;
 import me.doapps.appdhn.utils.ValueHelper;
 
-/**
- * Created by William_ST on 01/10/15.
- */
+
 public class BulletinFragment extends Fragment {
 
     private final String TAG = BulletinFragment.class.getSimpleName();

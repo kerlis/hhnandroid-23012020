@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Mapa2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/palabra"
+            android:text="FRAGMENTO 2"
+
+             android:layout_marginTop="0dp"/>
+
+        <ImageView android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/common_full_open_on_phone"
+            android:layout_below="@+id/palabra"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
