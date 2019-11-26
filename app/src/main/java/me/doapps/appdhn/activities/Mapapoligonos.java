@@ -1353,7 +1353,7 @@ progressDialog.dismiss();
                         else {
                             Log.d("TRAZOURL:", ds.child("url_kml").getValue(String.class));
                             pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
-                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kml");
+                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kmz");
                             Log.d("TRAZOURLWW:", String.valueOf(archivo));
                         }
 
