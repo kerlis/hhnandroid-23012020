@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="CIT_150801_refugio">
+  <name>CIT_150801_refugio</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>CIT_150801_refugio</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>Zona de Refugio</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td>Universidad Nacional José Faustino Sánchez Carrión</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA_M2</td>
+
+<td>202748.302239</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>PHRB1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150801</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.61047866299998,-11.12271569299998,0 -77.61042428199994,-11.12308511399993,0 -77.61047948499999,-11.12313079999996,0 -77.61020804799995,-11.12506387399998,0 -77.61021042799996,-11.12548741799998,0 -77.61020192399997,-11.12553940799995,0 -77.61043273099995,-11.12562601999997,0 -77.61047222999997,-11.12568978999997,0 -77.61028175199994,-11.12586719999996,0 -77.61017717699997,-11.12618090999996,0 -77.60990845799995,-11.12626801499994,0 -77.60936292299994,-11.12645835699993,0 -77.60815243199994,-11.12652911099997,0 -77.60799528999996,-11.12649503599994,0 -77.60783856999996,-11.12643121999997,0 -77.60767150199996,-11.12618291399997,0 -77.60753400699997,-11.12590642499993,0 -77.60732561099997,-11.12563147399993,0 -77.60690252999996,-11.12535126499995,0 -77.60659939799996,-11.12533392399996,0 -77.60644122099996,-11.12518392799996,0 -77.60625805299998,-11.12493417499996,0 -77.60621035499997,-11.12475365099994,0 -77.60608768499998,-11.12456944499996,0 -77.60586920599997,-11.12449962299996,0 -77.60566646699994,-11.12424863399997,0 -77.60558586399998,-11.12423343999996,0 -77.60571933999995,-11.12389168799996,0 -77.60603114999998,-11.12178864999993,0 -77.60622565899996,-11.12182919599997,0 -77.60766271999995,-11.12212874499994,0 -77.60840012199998,-11.12228244999994,0 -77.60925743699994,-11.12246114699997,0 -77.61022745299994,-11.12266333299993,0 -77.61047866299998,-11.12271569299998,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>Zona de Refugio</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA_M2</td>
+
+<td>24215.805768</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>PHRB1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150801</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.61572533999998,-11.12637782599995,0 -77.61581497099996,-11.12768324599995,0 -77.61452430699995,-11.12754050899997,0 -77.61422344699997,-11.12735046999995,0 -77.61404024699993,-11.12702978699997,0 -77.61405619599998,-11.12614333999994,0 -77.61435771599997,-11.12639233099998,0 -77.61448867699994,-11.12641987799998,0 -77.61467021099998,-11.12641829899997,0 -77.61572533999998,-11.12637782599995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>Zona de Refugio</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA_M2</td>
+
+<td>47855.165599</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>PHRB1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150801</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.60998012799996,-11.11089755599994,0 -77.61012479899995,-11.11279541499994,0 -77.60861146199994,-11.11274401799994,0 -77.60780063299995,-11.11206542999997,0 -77.60777774799999,-11.11204627699993,0 -77.60671885799997,-11.11116007499993,0 -77.60906070399994,-11.11125733099993,0 -77.60916540099998,-11.11113550299996,0 -77.60914636499996,-11.11088423099994,0 -77.60953849999999,-11.11082331699993,0 -77.60960893199996,-11.11088994199997,0 -77.60998012799996,-11.11089755599994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>Zona de Refugio</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA_M2</td>
+
+<td>4764.74232</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>PHRB1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150801</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.61459283999994,-11.10683379199998,0 -77.61408963399998,-11.10812336899994,0 -77.61386869599994,-11.10804597699996,0 -77.61383742199996,-11.10796053399997,0 -77.61433507399994,-11.10673645299994,0 -77.61459283999994,-11.10683379199998,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0.000000</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff0055ff</color>
+        <width>0.400000</width>
+      </LineStyle>
+        <PolyStyle>
+        <color>ff0055ff</color>
+      </PolyStyle>
+    </Style>
+</Document>
+</kml>

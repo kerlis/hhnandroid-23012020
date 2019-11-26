@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="CIT_110501_refugio">
+  <name>CIT_110501_refugio</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>CIT_110501_refugio</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>17470.59</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>110501</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.005131</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.20600307899997,-13.71813725199996,0 -76.20603873099998,-13.71897541599998,0 -76.20433456699999,-13.71911395499996,0 -76.20429178499995,-13.71824808299994,0 -76.20600307899997,-13.71813725199996,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>6697.45</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>110501</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003063</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.20339101799993,-13.70956539299993,0 -76.20343707999996,-13.71039249299997,0 -76.20273380099997,-13.71042889999995,0 -76.20270555399998,-13.70958449099993,0 -76.20339101799993,-13.70956539299993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>11602.56</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>110501</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.004073</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.19675111999999,-13.71074903999994,0 -76.19678990499995,-13.70984260099993,0 -76.19788544699998,-13.70978174299995,0 -76.19789640299996,-13.71070428299993,0 -76.19675111999999,-13.71074903999994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>RASGO</td>
+
+<td>Zona de Refugio</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>6454.92</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>110501</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.002986</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.20106270999997,-13.70447830499995,0 -76.20113647399995,-13.70526828599998,0 -76.20042263499994,-13.70532063499996,0 -76.20034173399995,-13.70457586299995,0 -76.20106270999997,-13.70447830499995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0.000000</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff0055ff</color>
+        <width>0.400000</width>
+      </LineStyle>
+        <PolyStyle>
+        <color>ff0055ff</color>
+      </PolyStyle>
+    </Style>
+</Document>
+</kml>

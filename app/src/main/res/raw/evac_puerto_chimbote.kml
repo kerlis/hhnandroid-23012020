@@ -1,0 +1,9989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="CIT_021801_evac">
+  <name>CIT_021801_evac</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>CIT_021801_evac</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58934045799998,-9.074031401999946,0 -78.58889998899997,-9.072590065999975,0 -78.58878461999996,-9.072725510999931,0 -78.58886128799998,-9.072035639999967,0 -78.58930243499998,-9.072569058999932,0 -78.58913103799995,-9.072521105999954,0 -78.58956989299998,-9.073959932999969,0 -78.58934045799998,-9.074031401999946,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58810797699994,-9.070047820999946,0 -78.58766751399998,-9.068606485999965,0 -78.58755214599995,-9.068741930999977,0 -78.58762881399997,-9.068052060999946,0 -78.58806995499998,-9.068585478999978,0 -78.58789856099998,-9.068537526999933,0 -78.58833740899996,-9.069976352999959,0 -78.58810797699994,-9.070047820999946,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58787155999994,-9.066402457999971,0 -78.58821611099995,-9.064935236999929,0 -78.58804826299996,-9.064994242999944,0 -78.58846162199995,-9.064436628999943,0 -78.58857446699994,-9.065119565999964,0 -78.58845047599993,-9.064991889999931,0 -78.58810579199997,-9.066456129999949,0 -78.58787155999994,-9.066402457999971,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59665111399994,-9.066316044999951,0 -78.59533009099994,-9.065590520999933,0 -78.59534190699998,-9.065768047999939,0 -78.59491561799996,-9.065220248999935,0 -78.59560379999994,-9.065294742999981,0 -78.59544754099994,-9.065379940999947,0 -78.59676565599995,-9.066104792999965,0 -78.59665111399994,-9.066316044999951,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59304950699999,-9.064659397999947,0 -78.59157888199997,-9.064329698999927,0 -78.59163958299996,-9.064496943999927,0 -78.59107781799997,-9.064089240999977,0 -78.59175957599996,-9.063969493999935,0 -78.59163316199994,-9.06409476999994,0 -78.59310080799997,-9.064424631999941,0 -78.59304950699999,-9.064659397999947,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58916081899997,-9.06145670899997,0 -78.58950534999997,-9.059989482999981,0 -78.58933750499995,-9.060048490999975,0 -78.58975085099996,-9.05949087099998,0 -78.58986370199995,-9.060173807999945,0 -78.58973971199998,-9.060046132999958,0 -78.58939504799997,-9.061510378999969,0 -78.58916081899997,-9.06145670899997,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58891797499996,-9.058185867999953,0 -78.58745817599998,-9.057811138999966,0 -78.58751370799996,-9.057980164999947,0 -78.58696473799995,-9.057555402999981,0 -78.58764985599999,-9.057456668999976,0 -78.58751965099998,-9.057577997999943,0 -78.58897646699995,-9.057952797999974,0 -78.58891797499996,-9.058185867999953,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57490272599995,-9.082007449999935,0 -78.57390847499994,-9.083140116999971,0 -78.57408435099995,-9.083167008999965,0 -78.57345727199999,-9.083464616999947,0 -78.57367895299996,-9.082808867999972,0 -78.57372830899999,-9.082979866999949,0 -78.57472127499995,-9.081849893999959,0 -78.57490272599995,-9.082007449999935,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58012547599998,-9.081105270999956,0 -78.57898805299999,-9.080116471999929,0 -78.57896200399995,-9.080292472999929,0 -78.57866139199996,-9.079666833999966,0 -78.57931819799995,-9.079885366999974,0 -78.57914743699996,-9.07993554199993,0 -78.58028216099996,-9.080923068999937,0 -78.58012547599998,-9.081105270999956,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004996</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56913078399998,-9.088454272999968,0 -78.56809728099995,-9.089552395999931,0 -78.56827209999995,-9.08958526899994,0 -78.56763493399996,-9.089861327999927,0 -78.56787956099998,-9.089213511999958,0 -78.56792286799998,-9.089386094999952,0 -78.56895499099994,-9.088290620999942,0 -78.56913078399998,-9.088454272999968,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56219406799994,-9.093612348999955,0 -78.56120152099999,-9.092478180999933,0 -78.56115180599994,-9.092649016999928,0 -78.56093897099999,-9.091988322999953,0 -78.56155999499998,-9.092294056999947,0 -78.56138400299994,-9.092320571999949,0 -78.56237404999996,-9.093453113999942,0 -78.56219406799994,-9.093612348999955,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56273662899997,-9.095626146999962,0 -78.56175923699999,-9.094478890999937,0 -78.56170725499999,-9.094649050999976,0 -78.56150321999996,-9.093985587999953,0 -78.56212012899994,-9.094299547999981,0 -78.56194379999994,-9.094323722999945,0 -78.56291871299999,-9.095469317999971,0 -78.56273662899997,-9.095626146999962,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56259348999998,-9.103534113999956,0 -78.56159412599999,-9.102405936999958,0 -78.56154543999998,-9.102577070999928,0 -78.56132862799996,-9.101917667999942,0 -78.56195148399996,-9.102219656999978,0 -78.56177565599995,-9.102247230999979,0 -78.56277250799997,-9.103373795999971,0 -78.56259348999998,-9.103534113999956,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004993</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55715120199994,-9.122479303999967,0 -78.55737133199995,-9.120988778999958,0 -78.55720897699996,-9.121061646999976,0 -78.55757415599999,-9.120471472999952,0 -78.55774404799996,-9.121142321999969,0 -78.55760971899997,-9.121025543999963,0 -78.55738920299996,-9.122513108999954,0 -78.55715120199994,-9.122479303999967,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004993</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55789443699996,-9.118260985999939,0 -78.55802300899995,-9.116759790999936,0 -78.55786541299995,-9.116842449999979,0 -78.55819381899994,-9.116231049999954,0 -78.55840441499998,-9.116890253999941,0 -78.55826319699997,-9.11678190799995,0 -78.55813405899994,-9.11828017299996,0 -78.55789443699996,-9.118260985999939,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.60055290799994,-9.068691568999952,0 -78.59927864999997,-9.06788673899996,0 -78.59927960399995,-9.068064655999933,0 -78.59888755799994,-9.067491850999943,0 -78.59956990799998,-9.067608224999958,0 -78.59940873799997,-9.067683722999959,0 -78.60068013499995,-9.068487704999939,0 -78.60055290799994,-9.068691568999952,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.60356947599996,-9.070703744999946,0 -78.60231903199997,-9.069862392999937,0 -78.60231483999996,-9.070040262999953,0 -78.60193952699996,-9.069456356999979,0 -78.60261822499996,-9.069592419999935,0 -78.60245493799994,-9.069663223999953,0 -78.60370254699996,-9.070503646999953,0 -78.60356947599996,-9.070703744999946,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.60723919399999,-9.073260133999952,0 -78.60596493599996,-9.072455303999959,0 -78.60596588999994,-9.072633220999933,0 -78.60557384399994,-9.072060415999943,0 -78.60625619399997,-9.072176789999958,0 -78.60609502399996,-9.072252287999959,0 -78.60736642099994,-9.073056269999938,0 -78.60723919399999,-9.073260133999952,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59065891599994,-9.078380093999954,0 -78.59021844699998,-9.076938757999926,0 -78.59010307799997,-9.077074202999938,0 -78.59017974599999,-9.076384331999975,0 -78.59062089299994,-9.07691775099994,0 -78.59044949599996,-9.076869797999962,0 -78.59088835099999,-9.078308624999977,0 -78.59065891599994,-9.078380093999954,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58746922399996,-9.071057206999967,0 -78.58640737999997,-9.069987654999977,0 -78.58636849799996,-9.07016127299994,0 -78.58611457099994,-9.069515269999954,0 -78.58675357499999,-9.069781379999938,0 -78.58657959899995,-9.069818897999937,0 -78.58763884399997,-9.070886983999969,0 -78.58746922399996,-9.071057206999967,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58257365799994,-9.065444232999937,0 -78.58173206999999,-9.064193958999965,0 -78.58166120899995,-9.06435715799995,0 -78.58153339299997,-9.063674909999975,0 -78.58211089899999,-9.06405652199993,0 -78.58193297099996,-9.064060627999936,0 -78.58277228199995,-9.065308972999958,0 -78.58257365799994,-9.065444232999937,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58472897199994,-9.068244999999934,0 -78.58374847599998,-9.067100410999956,0 -78.58369695899995,-9.067270708999956,0 -78.58349112099995,-9.066607812999962,0 -78.58410887399998,-9.066920096999979,0 -78.58393261399993,-9.06694474699998,0 -78.58491062599995,-9.068087682999931,0 -78.58472897199994,-9.068244999999934,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58778452699994,-9.079236699999967,0 -78.58734405799999,-9.07779536399994,0 -78.58722868899997,-9.077930808999952,0 -78.58730535699993,-9.077240937999932,0 -78.58774650399994,-9.077774356999953,0 -78.58757510699996,-9.077726403999975,0 -78.58801396199993,-9.079165230999934,0 -78.58778452699994,-9.079236699999967,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58637588599999,-9.074953669999957,0 -78.58593541699997,-9.073512333999929,0 -78.58582004799996,-9.073647778999941,0 -78.58589671599998,-9.072957907999978,0 -78.58633786299998,-9.073491326999942,0 -78.58616646599995,-9.073443373999965,0 -78.58660532099998,-9.07488220099998,0 -78.58637588599999,-9.074953669999957,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58492890199995,-9.073939717999963,0 -78.58355458399996,-9.073321082999939,0 -78.58358041799994,-9.073497115999942,0 -78.58311209499999,-9.072984794999968,0 -78.58380401599999,-9.073004558999969,0 -78.58365499299998,-9.07310186199993,0 -78.58502636099996,-9.073720058999982,0 -78.58492890199995,-9.073939717999963,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59240588399996,-9.073034385999961,0 -78.59196541499995,-9.071593049999933,0 -78.59185004599993,-9.071728494999945,0 -78.59192671399995,-9.071038623999925,0 -78.59236786099996,-9.071572042999947,0 -78.59219646399998,-9.071524089999969,0 -78.59263531899995,-9.072962916999927,0 -78.59240588399996,-9.073034385999961,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59126790199997,-9.069210250999959,0 -78.59082743899995,-9.067768915999977,0 -78.59071207099998,-9.067904360999933,0 -78.59078873899995,-9.067214490999959,0 -78.59122987999996,-9.067747908999934,0 -78.59105848599995,-9.067699956999945,0 -78.59149733399994,-9.069138782999971,0 -78.59126790199997,-9.069210250999959,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59372366199995,-9.077485416999934,0 -78.59328319299993,-9.076044080999964,0 -78.59316782399998,-9.076179525999976,0 -78.59324449199994,-9.075489654999956,0 -78.59368563899994,-9.076023073999977,0 -78.59351424199997,-9.075975120999942,0 -78.59395309699994,-9.077413947999958,0 -78.59372366199995,-9.077485416999934,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58414343999993,-9.074745862999976,0 -78.58263650799995,-9.074721049999937,0 -78.58272983999996,-9.074872522999954,0 -78.58209710899996,-9.074587126999973,0 -78.58274045899998,-9.074331693999966,0 -78.58264205399996,-9.074479990999976,0 -78.58414610299997,-9.074505568999939,0 -78.58414343999993,-9.074745862999976,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58041720399996,-9.074588817999938,0 -78.57891027199997,-9.074564004999957,0 -78.57900360399998,-9.074715477999973,0 -78.57837087299998,-9.074430081999935,0 -78.57901422299995,-9.074174648999929,0 -78.57891581799998,-9.074322945999938,0 -78.58041986699999,-9.074348523999959,0 -78.58041720399996,-9.074588817999938,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57738433699996,-9.078606835999949,0 -78.57624691399997,-9.077618036999979,0 -78.57622086499998,-9.077794037999979,0 -78.57592025299994,-9.077168398999959,0 -78.57657705899999,-9.077386931999968,0 -78.57640629799994,-9.07743710699998,0 -78.57754102199993,-9.07842463399993,0 -78.57738433699996,-9.078606835999949,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57481451899997,-9.076393937999967,0 -78.57367709599998,-9.07540513899994,0 -78.57365104699994,-9.07558113999994,0 -78.57335043499995,-9.074955500999977,0 -78.57400724099995,-9.075174033999929,0 -78.57383647999995,-9.075224208999941,0 -78.57497120399995,-9.076211735999948,0 -78.57481451899997,-9.076393937999967,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57400299799997,-9.078862314999981,0 -78.57286557499998,-9.077873515999954,0 -78.57283952599994,-9.078049516999954,0 -78.57253891399995,-9.077423877999934,0 -78.57319571999994,-9.077642410999943,0 -78.57302495899995,-9.077692585999955,0 -78.57415968299995,-9.078680112999962,0 -78.57400299799997,-9.078862314999981,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57587078399996,-9.081804230999978,0 -78.57503873799999,-9.080547588999934,0 -78.57496663199999,-9.080710240999963,0 -78.57484401899995,-9.080027043999962,0 -78.57541860899994,-9.080413043999954,0 -78.57524065199993,-9.080415793999975,0 -78.57607043699994,-9.081670489999965,0 -78.57587078399996,-9.081804230999978,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57776433399994,-9.084945119999929,0 -78.57693228799997,-9.083688477999942,0 -78.57686018199996,-9.083851129999971,0 -78.57673756899999,-9.08316793299997,0 -78.57731215899997,-9.083553932999962,0 -78.57713420199997,-9.083556682999927,0 -78.57796398699998,-9.084811378999973,0 -78.57776433399994,-9.084945119999929,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57660863199999,-9.084993310999948,0 -78.57547120899994,-9.084004511999979,0 -78.57544515999996,-9.084180512999978,0 -78.57514454799997,-9.083554873999958,0 -78.57580135399996,-9.083773406999967,0 -78.57563059299997,-9.08382358199998,0 -78.57676531699997,-9.084811108999929,0 -78.57660863199999,-9.084993310999948,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56622825899996,-9.10544744799995,0 -78.56485455199999,-9.104827415999978,0 -78.56488021099995,-9.105003479999937,0 -78.56441239499998,-9.104490675999955,0 -78.56510429699995,-9.104511136999975,0 -78.56495517699995,-9.104608291999966,0 -78.56632593299997,-9.105227882999941,0 -78.56622825899996,-9.10544744799995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55936198099994,-9.104832590999934,0 -78.55938697599999,-9.103325644999927,0 -78.55923548799996,-9.103418963999957,0 -78.55952096399994,-9.102786252999977,0 -78.55977632299994,-9.103429633999951,0 -78.55962803499995,-9.103331212999933,0 -78.55960227599996,-9.104835274999971,0 -78.55936198099994,-9.104832590999934,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55916210599997,-9.109015682999939,0 -78.55918710099996,-9.107508736999932,0 -78.55903561299994,-9.107602055999962,0 -78.55932108899998,-9.106969344999982,0 -78.55957644799997,-9.107612725999957,0 -78.55942815999998,-9.107514304999938,0 -78.55940240099994,-9.109018366999976,0 -78.55916210599997,-9.109015682999939,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55860881099994,-9.113917920999938,0 -78.55886690799997,-9.112433030999966,0 -78.55870279399994,-9.112501760999976,0 -78.55908282199994,-9.111920900999962,0 -78.55923544999996,-9.112596068999949,0 -78.55910419499998,-9.112475867999933,0 -78.55884579099995,-9.113957789999972,0 -78.55860881099994,-9.113917920999938,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55875333199998,-9.09869729199994,0 -78.55852759899995,-9.097207137999931,0 -78.55839372099996,-9.097324329999935,0 -78.55857010499994,-9.096652980999977,0 -78.55892881199998,-9.097244990999968,0 -78.55876623299997,-9.097172576999981,0 -78.55899073299997,-9.098660012999972,0 -78.55875333199998,-9.09869729199994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.55784791499997,-9.093826641999954,0 -78.55856894199997,-9.092503147999935,0 -78.55839145099998,-9.092515567999953,0 -78.55893780599996,-9.092087412999945,0 -78.55886565799995,-9.092775845999938,0 -78.55877992699999,-9.092619878999926,0 -78.55805956099994,-9.093940461999978,0 -78.55784791499997,-9.093826641999954,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57070339899997,-9.097821611999962,0 -78.56965414099994,-9.09673969399995,0 -78.56961322899997,-9.096912848999978,0 -78.56936687999996,-9.096263905999933,0 -78.57000272899995,-9.09653747599998,0 -78.56982832299997,-9.096572957999968,0 -78.57087500099993,-9.097653378999951,0 -78.57070339899997,-9.097821611999962,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56780737199995,-9.094410460999939,0 -78.56725546799999,-9.093008002999966,0 -78.56715105199999,-9.09315206399998,0 -78.56717350299994,-9.09245829799994,0 -78.56765503699995,-9.09295555999995,0 -78.56748041299994,-9.092921168999965,0 -78.56803051099996,-9.094321252999976,0 -78.56780737199995,-9.094410460999939,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56781911399997,-9.100919674999943,0 -78.56682656699996,-9.099785506999979,0 -78.56677685199998,-9.099956342999974,0 -78.56656401699996,-9.099295648999942,0 -78.56718504099996,-9.099601382999936,0 -78.56700904899998,-9.099627897999937,0 -78.56799909599994,-9.100760439999931,0 -78.56781911399997,-9.100919674999943,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56520883499996,-9.098129468999957,0 -78.56415682799997,-9.097050223999929,0 -78.56411635699999,-9.097223482999937,0 -78.56386835799998,-9.096575167999959,0 -78.56450489999997,-9.09684711999995,0 -78.56433058499994,-9.09688304499997,0 -78.56538000799998,-9.097960799999953,0 -78.56520883499996,-9.098129468999957,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57552111899997,-9.091491739999981,0 -78.57439349299995,-9.090491765999957,0 -78.57436571399995,-9.090667507999967,0 -78.57407127499994,-9.090038920999973,0 -78.57472589099996,-9.090263913999934,0 -78.57455464699996,-9.090312406999942,0 -78.57567958799996,-9.091311082999937,0 -78.57552111899997,-9.091491739999981,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00047">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57290893299995,-9.089015397999958,0 -78.57184056699998,-9.087952344999962,0 -78.57180274499996,-9.088126202999945,0 -78.57154487399998,-9.087481750999928,0 -78.57218549599998,-9.087743948999957,0 -78.57201175099993,-9.087782532999938,0 -78.57307751099995,-9.088844134999931,0 -78.57290893299995,-9.089015397999958,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00048">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57430068499997,-9.087202249999962,0 -78.57379082499995,-9.085783978999928,0 -78.57368215899999,-9.085924857999942,0 -78.57372527799998,-9.085232085999962,0 -78.57419177899999,-9.085743481999941,0 -78.57401825899996,-9.085703897999963,0 -78.57452638499996,-9.087119740999981,0 -78.57430068499997,-9.087202249999962,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00049">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57911886399995,-9.087237263999953,0 -78.57799123799998,-9.086237289999929,0 -78.57796345899999,-9.086413031999939,0 -78.57766901999997,-9.085784444999945,0 -78.57832363599994,-9.086009437999962,0 -78.57815239199994,-9.086057930999971,0 -78.57927733299994,-9.087056606999965,0 -78.57911886399995,-9.087237263999953,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00050">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57690596499998,-9.089792804999945,0 -78.57577833899995,-9.088792830999978,0 -78.57575055999996,-9.088968572999931,0 -78.57545612099995,-9.088339985999937,0 -78.57611073699997,-9.088564978999955,0 -78.57593949299996,-9.088613471999963,0 -78.57706443399997,-9.089612147999958,0 -78.57690596499998,-9.089792804999945,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00051">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56801826999998,-9.087718259999974,0 -78.56684236699994,-9.086775529999954,0 -78.56682335099998,-9.086952434999944,0 -78.56649805299998,-9.086339248999934,0 -78.56716303699994,-9.086531448999949,0 -78.56699441299998,-9.086588387999939,0 -78.56816756999996,-9.087529953999933,0 -78.56801826999998,-9.087718259999974,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00052">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56517177799998,-9.085134025999935,0 -78.56408226299999,-9.084092658999964,0 -78.56404794299994,-9.084267240999964,0 -78.56377717199996,-9.083628101999977,0 -78.56442293499998,-9.08387737299995,0 -78.56424999999996,-9.083919439999932,0 -78.56533687899997,-9.084959409999954,0 -78.56517177799998,-9.085134025999935,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00053">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57059505099994,-9.087079686999971,0 -78.56943304899994,-9.086119874999952,0 -78.56941144999996,-9.086296482999956,0 -78.56909514699999,-9.085678608999956,0 -78.56975725099994,-9.085880505999967,0 -78.56958781399999,-9.08593497499993,0 -78.57074708699997,-9.086893582999949,0 -78.57059505099994,-9.087079686999971,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00054">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57420765699999,-9.093319165999958,0 -78.57308003099996,-9.092319191999934,0 -78.57305225199997,-9.092494933999944,0 -78.57275781299995,-9.09186634699995,0 -78.57341242899997,-9.092091339999968,0 -78.57324118499997,-9.092139832999976,0 -78.57436612599997,-9.093138508999971,0 -78.57420765699999,-9.093319165999958,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00055">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57149663799999,-9.090735071999973,0 -78.57036777699994,-9.089736491999929,0 -78.57034021399994,-9.089912268999967,0 -78.57004499899995,-9.089284045999932,0 -78.57069989299998,-9.089508229999979,0 -78.57052870999996,-9.089556934999962,0 -78.57165488399994,-9.090554218999955,0 -78.57149663799999,-9.090735071999973,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00056">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58030826099997,-9.077813781999964,0 -78.57986779199996,-9.076372445999937,0 -78.57975242299995,-9.076507890999949,0 -78.57982909099997,-9.075818019999929,0 -78.58027023799997,-9.07635143899995,0 -78.58009884099994,-9.076303485999972,0 -78.58053769599997,-9.077742312999931,0 -78.58030826099997,-9.077813781999964,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00057">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58123149199997,-9.08097846499993,0 -78.58079102299996,-9.079537128999959,0 -78.58067565399995,-9.079672573999972,0 -78.58075232199997,-9.078982702999952,0 -78.58119346899997,-9.079516121999973,0 -78.58102207199994,-9.079468168999938,0 -78.58146092699997,-9.080906995999953,0 -78.58123149199997,-9.08097846499993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00058">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58225941899997,-9.084176459999981,0 -78.58181894999996,-9.082735123999953,0 -78.58170358099994,-9.082870568999965,0 -78.58178024899996,-9.082180697999945,0 -78.58222139599997,-9.082714116999966,0 -78.58204999899994,-9.082666163999932,0 -78.58248885399996,-9.084104990999947,0 -78.58225941899997,-9.084176459999981,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00059">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58348722099998,-9.07703807799993,0 -78.58304675199997,-9.075596741999959,0 -78.58293138299996,-9.075732186999971,0 -78.58300805099998,-9.075042315999951,0 -78.58344919799998,-9.075575734999973,0 -78.58327780099995,-9.075527781999938,0 -78.58371665599998,-9.076966608999953,0 -78.58348722099998,-9.07703807799993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00060">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58448733299997,-9.080282894999925,0 -78.58404686399996,-9.078841558999955,0 -78.58393149499995,-9.078977003999967,0 -78.58400816299996,-9.078287132999947,0 -78.58444930999997,-9.078820551999968,0 -78.58427791299994,-9.078772598999933,0 -78.58471676799996,-9.080211425999949,0 -78.58448733299997,-9.080282894999925,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00061">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59452109299997,-9.072413851999954,0 -78.59408061799996,-9.070972521999977,0 -78.59396524999994,-9.071107966999932,0 -78.59404191399995,-9.070418096999958,0 -78.59448306299998,-9.070951512999955,0 -78.59431166599995,-9.070903560999966,0 -78.59475052599998,-9.072342381999931,0 -78.59452109299997,-9.072413851999954,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00062">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59343440399994,-9.068615657999942,0 -78.59299393499998,-9.067174327999965,0 -78.59287856899994,-9.067309773999966,0 -78.59295523299994,-9.066619904999925,0 -78.59339637499994,-9.067153318999942,0 -78.59322498099994,-9.067105367999943,0 -78.59366383499997,-9.068544188999965,0 -78.59343440399994,-9.068615657999942,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00063">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59589019899994,-9.076890791999972,0 -78.59544972399993,-9.075449460999948,0 -78.59533435599997,-9.07558490699995,0 -78.59541101999997,-9.074895036999976,0 -78.59585216799997,-9.075428451999926,0 -78.59568077199998,-9.075380499999938,0 -78.59611963299994,-9.076819321999949,0 -78.59589019899994,-9.076890791999972,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00064">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59655548499995,-9.071797920999927,0 -78.59611500499995,-9.070356595999954,0 -78.59599963799997,-9.070492040999966,0 -78.59607629899995,-9.069802172999971,0 -78.59651744699994,-9.070335584999953,0 -78.59634605199994,-9.070287633999953,0 -78.59678491599999,-9.071726449999972,0 -78.59655548499995,-9.071797920999927,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00065">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59795051899994,-9.076249429999962,0 -78.59751003899999,-9.074808104999931,0 -78.59739467199995,-9.074943550999933,0 -78.59747133199994,-9.074253681999949,0 -78.59791248099998,-9.07478709399993,0 -78.59774108499994,-9.074739142999931,0 -78.59817995199995,-9.076177958999949,0 -78.59795051899994,-9.076249429999962,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00066">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.60027610199995,-9.075700988999927,0 -78.59983561499996,-9.074259669999947,0 -78.59972024899997,-9.074395116999938,0 -78.59979690499995,-9.073705248999943,0 -78.60023805499998,-9.074238656999967,0 -78.60006665999998,-9.074190706999957,0 -78.60050553299999,-9.075629516999982,0 -78.60027610199995,-9.075700988999927,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00067">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59978312999994,-9.073160202999929,0 -78.59934263899999,-9.071718885999928,0 -78.59922727299994,-9.07185433099994,0 -78.59930392799998,-9.071164464999981,0 -78.59974507999993,-9.071697871999959,0 -78.59957368399995,-9.071649921999949,0 -78.60001256099997,-9.073088729999938,0 -78.59978312999994,-9.073160202999929,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00068">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57625960699994,-9.074581803999934,0 -78.57475266899996,-9.074556973999961,0 -78.57484599899993,-9.074708448999957,0 -78.57421326899998,-9.074423043999957,0 -78.57485662499994,-9.074167616999944,0 -78.57475821799994,-9.074315913999953,0 -78.57626227299994,-9.074341508999964,0 -78.57625960699994,-9.074581803999934,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00069">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.60113942199996,-9.072731900999941,0 -78.60069893099995,-9.071290583999939,0 -78.60058356499997,-9.071426028999952,0 -78.60066021999995,-9.070736162999936,0 -78.60110137199996,-9.07126956999997,0 -78.60092997599998,-9.07122161999996,0 -78.60136885299994,-9.072660427999949,0 -78.60113942199996,-9.072731900999941,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00070">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59863129099995,-9.070121939999979,0 -78.60007874499996,-9.069702051999968,0 -78.59994495899997,-9.069584765999935,0 -78.60063366199995,-9.069671252999967,0 -78.60009401599996,-9.070104751999963,0 -78.60014440599997,-9.069934057999944,0 -78.59869948499994,-9.070352366999941,0 -78.59863129099995,-9.070121939999979,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00071">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59688957299994,-9.076662363999958,0 -78.59644909799994,-9.075221032999934,0 -78.59633372999997,-9.075356478999936,0 -78.59641039399998,-9.074666608999962,0 -78.59685154199997,-9.075200023999969,0 -78.59668014599998,-9.07515207199998,0 -78.59711900699995,-9.076590893999935,0 -78.59688957299994,-9.076662363999958,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00072">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59558038599994,-9.072128147999933,0 -78.59513991099999,-9.070686817999956,0 -78.59502454299997,-9.070822262999968,0 -78.59510120699997,-9.070132392999938,0 -78.59554235599995,-9.070665808999934,0 -78.59537095899998,-9.070617856999945,0 -78.59580981899995,-9.072056677999967,0 -78.59558038599994,-9.072128147999933,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00073">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59345371399996,-9.072762786999931,0 -78.59301324599994,-9.07132145099996,0 -78.59289787699998,-9.071456895999972,0 -78.59297454499995,-9.070767024999952,0 -78.59341569099996,-9.071300443999974,0 -78.59324429399999,-9.071252490999939,0 -78.59368314899996,-9.072691317999954,0 -78.59345371399996,-9.072762786999931,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00074">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59479441899998,-9.077256988999977,0 -78.59435394999997,-9.07581565299995,0 -78.59423858099996,-9.075951097999962,0 -78.59431524899998,-9.075261226999942,0 -78.59475639599998,-9.075794645999963,0 -78.59458499899995,-9.075746692999928,0 -78.59502385399998,-9.077185519999944,0 -78.59479441899998,-9.077256988999977,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00075">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59273856499993,-9.077842335999947,0 -78.59229809599998,-9.076400999999976,0 -78.59218272699997,-9.076536444999931,0 -78.59225939499999,-9.075846573999968,0 -78.59270054199999,-9.076379992999932,0 -78.59252914499996,-9.076332039999954,0 -78.59296799999999,-9.07777086699997,0 -78.59273856499993,-9.077842335999947,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00076">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59173919099999,-9.078142147999927,0 -78.59129872199998,-9.076700811999956,0 -78.59118335299996,-9.076836256999968,0 -78.59126002099998,-9.076146385999948,0 -78.59170116799999,-9.076679804999969,0 -78.59152977099996,-9.076631851999935,0 -78.59196862599998,-9.07807067899995,0 -78.59173919099999,-9.078142147999927,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00077">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59148036799996,-9.073399473999928,0 -78.59103989899995,-9.071958137999957,0 -78.59092452999994,-9.072093582999969,0 -78.59100119799996,-9.071403711999949,0 -78.59144234499996,-9.07193713099997,0 -78.59127094799999,-9.071889177999935,0 -78.59170980299996,-9.073328004999951,0 -78.59148036799996,-9.073399473999928,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00078">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59038668499994,-9.073684669999977,0 -78.58994621599999,-9.07224333399995,0 -78.58983084799996,-9.072378778999962,0 -78.58990751599998,-9.071688907999942,0 -78.59034866199994,-9.072222326999963,0 -78.59017726499997,-9.072174373999928,0 -78.59061611999994,-9.073613200999944,0 -78.59038668499994,-9.073684669999977,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00079">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59025900999995,-9.069514821999974,0 -78.58981854699994,-9.068073486999936,0 -78.58970317899997,-9.068208931999948,0 -78.58977984699999,-9.067519061999974,0 -78.59022098799994,-9.068052479999949,0 -78.59004959399994,-9.06800452799996,0 -78.59048844199998,-9.06944335399993,0 -78.59025900999995,-9.069514821999974,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00080">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58921204699999,-9.069781321999926,0 -78.58877158399997,-9.068339986999945,0 -78.58865621599995,-9.068475431999957,0 -78.58873288399997,-9.067785561999926,0 -78.58917402499998,-9.068318979999958,0 -78.58900263099997,-9.06827102799997,0 -78.58944147899996,-9.069709853999939,0 -78.58921204699999,-9.069781321999926,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00081">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.59168668699994,-9.066754646999925,0 -78.59124622399997,-9.065313311999944,0 -78.59113085599995,-9.065448756999956,0 -78.59120752399997,-9.064758886999925,0 -78.59164866499998,-9.065292304999957,0 -78.59147727099997,-9.065244352999969,0 -78.59191611899996,-9.066683178999938,0 -78.59168668699994,-9.066754646999925,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00082">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58549278599998,-9.079965159999972,0 -78.58505231699996,-9.078523823999944,0 -78.58493694799995,-9.078659268999957,0 -78.58501361599997,-9.077969397999937,0 -78.58545476299997,-9.078502816999958,0 -78.58528336599994,-9.07845486399998,0 -78.58572222099997,-9.079893690999938,0 -78.58549278599998,-9.079965159999972,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00083">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58335779499998,-9.080552109999928,0 -78.58291732599997,-9.079110773999958,0 -78.58280195699996,-9.07924621899997,0 -78.58287862499998,-9.07855634799995,0 -78.58331977199998,-9.079089766999971,0 -78.58314837499995,-9.079041813999936,0 -78.58358722999998,-9.080480640999951,0 -78.58335779499998,-9.080552109999928,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00084">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58233600499995,-9.08080287699994,0 -78.58189553599993,-9.079361540999969,0 -78.58178016699998,-9.079496985999981,0 -78.58185683499994,-9.078807114999961,0 -78.58229798199994,-9.079340533999925,0 -78.58212658499997,-9.079292580999947,0 -78.58256543999994,-9.080731407999963,0 -78.58233600499995,-9.08080287699994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00085">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58245929399999,-9.077304577999939,0 -78.58201882499998,-9.075863241999969,0 -78.58190345599996,-9.075998686999981,0 -78.58198012399998,-9.075308815999961,0 -78.58242127099999,-9.075842234999925,0 -78.58224987399996,-9.075794281999947,0 -78.58268872899998,-9.077233108999963,0 -78.58245929399999,-9.077304577999939,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00086">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58143136699994,-9.077571077999949,0 -78.58099089799998,-9.076129741999978,0 -78.58087552899997,-9.076265186999933,0 -78.58095219699999,-9.07557531599997,0 -78.58139334399994,-9.076108734999934,0 -78.58122194699996,-9.076060781999956,0 -78.58166080199999,-9.077499608999972,0 -78.58143136699994,-9.077571077999949,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00087">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57877248399996,-9.082778276999932,0 -78.57770966199996,-9.081709696999951,0 -78.57767093399997,-9.081883349999941,0 -78.57741642299999,-9.081237581999972,0 -78.57805567699995,-9.081503109999972,0 -78.57788173099993,-9.081540785999948,0 -78.57894195399996,-9.08260790099996,0 -78.57877248399996,-9.082778276999932,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00088">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.58046087999998,-9.085723926999947,0 -78.57933325399995,-9.08472395299998,0 -78.57930547499996,-9.084899694999933,0 -78.57901103599994,-9.084271107999939,0 -78.57966565199996,-9.084496100999957,0 -78.57949440799996,-9.084544593999965,0 -78.58061934899996,-9.08554326999996,0 -78.58046087999998,-9.085723926999947,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00089">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57408023499994,-9.075934955999969,0 -78.57293877299998,-9.076919089999933,0 -78.57310923199998,-9.076970069999959,0 -78.57244699899997,-9.077178008999965,0 -78.57275731699997,-9.076559257999975,0 -78.57278252699996,-9.076735442999961,0 -78.57392234399998,-9.075753797999937,0 -78.57408023499994,-9.075934955999969,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00090">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.57223645299996,-9.096252417999949,0 -78.57118954099997,-9.095168230999946,0 -78.57114825399998,-9.095341296999948,0 -78.57090330999995,-9.094691821999959,0 -78.57153856499997,-9.094966768999939,0 -78.57136408299994,-9.095001872999944,0 -78.57240841899994,-9.096084557999973,0 -78.57223645299996,-9.096252417999949,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00091">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56972174099997,-9.093110779999961,0 -78.56885846299997,-9.091875368999979,0 -78.56879045999995,-9.092039782999962,0 -78.56865075899998,-9.091359856999929,0 -78.56923483899999,-9.091731334999963,0 -78.56905700699997,-9.091738547999967,0 -78.56991797699999,-9.092972069999973,0 -78.56972174099997,-9.093110779999961,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00092">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56994197099994,-9.098559244999933,0 -78.56889271299997,-9.097477326999979,0 -78.56885180099994,-9.097650481999949,0 -78.56860545199999,-9.097001538999962,0 -78.56924130099998,-9.097275108999952,0 -78.56906689499994,-9.097310590999939,0 -78.57011357299996,-9.098391011999979,0 -78.56994197099994,-9.098559244999933,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00093">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>PHR1B</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>021801</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>0.004994</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -78.56672969899995,-9.095489739999948,0 -78.56568044099998,-9.094407821999937,0 -78.56563952899995,-9.094580976999964,0 -78.56539317999994,-9.093932033999977,0 -78.56602902899994,-9.094205603999967,0 -78.56585462299995,-9.094241085999954,0 -78.56690130099997,-9.095321506999937,0 -78.56672969899995,-9.095489739999948,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ff686868</color>
+    </PolyStyle>
+  </Style> 
+</Document>
+</kml>

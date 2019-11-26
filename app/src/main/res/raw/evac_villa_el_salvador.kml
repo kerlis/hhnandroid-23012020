@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="150142_evac">
+  <name>150142_evac</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>150142_evac</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003569</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.9469063709999,-12.24320238599995,0 -76.94644930399994,-12.24222335699994,0 -76.94638280399994,-12.24232919099995,0 -76.94636476599993,-12.24183522599992,0 -76.94672811299995,-12.24217300399994,0 -76.94660346899991,-12.24215426799992,0 -76.94705914699995,-12.24313166499991,0 -76.9469063709999,-12.24320238599995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003569</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.9415262519999,-12.24615202499996,0 -76.94096910099995,-12.24522599099993,0 -76.94091413199993,-12.24533830699994,0 -76.94084429299994,-12.24484868699994,0 -76.9412409119999,-12.24514651799996,0 -76.94111506099995,-12.24514100499994,0 -76.9416706589999,-12.24606556099991,0 -76.9415262519999,-12.24615202499996,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003569</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.94275818999995,-12.24536481399991,0 -76.9422010369999,-12.24443878299991,0 -76.94214606899993,-12.24455109899992,0 -76.94207622799991,-12.24406147999991,0 -76.94247284699992,-12.24435930899995,0 -76.94234699599991,-12.24435379699992,0 -76.9429025959999,-12.24527834999992,0 -76.94275818999995,-12.24536481399991,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003568</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.9411440909999,-12.24338422399995,0 -76.94061066699993,-12.24244477399992,0 -76.9405528609999,-12.24255570299994,0 -76.94049549399995,-12.24206451799995,0 -76.94088441199995,-12.24237201199992,0 -76.94075874099991,-12.24236340599992,0 -76.94129064999993,-12.24330133999996,0 -76.9411440909999,-12.24338422399995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003596</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.94475266199993,-12.24210004699995,0 -76.94377895899993,-12.2425934389999,0 -76.94388946299995,-12.24265398899991,0 -76.94338856599995,-12.24269406299993,0 -76.94371519999993,-12.24232177499994,0 -76.94370180999994,-12.24244509099992,0 -76.94467391799992,-12.24195313899992,0 -76.94475266199993,-12.24210004699995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003596</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.94836273199991,-12.24024791399995,0 -76.94738904499991,-12.24074131799995,0 -76.94749954999992,-12.24080186699996,0 -76.94699865699994,-12.24084194699992,0 -76.94732528399993,-12.24046965599996,0 -76.94731189399994,-12.24059297199995,0 -76.9482839879999,-12.24010100699991,0 -76.94836273199991,-12.24024791399995,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003596</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.95177438499991,-12.23851180399993,0 -76.95080071299992,-12.23900521799993,0 -76.95091121799993,-12.23906576499991,0 -76.95041032899991,-12.23910585099992,0 -76.95073694699994,-12.23873355699993,0 -76.95072355999992,-12.23885687299992,0 -76.95169563899992,-12.23836489899992,0 -76.95177438499991,-12.23851180399993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003572</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.95317953099993,-12.23998013199991,0 -76.95263565599993,-12.23904502299996,0 -76.95257900199994,-12.23915625999996,0 -76.95251631899993,-12.23866583799992,0 -76.95290879499993,-12.23897045299992,0 -76.95278295199995,-12.23896270799992,0 -76.9533252949999,-12.23989631299992,0 -76.95317953099993,-12.23998013199991,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.00357</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.95478348299992,-12.23915399399994,0 -76.95429205199991,-12.23819121099996,0 -76.95422933799995,-12.23829925799993,0 -76.95419382999995,-12.23780621199995,0 -76.95456890399993,-12.23813134299991,0 -76.95444367499994,-12.23811688699993,0 -76.95493365999994,-12.23907808499996,0 -76.95478348299992,-12.23915399399994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003595</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.95578512499992,-12.23638839699993,0 -76.95481146999993,-12.23688182299992,0 -76.95492197399994,-12.23694236799992,0 -76.95442109099992,-12.23698245999992,0 -76.95474770099992,-12.23661016299991,0 -76.95473431499994,-12.23673347899995,0 -76.95570637799995,-12.23624149199992,0 -76.95578512499992,-12.23638839699993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.003595</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.95962629699994,-12.23435941499992,0 -76.95865265799995,-12.23485285199996,0 -76.95876316199991,-12.23491339599991,0 -76.95826228499993,-12.23495349399991,0 -76.95858888699991,-12.23458119399993,0 -76.95857550199992,-12.23470450999992,0 -76.95954754899992,-12.23421251199994,0 -76.95962629699994,-12.23435941499992,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name> </name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>11</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Re</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Rutas de evacuación</td>
+
+</tr>
+
+<tr>
+
+<td>FECHA_RANG</td>
+
+<td>2015</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+<tr>
+
+<td>UBIGEO</td>
+
+<td>150142</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Shape_Leng</td>
+
+<td>0.00357</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -76.96184375299993,-12.23546871799994,0 -76.9613523079999,-12.23450594999991,0 -76.96128959799995,-12.23461399799993,0 -76.96125407799991,-12.23412095499992,0 -76.96162915299993,-12.23444607599993,0 -76.96150392599992,-12.23443162299992,0 -76.96199392599993,-12.23539280599994,0 -76.96184375299993,-12.23546871799994,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ff686868</color>
+    </PolyStyle>
+  </Style> 
+</Document>
+</kml>

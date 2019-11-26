@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="CIT_150204_refugio">
+  <name>CIT_150204_refugio</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>CIT_150204_refugio</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Zona de refugio</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>578.17</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>150204</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.69901229999994,-10.85666735199993,0 -77.69895818699996,-10.85667089899994,0 -77.69890407399998,-10.85666735199993,0 -77.69885088799998,-10.85665677299994,0 -77.69879953699996,-10.85663934199994,0 -77.69875089999994,-10.85661535699995,0 -77.69870581099997,-10.85658522899996,0 -77.69866503899993,-10.85654947299997,0 -77.69862928399994,-10.85650870199993,0 -77.69859915599994,-10.85646361199997,0 -77.69857517099996,-10.85641497599994,0 -77.69856568899996,-10.85638704099995,0 -77.69855773999996,-10.85636362499997,0 -77.69854715999998,-10.85631043799998,0 -77.69854361299997,-10.85625632499995,0 -77.69854715999998,-10.85620221199997,0 -77.69855773999996,-10.85614902499998,0 -77.69857517099996,-10.85609767499994,0 -77.69859915599994,-10.85604903799998,0 -77.69862928399994,-10.85600394799997,0 -77.69866503899993,-10.85596317699998,0 -77.69870581099997,-10.85592742099993,0 -77.69875089999994,-10.85589729399993,0 -77.69879953699996,-10.85587330899995,0 -77.69885088799998,-10.85585587699995,0 -77.69890407399998,-10.85584529799996,0 -77.69895818699996,-10.85584175099996,0 -77.69901229999994,-10.85584529799996,0 -77.69902489099997,-10.85584780199997,0 -77.69906548699998,-10.85585587699995,0 -77.69911683799995,-10.85587330899995,0 -77.69916547399998,-10.85589729399993,0 -77.69921056399994,-10.85592742099993,0 -77.69925133499999,-10.85596317699998,0 -77.69928709099997,-10.85600394799997,0 -77.69931721899997,-10.85604903799998,0 -77.69934120399995,-10.85609767499994,0 -77.69935863499995,-10.85614902499998,0 -77.69936921399994,-10.85620221199997,0 -77.69937276099995,-10.85625632499995,0 -77.69936921399994,-10.85631043799998,0 -77.69935863499995,-10.85636362499997,0 -77.69934120399995,-10.85641497599994,0 -77.69931721899997,-10.85646361199997,0 -77.69928709099997,-10.85650870199993,0 -77.69925133499999,-10.85654947299997,0 -77.69921056399994,-10.85658522899996,0 -77.69916949599997,-10.85661266899996,0 -77.69916547399998,-10.85661535699995,0 -77.69911683799995,-10.85663934199994,0 -77.69906548699998,-10.85665677299994,0 -77.69901229999994,-10.85666735199993,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>NOMBRE</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>RASGO</td>
+
+<td>Zona de refugio</td>
+
+</tr>
+
+<tr>
+
+<td>SIMBOLO</td>
+
+<td>Zr</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FECHA_RANG</td>
+
+<td>2012-2015</td>
+
+</tr>
+
+<tr>
+
+<td>AREA_M2</td>
+
+<td>578.17</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>UBIGEO</td>
+
+<td>150204</td>
+
+</tr>
+
+<tr>
+
+<td>FUENTE</td>
+
+<td>GEOEYE-1</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -77.70103125799994,-10.85831272999997,0 -77.70105428599999,-10.85827055699997,0 -77.70108308199997,-10.85823209099993,0 -77.70111705899996,-10.85819811399995,0 -77.70115552599998,-10.85816931799997,0 -77.70119769899998,-10.85814628999998,0 -77.70124271999998,-10.85812949799993,0 -77.70128967199997,-10.85811928399994,0 -77.70133759999999,-10.85811585599993,0 -77.70138552799995,-10.85811928399994,0 -77.70143248099998,-10.85812949799993,0 -77.70147750199999,-10.85814628999998,0 -77.70151967499999,-10.85816931799997,0 -77.70155814099996,-10.85819811399995,0 -77.70159211799995,-10.85823209099993,0 -77.70162091399999,-10.85827055699997,0 -77.70164394199998,-10.85831272999997,0 -77.70166073399997,-10.85835775099997,0 -77.70167094799996,-10.85840470399995,0 -77.70167437599997,-10.85845263199997,0 -77.70167094799996,-10.85850055999998,0 -77.70166073399997,-10.85854751299996,0 -77.70164394199998,-10.85859253399997,0 -77.70162091399999,-10.85863470699997,0 -77.70159211799995,-10.85867317299994,0 -77.70155814099996,-10.85870714999993,0 -77.70151967499999,-10.85873594599997,0 -77.70147750199999,-10.85875897399995,0 -77.70143248099998,-10.85877576599995,0 -77.70138552799995,-10.85878597999994,0 -77.70133759999999,-10.85878940799995,0 -77.70128967199997,-10.85878597999994,0 -77.70124271999998,-10.85877576599995,0 -77.70119769899998,-10.85875897399995,0 -77.70115552599998,-10.85873594599997,0 -77.70111705899996,-10.85870714999993,0 -77.70108308199997,-10.85867317299994,0 -77.70105428599999,-10.85863470699997,0 -77.70103125799994,-10.85859253399997,0 -77.70101446599995,-10.85854751299996,0 -77.70100425199996,-10.85850055999998,0 -77.70100082499994,-10.85845263199997,0 -77.70100425199996,-10.85840470399995,0 -77.70101446599995,-10.85835775099997,0 -77.70103125799994,-10.85831272999997,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+      <LabelStyle>
+        <color>00000000</color>
+        <scale>0.000000</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ff0055ff</color>
+        <width>0.400000</width>
+      </LineStyle>
+        <PolyStyle>
+        <color>ff0055ff</color>
+      </PolyStyle>
+    </Style>
+</Document>
+</kml>
