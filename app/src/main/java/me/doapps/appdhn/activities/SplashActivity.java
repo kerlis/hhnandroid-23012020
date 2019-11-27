@@ -161,9 +161,13 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startService(new Intent(SplashActivity.this, TokenService.class));
 
-          Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
+                Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
 
-                //     Intent intent = new Intent(SplashActivity.this, Comunicarfragmentos.class);
+
+                //    Intent intent = new Intent(SplashActivity.this, Mapacontainerfragment.class);
+
+
+               // Intent intent = new Intent(SplashActivity.this, Comunicarfragmentos.class);
 
 
                 //  Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
@@ -184,6 +188,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void valoresconfiguracion() {
         String mapas[] = {
+         "evac_asia",
         "evac_bahia_chimbote",
         "evac_bahia_paracas",
        "evac_balneario_ancon",
@@ -334,8 +339,8 @@ public class SplashActivity extends AppCompatActivity {
         for(int i=0; i < size; i++){
             System.out.println(mapas[i]);
             nombre =  mapas[i];
-            new  DownloadKmlFile("http://arteypixel.com/archivos_kmz/kmz_files/"+mapas[i]+".kmz",  "DEDEDE").execute("http://arteypixel.com/archivos_kmz/kmz_files/"+mapas[i]+".kmz",   mapas[i]);
-            //new  DownloadKmlFile("http://arteypixel.com/archivos_kml/raw/"+mapas[i]+".kml",  "DEDEDE").execute("http://arteypixel.com/archivos_kml/raw/"+mapas[i]+".kml",   mapas[i]);
+            // new  DownloadKmlFile("http://arteypixel.com/archivos_kmz/kmz_files/"+mapas[i]+".kmz",  "DEDEDE").execute("http://arteypixel.com/archivos_kmz/kmz_files/"+mapas[i]+".kmz",   mapas[i]);
+           new  DownloadKmlFile("http://arteypixel.com/archivos_kml/raw/"+mapas[i]+".kml",  "DEDEDE").execute("http://arteypixel.com/archivos_kml/raw/"+mapas[i]+".kml",   mapas[i]);
 
 
 
@@ -384,9 +389,9 @@ public class SplashActivity extends AppCompatActivity {
             FileOutputStream outputStream;
             try {
                 if (true) {
-                    outputStream = openFileOutput(val2+".kmz", Context.MODE_APPEND);
+                    outputStream = openFileOutput(val2+".kml", Context.MODE_APPEND);
                 } else {
-                    outputStream = openFileOutput(val2+".kmz", Context.MODE_PRIVATE);
+                    outputStream = openFileOutput(val2+".kml", Context.MODE_PRIVATE);
                 }
                 outputStream.write(byteArr);
                 outputStream.flush();

@@ -47,4 +47,15 @@
     <color name="black207">#e3000000</color>
     <color name="blackOpacity100">#00000000</color>
 
+
+
+    <color name="azul">#0082FF</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="plomo_clarito3">#DADADA</color>
+
+    <color name="celeste">#0091FA</color>
+
+
+
+
 </resources>

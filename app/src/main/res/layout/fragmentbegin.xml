@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="match_parent">
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article"
+    android:text="MI DATO"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp" />
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receptor"
+    android:layout_below="@+id/article"
+    android:text="MI DATO"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp" />
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_below="@+id/receptor"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:labelFor="@id/descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="13dp"
+        android:gravity="top|left"
+        android:hint="Escribe tu texto (máx. 800 caracteres)"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:lines="30"
+        android:minLines="9"
+        android:padding="7dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/static_spinner"
+        android:layout_below="@+id/descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  />
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_below="@+id/static_spinner"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_alignParentTop="true"
+            tools:context="com.example.erlis.volcanperu.pagedivisor"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

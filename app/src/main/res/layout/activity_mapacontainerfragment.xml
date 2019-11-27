@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/options"
+            android:layout_height="wrap_content">
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/azul"
+                    android:id="@+id/cell1top"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:textAlignment="center"
+                    android:layout_height="53dp">
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/azul"
+                        android:id="@+id/cell1"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:textAlignment="center"
+                        android:layout_height="50dp">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_toStartOf="@id/opcion1"
+                            android:textColor="@color/blanco"
+                            android:id="@+id/iconomapa"
+                            android:layout_marginRight="9dp"
+                            android:layout_centerVertical="true"
+                            android:text="A"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="REPORTE"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blanco"
+                            android:id="@+id/opcion1"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_below="@+id/cell1"
+                        android:id="@+id/cell1border"
+                        android:layout_height="3dp"
+                        android:background="@color/azul"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="4dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/azul">
+                    <RelativeLayout android:layout_width="0.5dp"
+                        android:layout_height="30dp"
+                        android:background="@color/plomo_clarito3"
+                        android:layout_centerVertical="true">
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/azul"
+                    android:id="@+id/cell2top"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:layout_height="53dp">
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/azul"
+                        android:id="@+id/cell2"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_height="50dp">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_toStartOf="@+id/opcion2"
+                            android:textColor="@color/blanco"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:text="B"
+                            android:id="@+id/iconolistado"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:id="@+id/opcion2"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blanco"
+                            android:layout_centerHorizontal="true"
+                            android:text="DETALLES"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_below="@+id/cell2"
+                        android:id="@+id/cell2border"
+                        android:layout_height="3dp"
+                        android:background="@color/azul"/>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/options"
+            android:layout_marginTop="-1dp">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fragment_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fragmenttres"
+            android:visibility="gone"
+            android:layout_below="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+
+        <Button android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/fragmenttres"
+            android:layout_height="80dp"
+            android:text="fragment"
+            android:id="@+id/callsecondfrag"/>
+
+        <Button android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/callsecondfrag"
+            android:text="dialogfragment"
+            android:layout_height="80dp"
+            android:id="@+id/calldialogfragment"/>
+
+        <Button android:layout_width="match_parent"
+            android:layout_below="@+id/vpPager"
+            android:text="dialogfragment"
+            android:layout_height="80dp"
+            android:id="@+id/getvaluespreferences"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

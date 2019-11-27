@@ -157,6 +157,11 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     public KmlLayer kml5;
     public KmlLayer kml6;
 
+
+    public KmlLayer kml7;
+    public KmlLayer kml8;
+    public KmlLayer kml9;
+
     Resources res,restwo;
 
     Resources res4,res5,res6;
@@ -201,6 +206,9 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
     InputStream archivo_inputstream_kml;
 
+    String urlkml1, urlkml2, urlkml3;
+
+    InputStream inputstream = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -414,7 +422,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             @Override
             public void onMapLoaded() {
                 //shareScreenshot();
-                cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
+             cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
 
 
 
@@ -447,6 +455,27 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         //opNotification.setOnClickListener(MapsActivity.this);
         opPressReleases.setOnClickListener(Mapapoligonos.this);
         opFrequentQustion.setOnClickListener(Mapapoligonos.this);
+
+
+/*
+
+        KmlLayer layer = null;
+        try {
+            layer = new KmlLayer(mMap, R.raw.mapakmls, getApplicationContext());
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            layer.addLayerToMap();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+*/
+
 
 
     }
@@ -823,6 +852,13 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                         longitud_posicion2 = ds.child("longitud").getValue(String.class);
 
 
+                        urlkml1 = ds.child("url_kml1").getValue(String.class);
+                        urlkml2 = ds.child("url_kml2").getValue(String.class);
+                        urlkml3 = ds.child("url_kml3").getValue(String.class);
+
+
+
+
                         latitud_dos = ds.child("latitud").getValue(String.class);
 
                         maximo_two(largest, ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), ds.child("nombre").getValue(String.class),  ds.child("url_kml1").getValue(String.class) );
@@ -857,81 +893,49 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     int rawId_1 = res_1.getIdentifier(url_kml1 ,"raw", getApplicationContext().getPackageName());
                     int rawId_2 = res_2.getIdentifier(url_kml2 ,"raw", getApplicationContext().getPackageName());
                     int rawId_3 = res_3.getIdentifier(url_kml3 ,"raw", getApplicationContext().getPackageName());
+
+
+
+
+
                     //int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
 
                     Log.d("IDENTIFICACION",String.valueOf(rawId_1  + "-" + rawId_2 + "-" + rawId_3));
 
 
-
+   /*
                     try {
 
                         if(rawId_1 != 0 ){
                             kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
-
-
-
-
-
-                            // Set a listener for geometry clicked events.
-                            kml1.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
-                                @Override
-                                public void onFeatureClick(Feature feature) {
-                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
-
-                                }
-                            });
-
-
-
                         }
 
                         if(rawId_2 != 0){
-                            kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
-                            // Set a listener for geometry clicked events.
-                            kml2.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
-                                @Override
-                                public void onFeatureClick(Feature feature) {
-                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
-                                }
-                            });
+                          kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
                         }
 
                         if(rawId_3 != 0){
-                            kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
-                            // Set a listener for geometry clicked events.
-                            kml3.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
-                                @Override
-                                public void onFeatureClick(Feature feature) {
-                                    Log.i("KmlClick", "Feature clicked: " + "datos 1212");
-                                }
-                            });
+                          kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
                         }
 
-                        //kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
-                        //kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
-                        //kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
 
-
-                        LatLng sydney = new LatLng(lati, longit);
-                        //  mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
-                        //  mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-                        //  mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
 
                     } catch (XmlPullParserException e) {
                         e.printStackTrace();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+
                     try {
 
                         if(rawId_1 != 0 ){
-                            kml1.addLayerToMap();
+                         //  kml1.addLayerToMap();
                         }
                         if(rawId_2 != 0){
-                            kml2.addLayerToMap();
+                      //    kml2.addLayerToMap();
                         }
                         if(rawId_3 != 0){
-                            kml3.addLayerToMap();
+                         //   kml3.addLayerToMap();
                         }
 
                     } catch (IOException e) {
@@ -939,8 +943,39 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     } catch (XmlPullParserException e) {
                         e.printStackTrace();
                     }
+                    */
 
                 }
+
+
+                int rawId_4 = res_1.getIdentifier(urlkml1 ,"raw", getApplicationContext().getPackageName());
+                int rawId_5 = res_1.getIdentifier(urlkml2 ,"raw", getApplicationContext().getPackageName());
+                int rawId_6 = res_1.getIdentifier(urlkml3 ,"raw", getApplicationContext().getPackageName());
+
+                try {
+                    kml4 = new KmlLayer(mMap, rawId_4, getApplicationContext());
+                    kml5 = new KmlLayer(mMap, rawId_5, getApplicationContext());
+                    kml6 = new KmlLayer(mMap, rawId_6, getApplicationContext());
+
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    kml4.addLayerToMap();
+                    kml5.addLayerToMap();
+                    kml6.addLayerToMap();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                }
+
+
+
+
 
                 Log.d("MAYOR_YYY:", String.valueOf(largest) + latitud_dos);
 
@@ -953,6 +988,11 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                     mMap.animateCamera( CameraUpdateFactory.zoomTo( 13.0f ) );
+
+
+
+
+
 
                 }
                 else{
@@ -1132,8 +1172,6 @@ progressDialog.dismiss();
 
                     final String urlszonas = ds.child("url_kml").getValue(String.class);
 
-
-
                     if(urlszonas.equals(url_1)){
                         restwo = getApplicationContext().getResources();
                         rawidrwo = res.getIdentifier(urlszonas ,"raw", getApplicationContext().getPackageName());
@@ -1247,7 +1285,140 @@ progressDialog.dismiss();
         */
 
 
-      new DownloadFilesTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    //  new DownloadFilesTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
+
+
+        valorx = valorurls;
+
+
+        //Log.d("VALORES:", valorx);
+         long totalSize = 0;
+       // Log.d("localizacionesxxxx:",valorx);
+        fusedLocationClient.getLastLocation().addOnSuccessListener(Mapapoligonos.this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null) {
+                    String latitude = String.valueOf(location.getLatitude());
+                    String longitude = String.valueOf(location.getLongitude());
+                    Log.d("UBICA555", latitude + "-" + longitude);
+
+                    double latitude2= -12.2213428;
+                    double longitude2=-76.2303765;
+                    float distance=0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(location.getLatitude());
+                    crntLocation.setLongitude(location.getLongitude());
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(latitude2);
+                    newLocation.setLongitude(longitude2);
+
+                    distance =crntLocation.distanceTo(newLocation) / 1000;
+
+                    Log.d("DISTANCIA:",String.valueOf(distance));
+                }
+            }
+        });
+
+
+        Log.d("DHN9999", "DHN999");
+        final ArrayList cartasevacuacion;
+        String valor3 = valorx;
+
+        url_1 = valor3.split("&&")[0];
+        url_2 = valor3.split("&&")[1];
+        url_3 = valor3.split("&&")[2];
+
+        latitud = valor3.split("&&")[3];
+        longitud = valor3.split("&&")[4];
+        nombre = valor3.split("&&")[5];
+
+        lati= Double.parseDouble(latitud);
+        longit = Double.parseDouble(longitud);
+
+        Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
+
+
+
+
+
+
+
+
+        if(url_1 != null){
+            res4 = getApplicationContext().getResources();
+            rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
+        }
+
+        if(url_2 != null){
+            res5 = getApplicationContext().getResources();
+            rawId5 = res5.getIdentifier(url_2, "raw", getApplicationContext().getPackageName());
+        }
+
+        if(url_3 != null){
+            res6 = getApplicationContext().getResources();
+            rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
+        }
+
+
+
+
+        try {
+
+            if(rawId4 != 0){
+                kml7 = new KmlLayer(mMap, rawId4, getApplicationContext());
+            }
+
+            if(rawId5 != 0){
+                kml8 = new KmlLayer(mMap, rawId5, getApplicationContext());
+            }
+
+            if(rawId6 != 0){
+                kml9 = new KmlLayer(mMap, rawId6, getApplicationContext());
+            }
+
+
+
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+
+            if(rawId4 != 0){
+                kml7.addLayerToMap();
+            }
+
+            if(rawId5 != 0){
+                kml8.addLayerToMap();
+            }
+
+            if(rawId6 != 0){
+                kml9.addLayerToMap();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+
+
+        LatLng sydney = new LatLng(lati, longit);
+        mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+
+
+
+
+
+
 
 
     }
@@ -1318,6 +1489,45 @@ progressDialog.dismiss();
 
             Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
 
+
+
+
+
+
+
+
+
+
+            res4 = getApplicationContext().getResources();
+            rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
+
+
+            res5 = getApplicationContext().getResources();
+            rawId5 = res5.getIdentifier(url_2, "raw", getApplicationContext().getPackageName());
+
+
+            res6 = getApplicationContext().getResources();
+            rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
+
+            try {
+                kml7 = new KmlLayer(mMap, rawId, getApplicationContext());
+                kml8 = new KmlLayer(mMap, rawId, getApplicationContext());
+                kml9 = new KmlLayer(mMap, rawId, getApplicationContext());
+
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            LatLng sydney = new LatLng(lati, longit);
+            mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+            mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
+
+
+
+
 /*
             res4 = getApplicationContext().getResources();
             rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
@@ -1331,6 +1541,9 @@ progressDialog.dismiss();
             rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
 
 */
+
+
+/*
             DatabaseReference mDatabase;
             mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
 
@@ -1342,6 +1555,7 @@ progressDialog.dismiss();
                     for(final DataSnapshot ds : dataSnapshot.getChildren()) {
 
                         urlszonas = ds.child("url_kml").getValue(String.class);
+
                         if((urlszonas.equals(url_1)) || (urlszonas.equals(url_2)) || (urlszonas.equals(url_3))){
                             final String rechazado1 = ds.child("url_kml").getValue(String.class);
                             Log.d("RECHAZADOS1",rechazado1);
@@ -1353,11 +1567,14 @@ progressDialog.dismiss();
                         else {
                             Log.d("TRAZOURL:", ds.child("url_kml").getValue(String.class));
                             pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
-                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kmz");
+                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kml");
                             Log.d("TRAZOURLWW:", String.valueOf(archivo));
                         }
 
-                        try( InputStream inputstream = new FileInputStream(archivo) ) {
+                       // InputStream inputstream = null;
+                        try{
+                             inputstream = new FileInputStream(archivo);
+
                             kml1 = new KmlLayer(mMap, inputstream, getApplicationContext());
                             LatLng sydney = new LatLng(lati, longit);
                             mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
@@ -1365,12 +1582,22 @@ progressDialog.dismiss();
                             mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
                         } catch (FileNotFoundException e) {
                             e.printStackTrace();
-                        } catch (IOException e) {
-
-                            e.printStackTrace();
                         } catch (XmlPullParserException e) {
                             e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } finally {
+                            if (inputstream != null) {
+                                try {
+                                    inputstream.close();
+                                } catch (IOException e) {
+                                    // TODO signal the error to the user. Printing a stack trace is not enough
+                                }
+                            }
                         }
+
+
+
                         try {
                             kml1.addLayerToMap();
                         } catch (IOException e) {
@@ -1386,6 +1613,9 @@ progressDialog.dismiss();
 
                 }
             });
+
+            */
+
             onProgressUpdate(valorx);
             return totalSize;
         }
