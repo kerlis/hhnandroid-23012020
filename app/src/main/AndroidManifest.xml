@@ -90,6 +90,7 @@
             android:name=".activities.NationalSeismicReportActivity"
             android:label="@string/title_activity_national_seismic_report"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".activities.NotificationActivity"
             android:screenOrientation="portrait">
@@ -143,17 +144,58 @@
             </intent-filter>
         </service>
 
+
+
+
+        <service android:name=".activities.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+
+             <service
+                android:name=".activities.FirebaseMessagingService"
+                android:enabled="true"
+                android:exported="true" />
+
+
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.uae.ncms" />
+            </intent-filter>
+        </receiver>
+
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_notification2_white" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorPrimary" />
-
+<!--
         <service
             android:name=".background.TokenService"
             android:enabled="true"
             android:exported="true" />
+-->
+
+
+        <service android:name=".background.Tokenrefresh">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+<!--
 
         <activity
             android:name=".activities.AlarmActivity"
@@ -162,9 +204,19 @@
             android:showOnLockScreen="true"
             android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
 
+-->
+
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/chanelMGP" />
+
+
+        <activity
+            android:name=".activities.Notificacionesconfig"
+            android:label="@string/title_activity_national_seismic_report"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

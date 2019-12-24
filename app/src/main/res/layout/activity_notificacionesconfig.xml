@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        tools:context="me.doapps.appdhn.activities.ProvincesActivity">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:background="@color/celeste"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:id="@+id/tophead"
+        android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_below="@+id/tophead"
+
+    android:layout_height="wrap_content" >
+
+
+
+
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_below="@+id/titulo"
+        android:background="@color/blanco"
+
+        android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+            android:background="@color/blanco"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/blanco"
+                android:id="@+id/bloque01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grupo01"
+                    android:background="@color/blanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <RadioButton
+                        android:id="@+id/nonotificar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:text="No notificar"
+                        android:textSize="13dp" />
+                    <RadioButton
+                        android:id="@+id/notificar"
+                        android:textSize="13dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notificar"
+                        android:paddingRight="2dp"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_below="@+id/bloque01"
+                android:id="@+id/estado"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <Button android:layout_width="110dp"
+                    android:layout_centerVertical="true"
+                    android:padding="4dp"
+                    android:text="conectado"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/estadodeconexion"
+                    android:layout_height="30dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/estado"
+                android:id="@+id/bloque1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grupo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <RadioButton
+                        android:id="@+id/vibrar"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vibrar al notificar"
+                        android:paddingRight="2dp"/>
+                    <RadioButton
+                        android:id="@+id/novibrar"
+                        android:textSize="13dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sonido al notificar"
+                        android:paddingRight="2dp"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/bloque1"
+                android:id="@+id/bloquesonido"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grupo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+                    <RadioButton
+                        android:id="@+id/alarma"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alarma"
+                        android:paddingRight="2dp"/>
+                    <RadioButton
+                        android:id="@+id/sonidonotificar"
+                        android:textSize="13dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notificación"
+                        android:paddingRight="2dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/sonidopersonalizado"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sonido personalizado"
+                        android:paddingRight="2dp"/>
+
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/picksound"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grupo2"
+                    android:layout_centerHorizontal="true"
+                    android:text="elige sonido" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bloquesonido"
+                android:id="@+id/bloqueprueba"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:id="@+id/texto5"
+                    android:textAlignment="center"
+                    android:text="PRUEBA LA NOTIFICACIÓN"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/probar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texto5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/verdeigp"
+                    android:shadowColor="@color/black_v"
+                    android:visibility="gone"
+
+
+                    android:text="Notificación de prueba"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/vervaloresdeconfiguracion"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/probar"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/verdeigp"
+                    android:text="VER VALORES"
+                    android:textColor="@color/white" />
+
+
+
+
+
+                <ImageView
+                    android:padding="0dp"
+                    android:id="@+id/imagen"
+                    android:layout_below="@+id/vervaloresdeconfiguracion"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo"
+                    style="@style/logoigp_normal_port23"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/versionnumero_label"
+                    style="@style/datossetlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagen"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Código de versión: Developer 5.6"></TextView>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="igp.gob.pe"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:id="@+id/igpweb"
+                    android:layout_below="@+id/versionnumero_label"
+                    android:textColor="@color/azuloscuro">
+                </TextView>
+
+                <TextView
+                    android:layout_below="@id/igpweb"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/negro"
+                    android:id="@+id/igpdireccion"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="ovs.gob.pe"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/ovsweb"
+                    android:layout_marginBottom="90dp"
+
+                    android:layout_below="@+id/igpdireccion"
+                    android:textColor="@color/azuloscuro">
+                </TextView>
+
+
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_below="@+id/ovsweb"
+                    android:layout_height="90dp"/>
+
+                <TextView
+                    android:layout_below="@id/ovsweb"
+                    android:visibility="gone"
+                    android:id="@+id/ovsdireccion"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="40dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

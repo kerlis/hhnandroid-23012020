@@ -3,10 +3,24 @@
     <string name="title_activity_maps">Map</string>
 
 
+
+    <string name="canal_sonido_personalizado_sismos_id" >canal_sonido_personalizado_sismos_id</string>
+
+    <string name="canal_sonido_personalizado_sismos_nombre" >canal_sonido_personalizado_sismos_nombre</string>
+    <string name="canal_sonido_personalizado_sismos_descripcion" translatable="false">canal_sonido_personalizado_sismos_descripcion</string>
+
     <string name="kml_url">https://www.dhn.mil.pe/secciones/departamentos/oceanografia/apps/cartastsunamis/images/cartas_inundacion/sur/mejia_arequipa_2013.pdf</string>
 
 
+    <string name="default_notification_channel_name_sismos">default_channel_name_sismos</string>
+
+    <string name="channel_description_sismos" translatable="false">fcm_default_channel_sismos</string>
+    <string name="default_notification_channel_id_sismos">default_channel_id_sismos</string>
+
+
     <!-- activity_maps -->
+    <string name="localizacion">&#xf140;</string>
+
     <string name="information_of_maps">Información del mapa</string>
     <string name="flood_charts">Zonas de inundación</string>
     <string name="places_of_refuge">Lugares de refugio</string>

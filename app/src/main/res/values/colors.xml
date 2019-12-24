@@ -47,6 +47,10 @@
     <color name="black207">#e3000000</color>
     <color name="blackOpacity100">#00000000</color>
 
+    <color name="negro">#00000000</color>
+    <color name="azuloscuro">#00070E25</color>
+    <color name="verdeigp">#000D2507</color>
+    <color name="black_v">#00131612</color>
 
 
     <color name="azul">#0082FF</color>

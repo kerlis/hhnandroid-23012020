@@ -23,9 +23,8 @@ public class Listadoregiones extends AppCompatActivity {
     DatabaseReference reference;
     RecyclerView recyclerView;
     ArrayList<Departamentos> list;
-    //Listadolugaresadapter adapter;
-
     Lugarescartasadapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

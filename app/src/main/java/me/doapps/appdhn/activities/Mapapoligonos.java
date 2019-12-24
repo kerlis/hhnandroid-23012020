@@ -9,8 +9,10 @@ import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
@@ -37,6 +39,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -173,7 +176,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
     private ImageView actionOpenDrawerMenu, ivSearch;
     private DrawerLayout drawerLayout;
-    private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion;
+    private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion, onnotificacion;
     private WorkaroundMapFragment.TouchableWrapper de;
     ProgressDialog progressDialog;
 
@@ -209,6 +212,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     String urlkml1, urlkml2, urlkml3;
 
     InputStream inputstream = null;
+    Button satelite, terreno, localizacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,6 +221,44 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         handler = new Handler(Looper.myLooper());
 
         progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
+
+        Typeface fontAwesomeFont = Typeface.createFromAsset(getApplicationContext().getAssets(), "fontawesome-webfont.ttf");
+        Button milocalizacion = findViewById(R.id.localizacion);
+        milocalizacion.setTypeface(fontAwesomeFont);
+
+        satelite = (Button) findViewById(R.id.satelite);
+        terreno = (Button) findViewById(R.id.terreno);
+        localizacion = (Button) findViewById(R.id.localizacion);
+
+
+        satelite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                mMap.setMapType(mMap.MAP_TYPE_HYBRID);
+            }
+        });
+        terreno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                mMap.setMapType(mMap.MAP_TYPE_NORMAL);
+            }
+        });
+        localizacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+                @SuppressLint("MissingPermission") Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                double longitude = location.getLongitude();
+                double latitude = location.getLatitude();
+
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 9));
+            }
+        });
+
+
+
+
 
 
 
@@ -315,6 +357,9 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         mapFragment.getMapAsync(this);
 
 
+
+         opNotification = findViewById(R.id.notificaciones);
+
         opTips = (LinearLayout) findViewById(R.id.option_tips);
         opBulletinNotice = (LinearLayout) findViewById(R.id.option_bulletin_notice);
         opNationalSeismicReport = (LinearLayout) findViewById(R.id.option_national_seismic_rport);
@@ -323,6 +368,8 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         opAbout = (LinearLayout) findViewById(R.id.option_about);
         opPressReleases = (LinearLayout) findViewById(R.id.option_pressreleases);
         opFrequentQustion = (LinearLayout) findViewById(R.id.option_frequent_questions);
+
+
 
 
 
@@ -430,6 +477,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
         });
 
+        mMap.getUiSettings().setZoomControlsEnabled(true);
 
 
 
@@ -446,6 +494,10 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
+
+
+
+        opNotification.setOnClickListener(Mapapoligonos.this);
         opTips.setOnClickListener(Mapapoligonos.this);
         opBulletinNotice.setOnClickListener(Mapapoligonos.this);
         opNationalSeismicReport.setOnClickListener(Mapapoligonos.this);
@@ -455,6 +507,20 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         //opNotification.setOnClickListener(MapsActivity.this);
         opPressReleases.setOnClickListener(Mapapoligonos.this);
         opFrequentQustion.setOnClickListener(Mapapoligonos.this);
+
+
+
+        opNotification.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,Notificacionesconfig.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
 
 /*
@@ -1045,6 +1111,9 @@ progressDialog.dismiss();
         protected void onPostExecute(Integer integer) {
             super.onPostExecute(integer);
             switch (integer) {
+                case R.id.notificaciones:
+                    startActivity(new Intent(Mapapoligonos.this, Notificacionesconfig.class));
+                    break;
                 case R.id.option_tips:
                     startActivity(new Intent(Mapapoligonos.this, TipsActivity.class));
                     break;

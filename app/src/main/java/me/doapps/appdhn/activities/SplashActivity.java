@@ -89,7 +89,7 @@ public class SplashActivity extends AppCompatActivity {
             preference.setFirstAccess(2);
             preference.setVersionCode(versionCode);
         }
-
+       // valoresconfiguracion2();
         cargararchivo();
       //  downloadkml("https://www.dhn.mil.pe/secciones/departamentos/oceanografia/apps/cartastsunamis/images/cartas_inundacion/sur/mejia_arequipa_2013.pdf");
     }
@@ -191,7 +191,7 @@ public class SplashActivity extends AppCompatActivity {
          "evac_asia",
         "evac_bahia_chimbote",
         "evac_bahia_paracas",
-       "evac_balneario_ancon",
+        "evac_balneario_ancon",
         "evac_balneario_barranca",
         "evac_balneario_pisco",
         "evac_balneario_tortugas",
@@ -405,4 +405,73 @@ public class SplashActivity extends AppCompatActivity {
         }
 
     }
+
+
+
+
+
+
+
+
+
+
+    private void valoresconfiguracion2() {
+
+        String file_ramdom = "ramdom_number_file";
+        String file_vibrar = "vibrar_file";
+        String file_sonido = "sonido_file";
+        String file_notificar = "notificar_file";
+        String file_tipo = "tipo_file";
+        String file_ringtone = "ring_tone_file";
+        String file_nombre_ringtone = "nombre_ringtone__file";
+        String vibrar_val =  "11111";
+        String sonido_val =  "A";
+        String notificacion_val =  "11111";
+        String ringtone_val =  "A";
+        String tiposonidoval =  "11111";
+        String nombre_ringtone_val =  "A";
+
+        try {
+
+            FileOutputStream fileOutputStream_ramdom = openFileOutput(file_ramdom, MODE_PRIVATE);
+            fileOutputStream_ramdom.write(vibrar_val.getBytes());
+
+            FileOutputStream fileOutputStream_vibrar = openFileOutput(file_vibrar, MODE_PRIVATE);
+            fileOutputStream_vibrar.write(vibrar_val.getBytes());
+
+            FileOutputStream fileOutputStream_sonido = openFileOutput(file_sonido, MODE_PRIVATE);
+            fileOutputStream_sonido.write(sonido_val.getBytes());
+
+            FileOutputStream fileOutputStream_notificar = openFileOutput(file_notificar, MODE_PRIVATE);
+            fileOutputStream_notificar.write(notificacion_val.getBytes());
+
+            FileOutputStream fileOutputStream_sonidotipo = openFileOutput(file_tipo, MODE_PRIVATE);
+            fileOutputStream_sonidotipo.write(tiposonidoval.getBytes());
+
+            FileOutputStream fileOutputStream_ring_tone = openFileOutput(file_ringtone, MODE_PRIVATE);
+            fileOutputStream_ring_tone.write(ringtone_val.getBytes());
+
+            FileOutputStream fileOutputStream_nombre_ring_tone = openFileOutput(file_nombre_ringtone, MODE_PRIVATE);
+            fileOutputStream_nombre_ring_tone.write(nombre_ringtone_val.getBytes());
+
+            fileOutputStream_nombre_ring_tone.close();
+
+            fileOutputStream_ring_tone.close();
+
+            fileOutputStream_sonidotipo.close();
+
+            fileOutputStream_notificar.close();
+
+            fileOutputStream_vibrar.close();
+
+            fileOutputStream_sonido.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

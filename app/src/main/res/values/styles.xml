@@ -1,6 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
+
+
+    <style name="logoigp_normal_port23">
+        <item name="android:layout_width">82dp</item>
+        <item name="android:layout_height">84dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="datossetlabel">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

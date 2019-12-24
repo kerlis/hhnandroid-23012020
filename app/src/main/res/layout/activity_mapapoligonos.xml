@@ -39,10 +39,48 @@ android:focusableInTouchMode="true">
 
     </fragment>
 
-    <!--
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-    -->
+
+
+
+
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="95dp"
+        android:id="@+id/satelite"
+        android:text="SATELITAL"
+        android:textSize="14dp"
+        android:textColor="@color/blanco"
+        android:layout_height="30dp"
+        android:background="@color/transparente">
+    </Button>
+    <Button
+        android:layout_width="80dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/blanco"
+        android:id="@+id/terreno"
+        android:textSize="14dp"
+        android:text="TERRENO"
+        android:layout_height="30dp"
+        android:background="@color/transparente">
+    </Button>
+    <Button
+        android:layout_width="40dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/blanco"
+        android:id="@+id/localizacion"
+        android:textSize="17dp"
+        android:text="@string/localizacion"
+        android:layout_height="30dp"
+        android:background="@color/transparente">
+    </Button>
+
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -76,14 +114,7 @@ android:focusableInTouchMode="true">
             android:textColorHint="@color/gen_white_50"
             android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/image_view_search"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:visibility="gone"
-            android:clickable="true"
-            android:padding="2dp"
-            android:src="@mipmap/ic_search" />
+
 
         <TextView android:layout_width="wrap_content"
             android:layout_centerVertical="true"
@@ -119,6 +150,8 @@ android:focusableInTouchMode="true">
 
     <LinearLayout
         android:id="@+id/menu_right"
+        android:visibility="gone"
+
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
@@ -433,8 +466,11 @@ android:focusableInTouchMode="true">
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
+
+
             <LinearLayout
-                android:id="@+id/menu_head"
+                android:id="@+id/menu_hearrd"
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:orientation="vertical">
@@ -457,6 +493,11 @@ android:focusableInTouchMode="true">
 
 
             </LinearLayout>
+
+
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
