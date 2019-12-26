@@ -32,6 +32,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
     var valorramdomesound: String? = null
 
     fun removerz(context: Context?, title: String?, message: String?) {
+        Log.d("qqqqq", " Valor pux")
 
         var file2 = InputStreamReader(context!!.openFileInput("vibrar_file"))
         var br2 = BufferedReader(file2 as Reader?)
@@ -119,7 +120,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val notificationBuilder = NotificationCompat.Builder(context!!, channelId)
                                 .setSmallIcon(R.mipmap.ic_launcher)
                                 .setColor(Color.parseColor("#001665"))
-                                .setContentTitle("Sismo Perú...........")
+                                .setContentTitle("TSUNAMI ALERTA...........")
                                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                                 .setAutoCancel(true)
                                 .setContentIntent(pendingIntent)
@@ -135,7 +136,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val notificationBuilder = NotificationCompat.Builder(context!!, channelId)
                                 .setSmallIcon(R.mipmap.ic_launcher)
                                 .setColor(Color.parseColor("#001665"))
-                                .setContentTitle("Sismo Perú...........")
+                                .setContentTitle("TSUNAMI ALERTA...........")
                                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                                 .setAutoCancel(true)
                                 .setContentIntent(pendingIntent)
@@ -174,7 +175,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val notificationBuilder = NotificationCompat.Builder(context!!, channelId)
                                 .setSmallIcon(R.mipmap.ic_launcher)
                                 .setColor(Color.parseColor("#001665"))
-                                .setContentTitle("Alerta de Lahar")
+                                .setContentTitle("TSUNAMI ALERTA")
                                 // .setContentText(" $nobrevolcan_r2  $asubstring | $hora ")
                                 .setAutoCancel(true)
                                 .setSound(sonido_notificacion_android)
@@ -195,7 +196,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                             .setSmallIcon(R.mipmap.ic_launcher)
                             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                             .setColor(Color.parseColor("#001665"))
-                            .setContentTitle("Sismo Perú...........")
+                            .setContentTitle("TSUNAMI ALERTA...........")
                             .setAutoCancel(true)
                             .setVibrate(longArrayOf(50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100))
                             .setContentIntent(pendingIntent)
@@ -220,7 +221,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val b = NotificationCompat.Builder(context)
                         val notification = b.setContentTitle("->$title")
                                 //.setContentTitle("$valorsonido , $valornotificacionm, $valortipo, $valorringtone")
-                                .setContentTitle("Sismo Perú...........")
+                                .setContentTitle("TSUNAMI ALERTA...........")
                                 .setColor(Color.parseColor("#001665"))
                                 .setAutoCancel(true)
                                 .setSmallIcon(R.mipmap.ic_launcher)
@@ -244,7 +245,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val notification = b.setContentTitle("->$title")
                                 //.setContentTitle("$valorsonido , $valornotificacionm, $valortipo, $valorringtone")
 
-                                .setContentTitle("Sismo Perú...........")
+                                .setContentTitle("TSUNAMI ALERTA...........")
                                 .setColor(Color.parseColor("#001665"))
                                 .setAutoCancel(true)
                                 .setSmallIcon(R.mipmap.ic_launcher)
@@ -272,7 +273,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                         val b = NotificationCompat.Builder(context)
                         val notification = b.setContentTitle("->$title")
                                 //.setContentTitle("$valorsonido , $valornotificacionm, $valortipo, $valorringtone")
-                                .setContentTitle("Sismo Perú...........")
+                                .setContentTitle("TSUNAMI ALERTA...........")
 
                                 .setColor(Color.parseColor("#001665"))
                                 .setAutoCancel(true)
@@ -298,7 +299,7 @@ class Removenotificationtwo : FirebaseMessagingService() {
                     val b = NotificationCompat.Builder(context)
                     val notification = b.setContentTitle("->$title")
                             //.setContentTitle("$valorsonido , $valornotificacionm, $valortipo, $valorringtone")
-                            .setContentTitle("Sismo Perú...........")
+                            .setContentTitle("TSUNAMI ALERTA...........")
 
                             .setColor(Color.parseColor("#001665"))
                             .setAutoCancel(true)

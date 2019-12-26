@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "me.doapps.appdhn"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 27
         versionCode 41
         versionName "1.4.1"
         multiDexEnabled true
@@ -50,10 +51,6 @@ dependencies {
     compile('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.9.2@aar') {
         transitive = true
     }
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-
     compile project(':YouTubeAndroidPlayerApi')
     compile files('libs/ormlite-core.jar')
     compile files('libs/ormlite-android.jar')
@@ -65,39 +62,12 @@ dependencies {
 
     implementation 'com.android.support:design:27.1.0'
     implementation 'com.github.rey5137:material:1.2.2'
-
-    /*
     implementation 'com.google.android.gms:play-services-identity:11.8.0'
     implementation 'com.google.android.gms:play-services-maps:11.8.0'
     implementation 'com.google.android.gms:play-services-gcm:11.8.0'
     implementation 'com.google.android.gms:play-services-location:11.8.0'
+
     implementation 'com.google.maps.android:android-maps-utils:0.4.+'
-    implementation 'com.google.android.gms:play-services-maps:11.8.0'
-    implementation 'com.google.maps.android:android-maps-utils:0.5'
-
-
-
-    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
-    implementation 'com.google.firebase:firebase-database:11.8.0'
-    implementation 'com.google.firebase:firebase-crash:11.8.0'
-
-
-
-*/
-    implementation 'com.google.maps.android:android-maps-utils:0.4.4'
-
-    implementation 'com.google.firebase:firebase-messaging:15.0.1'
-    implementation 'com.google.android.gms:play-services-maps:15.0.1'
-    implementation 'com.google.android.gms:play-services-location:15.0.1'
-    implementation 'com.google.android.gms:play-services-maps:15.0.1'
-
-
-    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
-    implementation 'com.google.firebase:firebase-database:15.0.1'
-  //  implementation 'com.google.firebase:firebase-crash:15.0.1'
-
-
-
     implementation 'com.loopj.android:android-async-http:1.4.5'
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'org.apache.httpcomponents:httpcore:4.4.1'
@@ -107,18 +77,19 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:11.8.0'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-crash:11.8.0'
 
+    implementation 'com.firebaseui:firebase-ui:1.1.1'
+    implementation 'com.firebase:firebase-client-android:2.5.2+'
 
-
-
-
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
 
     implementation 'com.android.support:recyclerview-v7:27.1.0'
-
     compile "me.leolin:ShortcutBadger:1.1.21@aar"
-
-    implementation "com.google.firebase:firebase-core:${rootProject.ext.firebaseCore}"
-    implementation "com.google.firebase:firebase-messaging:${rootProject.ext.firebaseMessaging}"
-}
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+ }
 
 apply plugin: 'com.google.gms.google-services'

@@ -95,7 +95,7 @@ public class Firebasemessagingserviceid extends FirebaseInstanceIdService {
             fileOutputStream.write(Message5.getBytes());
             //FirebaseMessaging.getInstance().subscribeToTopic(Message5);
 
-            FirebaseMessaging.getInstance().subscribeToTopic("TEMAVOLCANESANDROIDYIOSIGP3");
+            FirebaseMessaging.getInstance().subscribeToTopic("VOLCANESPERU5000333NOTDHN");
 
 
             //  fileOutputStream.write(Message7.getBytes());

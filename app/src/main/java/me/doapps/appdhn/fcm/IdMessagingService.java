@@ -25,10 +25,13 @@ public class IdMessagingService extends FirebaseInstanceIdService {
     public void onTokenRefresh() {
         super.onTokenRefresh();
 
+        Log.i("service", "GRABANDO GRABANDO");
+        Log.d("service", "GRABANDO GRABANDO");
+
         token = FirebaseInstanceId.getInstance().getToken();
         imei = PhoneUtil.getImei(this);
 
-        FirebaseMessaging.getInstance().subscribeToTopic("VOLCANESPERU5000333");
+        FirebaseMessaging.getInstance().subscribeToTopic("VOLCANESPERU5000333NOTDHN");
 
 
         if (token != null && imei != null) {

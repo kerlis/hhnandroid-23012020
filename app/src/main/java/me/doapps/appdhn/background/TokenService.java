@@ -29,9 +29,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by Leandro on 10/27/17.
- */
+
 
 public class TokenService extends IntentService {
     public static boolean isComplete;
@@ -46,7 +44,7 @@ public class TokenService extends IntentService {
     protected void onHandleIntent(@Nullable final Intent intent) {
         while (!isComplete) {
             try {
-                Log.e("service", "processing");
+                Log.d("service", "processing grabando");
                 Thread.sleep(1000);
 
                 imei = PhoneUtil.getImei(this);

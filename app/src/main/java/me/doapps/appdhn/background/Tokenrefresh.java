@@ -9,7 +9,9 @@ package me.doapps.appdhn.background;
         import android.net.Uri;
         import android.os.Build;
         import android.util.Log;
-        import com.google.firebase.iid.FirebaseInstanceId;
+         import android.widget.Toast;
+
+         import com.google.firebase.iid.FirebaseInstanceId;
         import com.google.firebase.iid.FirebaseInstanceIdService;
         import com.google.firebase.messaging.FirebaseMessaging;
         import java.io.BufferedReader;
@@ -181,6 +183,10 @@ public class Tokenrefresh extends FirebaseInstanceIdService {
     }
 
     private void valoresconfiguracion() {
+
+
+        Toast.makeText(this, "GRABANDO GRABANDO", Toast.LENGTH_SHORT).show();
+        Log.d("service", "GRABANDO GRABANDO");
 
         String file_ramdom = "ramdom_number_file";
         String file_vibrar = "vibrar_file";

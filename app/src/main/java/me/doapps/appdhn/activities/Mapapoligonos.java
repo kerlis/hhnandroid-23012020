@@ -13,13 +13,11 @@ import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.os.Handler;
-import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
@@ -39,7 +37,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -70,22 +67,14 @@ import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
 import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
-
 import me.doapps.appdhn.R;
 import me.doapps.appdhn.adapters.Listadolugaresadapter;
-import me.doapps.appdhn.dialogs.ProgressDialog;
 import me.doapps.appdhn.fragments.WorkaroundMapFragment;
 import me.doapps.appdhn.models.Departamentos;
 import me.doapps.appdhn.utils.PermissionUtils;
@@ -106,8 +95,12 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     private SupportMapFragment mapFragment;
     private GoogleMap mMap;
     private GoogleMap map;
-    double longitude = -16.31537405101501;
-    double latitude = -71.94828379488575;
+    double longitude = -12.1062165;
+    double latitude = -77.0154192;
+
+
+
+
     FrameLayout mapapoligonos;
     String latitude_last;
     String longitude_last;
@@ -147,80 +140,49 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
     Resources res_2;
     Resources res_3;
 
-
-    Resources res_4;
-
-
     public KmlLayer kml1;
-    public KmlLayer kml2;
-    public KmlLayer kml3;
-
-
     public KmlLayer kml4;
     public KmlLayer kml5;
     public KmlLayer kml6;
-
-
     public KmlLayer kml7;
     public KmlLayer kml8;
     public KmlLayer kml9;
-
     Resources res,restwo;
-
     Resources res4,res5,res6;
-
-
     int rawId, rawidrwo;
     int rawId4, rawId5,rawId6;
-
-
     private ImageView actionOpenDrawerMenu, ivSearch;
     private DrawerLayout drawerLayout;
     private LinearLayout opTips, opBulletinNotice, opNationalSeismicReport, opDownloadableContent, opVideo, opAbout, opNotification, opPressReleases, opFrequentQustion, onnotificacion;
     private WorkaroundMapFragment.TouchableWrapper de;
-    ProgressDialog progressDialog;
-
     String valorx;
-
-    private  ProgressDialog progressDialogs;
-    Context context;
-    private Handler handler;
-
-
-
     String valorurls;
-    InputStreamReader isr ;
-    FileInputStream fis = null;
-
-    FileInputStream fileinputstream;
-    InputStreamReader inputStreamReader;
-
-
-
-    FileInputStream fileInputStream;
-
-    String urlszonas;
-
-
-    InputStream inputstream_kml;
-    String pathfile;
-
-    File archivo;
-
-    InputStream archivo_inputstream_kml;
-
     String urlkml1, urlkml2, urlkml3;
 
-    InputStream inputstream = null;
     Button satelite, terreno, localizacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapapoligonos);
-        handler = new Handler(Looper.myLooper());
 
-        progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
+
+        Snackbar.make(findViewById(android.R.id.content),"Mantén actualizada la aplicación", Snackbar.LENGTH_LONG)
+                .setAction("Play store", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW)
+                                .setData(Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName()));
+                        try {
+                            startActivity(new Intent(intent)
+                                    .setPackage("com.android.vending"));
+                        } catch (android.content.ActivityNotFoundException exception) {
+                            startActivity(intent);
+                        }
+                    }
+                }).show();
+
+
 
         Typeface fontAwesomeFont = Typeface.createFromAsset(getApplicationContext().getAssets(), "fontawesome-webfont.ttf");
         Button milocalizacion = findViewById(R.id.localizacion);
@@ -255,8 +217,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 9));
             }
         });
-
-
 
 
 
@@ -369,46 +329,12 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         opPressReleases = (LinearLayout) findViewById(R.id.option_pressreleases);
         opFrequentQustion = (LinearLayout) findViewById(R.id.option_frequent_questions);
 
-
-
-
-
-
-
-/*
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-
-                try {
-                 //   Thread.sleep(1000);
-
-                    manageBlinkEffect();
-
-
-
-                } catch (Exception e) {
-                    Log.e(TAG, "new Thread " + e.toString());
-                }
-
-            }
-        }).start();
-*/
-
-
-        //PrimeRun p = new PrimeRun(143);
-        //new Thread(p).start();
-
-
-
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 manageBlinkEffect();
             }
         });
-
 
     }
 
@@ -436,16 +362,14 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         anim.start();
     }
 
-
-
-
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
-        LatLng sydney = new LatLng(-34, 151);
+
+
+
+        LatLng sydney = new  LatLng(-12.1062165, -77.0154192);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
@@ -468,21 +392,13 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
             @Override
             public void onMapLoaded() {
-                //shareScreenshot();
              cargarmapas_ubicacion("swwcw&&cscwccw&&wdvwevewvwev&&-9.099295&&-78.568640&&miposicion");
-
-
 
             }
 
         });
 
         mMap.getUiSettings().setZoomControlsEnabled(true);
-
-
-
-
-
 
         actionOpenDrawerMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -493,8 +409,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                 drawerLayout.openDrawer(GravityCompat.START);
             }
         });
-
-
 
 
         opNotification.setOnClickListener(Mapapoligonos.this);
@@ -519,30 +433,69 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         });
 
 
+        opTips.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,TipsActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        opBulletinNotice.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,BulletinNoticesActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        opNationalSeismicReport.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,NationalSeismicReportActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        opDownloadableContent.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,Listadoregiones.class);
+                startActivity(intent);
+            }
+        });
 
-/*
+        opVideo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,VideosActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        KmlLayer layer = null;
-        try {
-            layer = new KmlLayer(mMap, R.raw.mapakmls, getApplicationContext());
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            layer.addLayerToMap();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        }
-*/
+        opAbout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,AboutActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        opPressReleases.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,PressReleasesActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        opFrequentQustion.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Mapapoligonos.this,FrequentQuestionsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -561,25 +514,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     latitude_last = String.valueOf(location.getLatitude());
                     longitude_last = String.valueOf(location.getLongitude());
                     Log.d("UBICA555", latitude_last + "-" + longitude_last);
-
-                    /*
-                    double latitude2 = -12.2213428;
-                    double longitude2 = -76.2303765;
-                    //  float distance=0;
-
-                    Location crntLocation = new Location("crntlocation");
-                    crntLocation.setLatitude(location.getLatitude());
-                    crntLocation.setLongitude(location.getLongitude());
-
-                    Location newLocation = new Location("newlocation");
-                    newLocation.setLatitude(latitude2);
-                    newLocation.setLongitude(longitude2);
-
-                    distance = crntLocation.distanceTo(newLocation) / 1000; // in km
-
-                    Log.d("DISTANCIA:", String.valueOf(distance));
-                    */
-
                     Toast.makeText(Mapapoligonos.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
 
                 }
@@ -598,33 +532,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         retrieveFileFromUrl(opcion);
     }
     private void retrieveFileFromUrl(final String urls) {
-    //   new DownloadKmlFile(getString(R.string.kml_url)).execute();
-      //  cargarmapas_defecto(urls);
-
-        Log.d("valorurls:",urls);
-
-
         cargarprograso(urls);
-    //    new DownloadFilesTask().execute(urls);
-
-       // new DownloadFilesTask().execute(urls);
-
-
-        /*
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-
-                new DownloadFilesTask().execute(urls);
-
-
-            }
-        });
-        */
-
-
-
-
     }
 
     private void moveCameraToKml(KmlLayer kmlLayer) {
@@ -824,12 +732,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         }
     }
 
-
-
-
-
-
-
     public void cargarmapas_ubicacion(String valor) {
 
         Log.d("mapskmladapter", valor);
@@ -917,99 +819,24 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                         latitud_posicion1 = ds.child("latitud").getValue(String.class);
                         longitud_posicion2 = ds.child("longitud").getValue(String.class);
 
-
                         urlkml1 = ds.child("url_kml1").getValue(String.class);
                         urlkml2 = ds.child("url_kml2").getValue(String.class);
                         urlkml3 = ds.child("url_kml3").getValue(String.class);
-
-
-
 
                         latitud_dos = ds.child("latitud").getValue(String.class);
 
                         maximo_two(largest, ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), ds.child("nombre").getValue(String.class),  ds.child("url_kml1").getValue(String.class) );
                     }
 
-                    // long de = dataSnapshot.getChildrenCount();
-                    //maximo(ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), de);
-
-                    /*
-
-                    if(url_kml1 != url_1){
-                        res = getApplicationContext().getResources();
-                    }
-                    else if(url_kml2 != url_2){
-                        res = getApplicationContext().getResources();
-
-                    }
-                    else if(url_kml3 != url_3){
-                        res = getApplicationContext().getResources();
-
-                    }
-                    */
-
-
-
                     res_1 = getApplicationContext().getResources();
                     res_2 = getApplicationContext().getResources();
                     res_3 = getApplicationContext().getResources();
-
-
 
                     int rawId_1 = res_1.getIdentifier(url_kml1 ,"raw", getApplicationContext().getPackageName());
                     int rawId_2 = res_2.getIdentifier(url_kml2 ,"raw", getApplicationContext().getPackageName());
                     int rawId_3 = res_3.getIdentifier(url_kml3 ,"raw", getApplicationContext().getPackageName());
 
-
-
-
-
-                    //int rawId = res.getIdentifier(name ,"raw", getApplicationContext().getPackageName());
-
                     Log.d("IDENTIFICACION",String.valueOf(rawId_1  + "-" + rawId_2 + "-" + rawId_3));
-
-
-   /*
-                    try {
-
-                        if(rawId_1 != 0 ){
-                            kml1 = new KmlLayer(mMap, rawId_1, getApplicationContext());
-                        }
-
-                        if(rawId_2 != 0){
-                          kml2 = new KmlLayer(mMap, rawId_2, getApplicationContext());
-                        }
-
-                        if(rawId_3 != 0){
-                          kml3 = new KmlLayer(mMap, rawId_3, getApplicationContext());
-                        }
-
-
-
-                    } catch (XmlPullParserException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                    try {
-
-                        if(rawId_1 != 0 ){
-                         //  kml1.addLayerToMap();
-                        }
-                        if(rawId_2 != 0){
-                      //    kml2.addLayerToMap();
-                        }
-                        if(rawId_3 != 0){
-                         //   kml3.addLayerToMap();
-                        }
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (XmlPullParserException e) {
-                        e.printStackTrace();
-                    }
-                    */
 
                 }
 
@@ -1315,55 +1142,14 @@ progressDialog.dismiss();
 
 
 
-
-
     public void cargarprograso(final String dato){
 
-       // progressDialogs.setMessage("sddwfwfw");
-        //progressDialogs.show();
-
         valorurls = dato;
-        Log.d("valorurls:dd",valorurls);
-
-        //cargarmapas_defecto(dato);
 
         mMap.clear();
 
- /*
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-
-                 new DownloadFilesTask().execute(dato);
-
-
-                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-                        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-                    else
-                        task.execute();
-
-
-
-                } catch (Exception e) {
-                    Log.e(TAG, "new Thread " + e.toString());
-                }
-            }
-        }).start();
-        */
-
-
-    //  new DownloadFilesTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-
-
-
         valorx = valorurls;
 
-
-        //Log.d("VALORES:", valorx);
-         long totalSize = 0;
-       // Log.d("localizacionesxxxx:",valorx);
         fusedLocationClient.getLastLocation().addOnSuccessListener(Mapapoligonos.this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
@@ -1410,12 +1196,6 @@ progressDialog.dismiss();
         Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
 
 
-
-
-
-
-
-
         if(url_1 != null){
             res4 = getApplicationContext().getResources();
             rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
@@ -1430,8 +1210,6 @@ progressDialog.dismiss();
             res6 = getApplicationContext().getResources();
             rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
         }
-
-
 
 
         try {
@@ -1481,24 +1259,13 @@ progressDialog.dismiss();
         mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-
-
-
-
-
-
-
-
-
     }
-
-
 
     class DownloadFilesTask extends AsyncTask<String,  Integer, Long> {
 
         @Override
         protected void onPreExecute() {
-            progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
+         //   progressDialogs = new ProgressDialog(Mapapoligonos.this, R.style.AppCompatAlertDialogStyle);
             /*
             progressDialogs.setMessage("Cargando...");
             progressDialogs.setCancelable(false);
@@ -1558,15 +1325,6 @@ progressDialog.dismiss();
 
             Log.d("DHN9999", url_1 + " / " +  url_1 + " / " +  url_1);
 
-
-
-
-
-
-
-
-
-
             res4 = getApplicationContext().getResources();
             rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
 
@@ -1593,97 +1351,6 @@ progressDialog.dismiss();
             mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
             mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-
-
-
-
-/*
-            res4 = getApplicationContext().getResources();
-            rawId4 = res4.getIdentifier(url_1, "raw", getApplicationContext().getPackageName());
-
-
-            res5 = getApplicationContext().getResources();
-            rawId5 = res5.getIdentifier(url_2, "raw", getApplicationContext().getPackageName());
-
-
-            res6 = getApplicationContext().getResources();
-            rawId6 = res6.getIdentifier(url_3, "raw", getApplicationContext().getPackageName());
-
-*/
-
-
-/*
-            DatabaseReference mDatabase;
-            mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
-
-            mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
-                @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-
-                    for(final DataSnapshot ds : dataSnapshot.getChildren()) {
-
-                        urlszonas = ds.child("url_kml").getValue(String.class);
-
-                        if((urlszonas.equals(url_1)) || (urlszonas.equals(url_2)) || (urlszonas.equals(url_3))){
-                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
-                            Log.d("RECHAZADOS1",rechazado1);
-                        }
-                        else if(urlszonas.equals(url_3)) {
-                            final String rechazado1 = ds.child("url_kml").getValue(String.class);
-                            Log.d("RECHAZADOS1",rechazado1);
-                        }
-                        else {
-                            Log.d("TRAZOURL:", ds.child("url_kml").getValue(String.class));
-                            pathfile =  getFilesDir() + "/" + ds.child("url_kml").getValue(String.class);
-                            archivo = new File(getFilesDir() + "/" + ds.child("url_kml").getValue(String.class)+".kml");
-                            Log.d("TRAZOURLWW:", String.valueOf(archivo));
-                        }
-
-                       // InputStream inputstream = null;
-                        try{
-                             inputstream = new FileInputStream(archivo);
-
-                            kml1 = new KmlLayer(mMap, inputstream, getApplicationContext());
-                            LatLng sydney = new LatLng(lati, longit);
-                            mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
-                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-                            mMap.animateCamera( CameraUpdateFactory.zoomTo( 14.0f ) );
-                        } catch (FileNotFoundException e) {
-                            e.printStackTrace();
-                        } catch (XmlPullParserException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        } finally {
-                            if (inputstream != null) {
-                                try {
-                                    inputstream.close();
-                                } catch (IOException e) {
-                                    // TODO signal the error to the user. Printing a stack trace is not enough
-                                }
-                            }
-                        }
-
-
-
-                        try {
-                            kml1.addLayerToMap();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        } catch (XmlPullParserException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-
-            */
 
             onProgressUpdate(valorx);
             return totalSize;

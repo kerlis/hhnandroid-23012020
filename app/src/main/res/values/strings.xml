@@ -4,10 +4,34 @@
 
 
 
+
+
+    <string name="canal_sonido_alarmas_sismos_id" >canal_sonido_alarmas_sismos_id</string>
+    <string name="canal_sonido_alarmas_sismos_id_nombre" >canal_sonido_alarmas_sismos_id_nombre</string>
+    <string name="canal_sonido_alarmas_sismos_id_descripcion" translatable="false">canal_sonido_alarmas_sismos_id_descripcion</string>
+
+    <string name="canal_sonido_notificacion_sismos_id" >canal_sonido_notificacion_sismos_id</string>
+    <string name="canal_sonido_notificacion_sismos_nombre" >canal_sonido_notificacion_sismos_nombre</string>
+    <string name="canal_sonido_notificacion_sismos_descripcion" translatable="false">canal_sonido_notificacion_sismos_descripcion</string>
+
+    <string name="canal_sonido_personalizado_sismos_id" >canal_sonido_personalizado_sismos_id</string>
+    <string name="canal_sonido_personalizado_sismos_nombre" >canal_sonido_personalizado_sismos_nombre</string>
+    <string name="canal_sonido_personalizado_sismos_descripcion" translatable="false">canal_sonido_personalizado_sismos_descripcion</string>
+
+    <string name="canal_sin_sonido_con_vibracion_sismos_id" >canal_sin_sonido_con_vibracion_sismos_id</string>
+    <string name="canal_sin_sonido_con_vibracion_sismos_nombre" >canal_sin_sonido_con_vibracion_sismos_nombre</string>
+    <string name="canal_sin_sonido_con_vibracion_sismos_descripcion" translatable="false">canal_sin_sonido_con_vibracion_sismos_descripcion</string>
+
+
+
+
+
+<!---
     <string name="canal_sonido_personalizado_sismos_id" >canal_sonido_personalizado_sismos_id</string>
 
     <string name="canal_sonido_personalizado_sismos_nombre" >canal_sonido_personalizado_sismos_nombre</string>
     <string name="canal_sonido_personalizado_sismos_descripcion" translatable="false">canal_sonido_personalizado_sismos_descripcion</string>
+    -->
 
     <string name="kml_url">https://www.dhn.mil.pe/secciones/departamentos/oceanografia/apps/cartastsunamis/images/cartas_inundacion/sur/mejia_arequipa_2013.pdf</string>
 
@@ -44,7 +68,12 @@
     <string name="title_tips">Tips</string>
     <string name="title_bulletin_notices">Boletín de noticias</string>
     <string name="title_national_seismic_report">Reporte Últimos Sismos</string>
+
     <string name="title_downloadable_content">Cartas de inundación</string>
+
+    <string name="titulo_notificaciones">Notificaciones</string>
+
+
     <string name="title_videos">Videos</string>
     <string name="title_about">Acerca de MGP Tsunamis</string>
     <string name="title_notifications">Últimos mensajes recibidos</string>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-  <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -7,7 +7,18 @@
         android:backgroundTint="@color/colorPrimary"
         tools:context="me.doapps.appdhn.activities.ProvincesActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 <RelativeLayout android:layout_width="match_parent"
+     android:layout_below="@+id/toolbar"
     android:background="@color/celeste"
     android:layout_height="match_parent">
 
@@ -15,14 +26,7 @@
     <RelativeLayout android:layout_width="match_parent"
         android:id="@+id/tophead"
         android:layout_height="wrap_content">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     </RelativeLayout>
 
 
@@ -246,15 +250,21 @@
 
 
 
-
                 <ImageView
                     android:padding="0dp"
                     android:id="@+id/imagen"
-                    android:layout_below="@+id/vervaloresdeconfiguracion"
+                    style="@style/logoigp_normal_port25"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/logo"
-                    style="@style/logoigp_normal_port23"
-                    android:layout_centerHorizontal="true"/>
+                    android:src="@mipmap/im_shield_marine"
+                    android:scaleType="fitXY"/>
+
+
+
+
+
+
+
 
                 <TextView
                     android:id="@+id/versionnumero_label"
@@ -340,4 +350,4 @@
 
 
 </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -24,6 +24,7 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
@@ -236,6 +237,22 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        Snackbar.make(findViewById(android.R.id.content),"Mantén actualizada la aplicación", Snackbar.LENGTH_LONG)
+                .setAction("Play store", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW)
+                                .setData(Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName()));
+                        try {
+                            startActivity(new Intent(intent)
+                                    .setPackage("com.android.vending"));
+                        } catch (android.content.ActivityNotFoundException exception) {
+                            startActivity(intent);
+                        }
+                    }
+                }).show();
+
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 

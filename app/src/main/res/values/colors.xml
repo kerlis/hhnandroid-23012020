@@ -3,6 +3,9 @@
     <color name="transparente">#73000000</color>
     <color name="plomo">#8C8C8C</color>
 
+    <color name="seleccionadocolor">#1B59A2</color>
+
+
     <color name="gen_white">#ffffff</color>
     <color name="gen_black">#000000</color>
     <color name="gen_white_50">#80ffffff</color>

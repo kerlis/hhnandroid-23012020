@@ -35,7 +35,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
-
 import me.doapps.appdhn.R;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -126,13 +125,12 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notificacionesconfig);
 
+
+        instanceToolbar();
         Snackbar.make(findViewById(android.R.id.content),"Mantén actualizada la aplicación", Snackbar.LENGTH_LONG)
                 .setAction("Play store", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Toast.makeText(getApplicationContext(), "Configurado", Toast.LENGTH_LONG).show();
-
-
                         Intent intent = new Intent(Intent.ACTION_VIEW)
                                 .setData(Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName()));
                         try {
@@ -141,15 +139,12 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
                         } catch (android.content.ActivityNotFoundException exception) {
                             startActivity(intent);
                         }
-                        //whatever you want to do when "Action" is clicked in the SnackBar
                     }
                 }).show();
 
 
 
         estado = (Button) findViewById(R.id.estadodeconexion);
-
-
         igpdireccion = (TextView) findViewById(R.id.igpdireccion);
         ovsdireccion = (TextView) findViewById(R.id.ovsdireccion);
         igpdireccion.setText("Calle Badajoz N° 169 Urb. Mayorazgo IV Etapa,Ate,\n Lima 15012 - Perú\n" +
@@ -178,10 +173,7 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
         });
 
 
-
-
         probar = findViewById(R.id.probar);
-
         bloquesonido = findViewById(R.id.bloquesonido);
         picksound = (Button) findViewById(R.id.picksound);
         picksound.setVisibility(View.GONE);
@@ -216,8 +208,6 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
         alarma_notificacion = findViewById(R.id.alarma);
         notificar_notificacion = findViewById(R.id.sonidonotificar);
         sonidopersonalizado_notificacion = findViewById(R.id.sonidopersonalizado);
-
-
 
 
         try {
@@ -319,35 +309,17 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
             e.printStackTrace();
         }
 
+        valorguardadoenmemoriaa_int = valorguardadoenmemoriaa.length();
+        valorguardadoenmemoriab_int = valorguardadoenmemoriab.length();
+        valorguardadoenmemoriac_int = valorguardadoenmemoriac.length();
 
 
-        //valortipo = valorguardadoenmemoriac;
-
-        //valorentero = valorguardadoenmemoriac.length();
-
-       // Log.d("" + valorguardadoenmemoriaa);
-
-        Log.d("VALOR_FILE",  valorguardadoenmemoriaa);
-
-      //  valorguardadoenmemoriaa_int = valorguardadoenmemoriaa.length();
-      //  valorguardadoenmemoriab_int = valorguardadoenmemoriab.length();
-      ///  valorguardadoenmemoriac_int = valorguardadoenmemoriac.length();
-
-  /*
         if (valorguardadoenmemoriab_int > 4){
             notificar.setChecked(true);
             nonotificar.setChecked(false);
 
             estado.setBackgroundColor(Color.parseColor("#00FF79"));
-
-            // estado.setBackgroundTintList(ColorStateList.valueOf(getColor(R.color.colorconectado)));
-
-
-
-
             estado.setText("conectado");
-
-
         }
         else{
             notificar.setChecked(false);
@@ -404,7 +376,7 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
             picksound.setVisibility(View.VISIBLE);
 
         }
-*/
+
 
 
 
@@ -907,5 +879,23 @@ public class Notificacionesconfig extends AppCompatActivity implements Navigatio
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
+
+
+    private void instanceToolbar() {
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle(getString(R.string.titulo_notificaciones));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+
 
 }

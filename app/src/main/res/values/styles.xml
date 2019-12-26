@@ -10,6 +10,15 @@
         <item name="android:gravity">center_vertical</item>
     </style>
 
+
+    <style name="logoigp_normal_port25">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">125dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
     <style name="datossetlabel">
         <item name="android:textColor">@color/negro</item>
         <item name="android:textStyle">bold</item>
@@ -18,11 +27,11 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/windowBackground</item>
         <item name="android:windowBackground">@color/windowBackground</item>
         <!--<item name="windowActionBar">true</item>-->
         <!--<item name="colorControlNormal">#E040FB</item>-->
-        <item name="colorControlActivated">@color/gen_white</item>
+        <item name="colorControlActivated">@color/seleccionadocolor</item>
         <!--<item name="colorControlHighlight">#CDDC39</item>-->
     </style>
 

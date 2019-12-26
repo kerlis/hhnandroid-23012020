@@ -1,5 +1,8 @@
 package me.doapps.appdhn.activities;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,9 +33,23 @@ public class Listadoregiones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listadoregiones);
 
+        Snackbar.make(findViewById(android.R.id.content),"Mantén actualizada la aplicación", Snackbar.LENGTH_LONG)
+                .setAction("Play store", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW)
+                                .setData(Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName()));
+                        try {
+                            startActivity(new Intent(intent)
+                                    .setPackage("com.android.vending"));
+                        } catch (android.content.ActivityNotFoundException exception) {
+                            startActivity(intent);
+                        }
+                    }
+                }).show();
+
+
         instanceToolbar();
-
-
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartaspdf");
@@ -58,11 +75,7 @@ public class Listadoregiones extends AppCompatActivity {
                 Toast.makeText(Listadoregiones.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
-
-
 
     private void instanceToolbar() {
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -70,7 +83,6 @@ public class Listadoregiones extends AppCompatActivity {
         getSupportActionBar().setTitle(getString(R.string.title_downloadable_content));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -46,6 +46,8 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService {
     }
 
     private void createNotificationChannel() {
+        Log.d("service", "processing grabando");
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.beep2);
             AudioAttributes att = new AudioAttributes.Builder()

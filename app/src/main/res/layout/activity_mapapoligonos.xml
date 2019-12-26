@@ -8,9 +8,6 @@ android:layout_height="match_parent"
 android:focusableInTouchMode="true">
 
 
-
-
-
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -28,21 +25,12 @@ android:focusableInTouchMode="true">
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MapsActivity" >
-
-
         <Button
             android:id="@+id/cogerlocalizacion"
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="60dp"/>
-
-
     </fragment>
-
-
-
-
-
 
 
     <Button
@@ -114,8 +102,6 @@ android:focusableInTouchMode="true">
             android:textColorHint="@color/gen_white_50"
             android:textSize="16sp" />
 
-
-
         <TextView android:layout_width="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="7dp"
@@ -145,13 +131,9 @@ android:focusableInTouchMode="true">
     </RelativeLayout>
 
 
-
-
-
     <LinearLayout
         android:id="@+id/menu_right"
         android:visibility="gone"
-
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
@@ -315,9 +297,7 @@ android:focusableInTouchMode="true">
 
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
@@ -329,8 +309,7 @@ android:focusableInTouchMode="true">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:layout_marginBottom="5dp"
+             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -443,6 +422,7 @@ android:focusableInTouchMode="true">
 
     <ProgressBar
         android:id="@+id/progressBar4"
+        android:visibility="gone"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

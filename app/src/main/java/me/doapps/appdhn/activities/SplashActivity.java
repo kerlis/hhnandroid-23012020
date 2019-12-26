@@ -1,14 +1,18 @@
 package me.doapps.appdhn.activities;
 import android.Manifest;
 import android.app.DownloadManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.media.AudioAttributes;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Bundle;
@@ -18,11 +22,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.google.maps.android.data.Feature;
-import com.google.maps.android.data.kml.KmlLayer;
+
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -31,6 +36,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
@@ -59,6 +65,8 @@ public class SplashActivity extends AppCompatActivity {
 
     String dato1;
     String dato2;
+    String Message;
+    String valorguardadoenmemoriaa, valorguardadoenmemoriab, valorguardadoenmemoriac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +75,9 @@ public class SplashActivity extends AppCompatActivity {
         Setting.countAlarm = 0;
         preferenceUtil = new PreferencesUtil(SplashActivity.this);
         preference = Preference.getIntance(this);
+
+
+        FirebaseMessaging.getInstance().subscribeToTopic("VOLCANESPERU5000333NOTDHN");
 
         getPermissionCell();
 
@@ -89,10 +100,103 @@ public class SplashActivity extends AppCompatActivity {
             preference.setFirstAccess(2);
             preference.setVersionCode(versionCode);
         }
-       // valoresconfiguracion2();
+ // valoresconfiguracion2();
         cargararchivo();
+
+
+        try {
+            FileInputStream fileInputStream =  openFileInput("vibrar_file");
+            InputStreamReader inputStreamReader =  new InputStreamReader(fileInputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuffer stringBuffer =  new StringBuffer();
+            try {
+                while ((Message = bufferedReader.readLine())!=null)
+                {
+                    stringBuffer.append(Message);
+                }
+                valorguardadoenmemoriaa = stringBuffer.toString();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+        if (valorguardadoenmemoriaa == null){
+            valoresconfiguracion2();
+
+        }
+        else{
+
+        }
+        crear_canal_sonido_alarma();
+        crear_canal_sonido_notificacion();
+        crear_canal_sin_sonido_con_vibracion();
+
       //  downloadkml("https://www.dhn.mil.pe/secciones/departamentos/oceanografia/apps/cartastsunamis/images/cartas_inundacion/sur/mejia_arequipa_2013.pdf");
     }
+
+
+
+    private void crear_canal_sonido_alarma() {
+        String channelId = getString(R.string.canal_sonido_alarmas_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.alarmasonido);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sonido_alarmas_sismos_id_nombre);
+            String description = getString(R.string.canal_sonido_alarmas_sismos_id_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                    .build();
+            channel.setSound(sonido_notificacion_android, audioAttributes);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private void crear_canal_sonido_notificacion() {
+        String channelId = getString(R.string.canal_sonido_notificacion_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.beep2);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sonido_notificacion_sismos_nombre);
+            String description = getString(R.string.canal_sonido_notificacion_sismos_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                    .build();
+            channel.setSound(sonido_notificacion_android, audioAttributes);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private void crear_canal_sin_sonido_con_vibracion() {
+        String channelId = getString(R.string.canal_sin_sonido_con_vibracion_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.alarmasonido);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sin_sonido_con_vibracion_sismos_nombre);
+            String description = getString(R.string.canal_sin_sonido_con_vibracion_sismos_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+            channel.setVibrationPattern(new long[]{50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100});
+            channel.enableVibration(true);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+
 
     @Override
     protected void onDestroy() {
@@ -161,7 +265,9 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startService(new Intent(SplashActivity.this, TokenService.class));
 
-                Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
+            //    Intent intent = new Intent(SplashActivity.this, Verdatos.class);
+
+               Intent intent = new Intent(SplashActivity.this, Mapapoligonos.class);
 
 
                 //    Intent intent = new Intent(SplashActivity.this, Mapacontainerfragment.class);

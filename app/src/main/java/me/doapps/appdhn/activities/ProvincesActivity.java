@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -33,10 +34,27 @@ public class ProvincesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provinces);
 
+        Snackbar.make(findViewById(android.R.id.content),"Mantén actualizada la aplicación", Snackbar.LENGTH_LONG)
+                .setAction("Play store", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW)
+                                .setData(Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName()));
+                        try {
+                            startActivity(new Intent(intent)
+                                    .setPackage("com.android.vending"));
+                        } catch (android.content.ActivityNotFoundException exception) {
+                            startActivity(intent);
+                        }
+                    }
+                }).show();
+
+
         instanceToolbar();
         initRecycler();
         getPermitionDialog();
     }
+
 
     private void instanceToolbar() {
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
