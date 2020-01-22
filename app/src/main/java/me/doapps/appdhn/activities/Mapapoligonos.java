@@ -54,6 +54,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -88,7 +89,13 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                                                                 ActivityCompat.OnRequestPermissionsResultCallback,
                                                                 GoogleMap.OnInfoWindowClickListener,
                                                                 GoogleApiClient.OnConnectionFailedListener,
-                                                                ResultCallback  {
+                                                                ResultCallback,
+                                                                GoogleMap.OnCameraMoveStartedListener,
+                                                                GoogleMap.OnCameraMoveListener,
+                                                                GoogleMap.OnCameraMoveCanceledListener,
+                                                                GoogleMap.OnCameraIdleListener
+
+{
 
     private static final String TAG = Mapapoligonos.class.getSimpleName();
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
@@ -248,6 +255,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         recyclerview4   = dialogView.findViewById(R.id.my_recycler_view);
         recyclerview4.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         reference = FirebaseDatabase.getInstance().getReference("bdrefugy").child("cartas4");
+
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -268,6 +276,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                 Toast.makeText(Mapapoligonos.this, "Opsss.... Something is wrong", Toast.LENGTH_SHORT).show();
             }
         });
+
         Button cerrar = dialogView.findViewById(R.id.cerrar);
         alertDialog2 = dialogBuilder.create();
         alertDialog2.setCancelable(true);
@@ -288,11 +297,10 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
-
         abrirbusquedapopup.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
-                verpopup("si");
+               verpopup("si");
 
             }
         });
@@ -338,6 +346,61 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
     }
 
+    @Override
+    public void onCameraIdle() {
+        Toast.makeText(getApplicationContext(), "SE MOVION : ",Toast.LENGTH_SHORT).show();
+
+        LatLngBounds curScreen =   mMap.getProjection().getVisibleRegion().latLngBounds;
+        Log.d("limites", String.valueOf(curScreen));
+        Toast.makeText(getApplicationContext(), "limites de camera." +  String.valueOf(curScreen), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onCameraMoveCanceled() {
+        Toast.makeText(getApplicationContext(), "SE MOVION : ",Toast.LENGTH_SHORT).show();
+
+        LatLngBounds curScreen =   mMap.getProjection().getVisibleRegion().latLngBounds;
+        Log.d("limites", String.valueOf(curScreen));
+        Toast.makeText(getApplicationContext(), "limites de camera." +  String.valueOf(curScreen), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onCameraMove() {
+        Toast.makeText(getApplicationContext(), "SE MOVION : ",Toast.LENGTH_SHORT).show();
+
+        LatLngBounds curScreen =   mMap.getProjection().getVisibleRegion().latLngBounds;
+        Log.d("limites", String.valueOf(curScreen));
+        Toast.makeText(getApplicationContext(), "limites de camera." +  String.valueOf(curScreen), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onCameraMoveStarted(int reason) {
+
+
+
+        LatLngBounds curScreen =   mMap.getProjection().getVisibleRegion().latLngBounds;
+        Log.d("limites", String.valueOf(curScreen));
+        Toast.makeText(getApplicationContext(), "limites de camera." +  String.valueOf(curScreen), Toast.LENGTH_SHORT).show();
+
+
+        if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
+            Toast.makeText(getApplicationContext(), "The user gestured on the map.", Toast.LENGTH_SHORT).show();
+        } else if (reason == GoogleMap.OnCameraMoveStartedListener
+                .REASON_API_ANIMATION) {
+            Toast.makeText(getApplicationContext(), "The user tapped something on the map.", Toast.LENGTH_SHORT).show();
+        } else if (reason == GoogleMap.OnCameraMoveStartedListener
+                .REASON_DEVELOPER_ANIMATION) {
+            Toast.makeText(getApplicationContext(), "The app moved the camera.", Toast.LENGTH_SHORT).show();
+        }
+
+
+
+    }
+
+    public void verposiciiones(){
+
+    }
+
 
     class PrimeRun implements Runnable {
         long minPrime;
@@ -368,7 +431,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         mMap = googleMap;
 
 
-
         LatLng sydney = new  LatLng(-12.1062165, -77.0154192);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
@@ -376,7 +438,16 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         mMap.setOnMyLocationButtonClickListener(this);
         mMap.setOnMyLocationClickListener(this);
 
-       enableMyLocation();
+        mMap.setOnCameraIdleListener(this);
+        mMap.setOnCameraMoveStartedListener(this);
+        mMap.setOnCameraMoveListener(this);
+        mMap.setOnCameraMoveCanceledListener(this);
+
+
+
+
+
+        enableMyLocation();
 
         cogerlocalizacion.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -504,21 +575,17 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
 
     }
 
-
     private void localizacion(){
         fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
-
                 if (location != null) {
                     latitude_last = String.valueOf(location.getLatitude());
                     longitude_last = String.valueOf(location.getLongitude());
                     Log.d("UBICA555", latitude_last + "-" + longitude_last);
                     Toast.makeText(Mapapoligonos.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
-
                 }
             }
-
         });
     }
 
@@ -531,6 +598,7 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         mMap.clear();
         retrieveFileFromUrl(opcion);
     }
+
     private void retrieveFileFromUrl(final String urls) {
         cargarprograso(urls);
     }
@@ -588,8 +656,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         }
     }
 
-
-
     private void enableMyLocation() {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -602,17 +668,13 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                 // Access to the location has been granted to the app.
                 mMap.setMyLocationEnabled(true);
             }
-        }
-
-
+    }
 
     @Override
     public boolean onMyLocationButtonClick() {
         Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
-
         return false;
     }
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
@@ -678,8 +740,6 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
         PermissionUtils.PermissionDeniedDialog.newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
 
-
-
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
@@ -731,6 +791,170 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
             }
         }
     }
+
+
+
+
+    public void mostrar_pormovimiento(String valor) {
+
+        Log.d("mapskmladapter", valor);
+
+        fusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+
+                if (location != null) {
+                    latitude_last = String.valueOf(location.getLatitude());
+                    longitude_last = String.valueOf(location.getLongitude());
+                    Log.d("UBICA555", latitude_last + "-" + longitude_last);
+
+                    double latitude2= -12.2213428;
+                    double longitude2=-76.2303765;
+                    //  float distance=0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(location.getLatitude());
+                    crntLocation.setLongitude(location.getLongitude());
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(latitude2);
+                    newLocation.setLongitude(longitude2);
+
+                    distance =crntLocation.distanceTo(newLocation) / 1000; // in km
+
+                    Log.d("DISTANCIA:",String.valueOf(distance));
+
+                    Toast.makeText(Mapapoligonos.this, "UBICACION999: " + latitude_last + "-" + longitude_last, Toast.LENGTH_SHORT).show();
+                    // progressDialog.dismiss();
+
+                }
+            }
+
+        });
+
+        String valor3 = valor;
+
+        url_1 = valor3.split("&&")[0];
+        url_2 = valor3.split("&&")[1];
+        url_3 = valor3.split("&&")[2];
+        latitud = valor3.split("&&")[3];
+        longitud = valor3.split("&&")[4];
+        nombre = valor3.split("&&")[5];
+
+        lati= Double.parseDouble(latitud);
+        longit = Double.parseDouble(longitud);
+
+        DatabaseReference mDatabase;
+        // mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas3");
+        mDatabase = FirebaseDatabase.getInstance("https://dhnnotservice.firebaseio.com/").getReference("bdrefugy").child("cartas5");
+
+        mDatabase.orderByKey().addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+
+                Integer size = 0;
+                for(final DataSnapshot ds : dataSnapshot.getChildren()) {
+
+                    Log.d("NUMERO", String.valueOf(size++)) ;
+                    final String name = ds.child("url_kml1").getValue(String.class);
+
+                    final String url_kml1 = ds.child("url_kml1").getValue(String.class);
+                    final String url_kml2 = ds.child("url_kml2").getValue(String.class);
+                    final String url_kml3 = ds.child("url_kml3").getValue(String.class);
+                    float distance = 0;
+
+                    Location crntLocation=new Location("crntlocation");
+                    crntLocation.setLatitude(Double.parseDouble(latitude_last));
+                    crntLocation.setLongitude(Double.parseDouble(longitude_last));
+
+                    Location newLocation=new Location("newlocation");
+                    newLocation.setLatitude(Double.parseDouble(ds.child("latitud").getValue(String.class)));
+                    newLocation.setLongitude(Double.parseDouble(ds.child("longitud").getValue(String.class)));
+
+                    distance = crntLocation.distanceTo(newLocation) / 1000;
+
+                    //  distance.com
+
+                    if(size > distance){
+                        largest = distance;
+
+                        latitud_posicion1 = ds.child("latitud").getValue(String.class);
+                        longitud_posicion2 = ds.child("longitud").getValue(String.class);
+
+                        urlkml1 = ds.child("url_kml1").getValue(String.class);
+                        urlkml2 = ds.child("url_kml2").getValue(String.class);
+                        urlkml3 = ds.child("url_kml3").getValue(String.class);
+
+                        latitud_dos = ds.child("latitud").getValue(String.class);
+
+                        maximo_two(largest, ds.child("latitud").getValue(String.class), ds.child("latitud").getValue(String.class), ds.child("nombre").getValue(String.class),  ds.child("url_kml1").getValue(String.class) );
+                    }
+
+                    res_1 = getApplicationContext().getResources();
+                    res_2 = getApplicationContext().getResources();
+                    res_3 = getApplicationContext().getResources();
+
+                    int rawId_1 = res_1.getIdentifier(url_kml1 ,"raw", getApplicationContext().getPackageName());
+                    int rawId_2 = res_2.getIdentifier(url_kml2 ,"raw", getApplicationContext().getPackageName());
+                    int rawId_3 = res_3.getIdentifier(url_kml3 ,"raw", getApplicationContext().getPackageName());
+
+                    Log.d("IDENTIFICACION",String.valueOf(rawId_1  + "-" + rawId_2 + "-" + rawId_3));
+
+                }
+
+
+                int rawId_4 = res_1.getIdentifier(urlkml1 ,"raw", getApplicationContext().getPackageName());
+                int rawId_5 = res_1.getIdentifier(urlkml2 ,"raw", getApplicationContext().getPackageName());
+                int rawId_6 = res_1.getIdentifier(urlkml3 ,"raw", getApplicationContext().getPackageName());
+
+                try {
+                    kml4 = new KmlLayer(mMap, rawId_4, getApplicationContext());
+                    kml5 = new KmlLayer(mMap, rawId_5, getApplicationContext());
+                    kml6 = new KmlLayer(mMap, rawId_6, getApplicationContext());
+
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    kml4.addLayerToMap();
+                    kml5.addLayerToMap();
+                    kml6.addLayerToMap();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                }
+
+                Log.d("MAYOR_YYY:", String.valueOf(largest) + latitud_dos);
+
+                if(String.valueOf(largest) + latitud_dos != null){
+                    Toast.makeText(Mapapoligonos.this, "Distancia:" + "  LLEGO_DATO", Toast.LENGTH_SHORT).show();
+                    LatLng sydney = new LatLng(Double.parseDouble(latitud_posicion1), Double.parseDouble(longitud_posicion2));
+                    mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                    mMap.animateCamera( CameraUpdateFactory.zoomTo( 13.0f ) );
+                }
+                else{
+                    Toast.makeText(Mapapoligonos.this, "Distancia:" + "NO LLEGO", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+
+
+
+
 
     public void cargarmapas_ubicacion(String valor) {
 
@@ -866,27 +1090,14 @@ public class Mapapoligonos extends AppCompatActivity implements GoogleApiClient.
                     e.printStackTrace();
                 }
 
-
-
-
-
                 Log.d("MAYOR_YYY:", String.valueOf(largest) + latitud_dos);
 
-
                 if(String.valueOf(largest) + latitud_dos != null){
-
                     Toast.makeText(Mapapoligonos.this, "Distancia:" + "  LLEGO_DATO", Toast.LENGTH_SHORT).show();
-
                     LatLng sydney = new LatLng(Double.parseDouble(latitud_posicion1), Double.parseDouble(longitud_posicion2));
                     mMap.addMarker(new MarkerOptions().position(sydney).title(nombre));
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                     mMap.animateCamera( CameraUpdateFactory.zoomTo( 13.0f ) );
-
-
-
-
-
-
                 }
                 else{
                     Toast.makeText(Mapapoligonos.this, "Distancia:" + "NO LLEGO", Toast.LENGTH_SHORT).show();

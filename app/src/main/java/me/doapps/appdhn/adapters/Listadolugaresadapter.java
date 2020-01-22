@@ -60,6 +60,7 @@ public class Listadolugaresadapter extends RecyclerView.Adapter<Listadolugaresad
         holder.recyclerView2.setVisibility(View.GONE);
 
         holder.cerrar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
